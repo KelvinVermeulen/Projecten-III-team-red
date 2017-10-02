@@ -52,6 +52,9 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 | Mike2 **(Aalst)** | sharepoint | 2 | | november2 |
 | November2 **(Aalst)** | sql | 2 | | delta2 |
 
+Kanbanbord:
+- 1. Netwerk
+
 ## Plan van aanpak 
 
 1. Samenzitten per groep en Kanban aanvullen met deelopdrachten
