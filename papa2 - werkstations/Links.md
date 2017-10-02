@@ -11,5 +11,5 @@
 ## Research papa2
 
 ## Research Werkstations
-
+[Deploying Operating Systems with System Center 2012 Configuration Manager](https://www.youtube.com/watch?v=99I354t500g)
 ## Varia
