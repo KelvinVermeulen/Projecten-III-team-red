@@ -20,7 +20,17 @@ Aalst: ?
 
 ## Kanbanbord
 
-- Per issue moet in de comments vermeld worden: personen, geschatte tijd, dependencies
+- Iedere issue moet volgens deze layout gedocumenteerd worden:
+
+Titel:  nummer taak - naam taak: beschrijving
+
+Description:
+- Verantwoordelijke
+- (Verantwoordelijke uitvoeren testplan)
+- Geschatte tijd
+- Beschrijving (kort en duidelijk)
+- Dependencies
+
 
 ## Productie
 
