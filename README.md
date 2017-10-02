@@ -39,21 +39,19 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 
 ## Taakverdeling
 
-| Rubriek | Taak | Aantal | Personen | Test... |
-| --- | --- | --- | --- | --- | 
-| Netwerken & Firewall |  | 4 | Laurens, Robin, Pieter, Ebu | Alfa2 & Bravo2 |
-| Alfa2 & Bravo2 | DC | 2 | Patrick, Hilmi | Charlie2 |
-| Charlie2 | Mailserver | 2 | Jens, Antonio | Kilo2 |
-| Kilo2 | DHCP | 1 | Hilmi | Lima2 |
-| Lima2 | Fileserver | 2 | Cedric, Bram | Oscar2 |
-| Oscar2 | Monitoring | 2 | Sandrien, Arto | Papa2 & werkstations |
-| Papa2 & Werkstations | MSCS | 3 | Stephan, Thomas, Egon | Netwerken & Firewall |
-| Delta2 **(Aalst)** | webserver | 2 | | mike2 |
-| Mike2 **(Aalst)** | sharepoint | 2 | | november2 |
-| November2 **(Aalst)** | sql | 2 | | delta2 |
+|Nr. | Rubriek | Taak | Aantal | Personen | Test... |
+| --- | --- | --- | --- | --- | --- | 
+| 1 & 2 | Netwerken & Firewall |  | 4 | Laurens, Robin, Pieter, Ebu | Alfa2 & Bravo2 |
+| 3 & 4 | Alfa2 & Bravo2 | DC | 2 | Patrick, Hilmi | Charlie2 |
+| 5 | Charlie2 | Mailserver | 2 | Jens, Antonio | Kilo2 |
+| 7 | Kilo2 | DHCP | 1 | Hilmi | Lima2 |
+| 8 | Lima2 | Fileserver | 2 | Cedric, Bram | Oscar2 |
+| 11 | Oscar2 | Monitoring | 2 | Sandrien, Arto | Papa2 & werkstations |
+| 12 | Papa2 & Werkstations | MSCS | 3 | Stephan, Thomas, Egon | Netwerken & Firewall |
+| 6 | Delta2 **(Aalst)** | webserver | 2 | | mike2 |
+| 9 | Mike2 **(Aalst)** | sharepoint | 2 | | november2 |
+| 10 | November2 **(Aalst)** | sql | 2 | | delta2 |
 
-Kanbanbord:
-- 1. Netwerk
 
 ## Plan van aanpak 
 
