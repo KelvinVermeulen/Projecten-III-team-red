@@ -3,7 +3,8 @@
 ## Verantwoordelijk voor communicatie Gent-Aalst
 
 Gent: Laurens Bracke
-Aalst:
+
+Aalst: ?
 
 ## Slack
 
@@ -37,9 +38,9 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 | Lima2 | Fileserver | 2 | Cedric, Bram | Oscar2 |
 | Oscar2 | Monitoring | 2 | Sandrien, Arto | Papa2 & werkstations |
 | Papa2 & Werkstations | MSCS | 3 | Stephan, Thomas, Egon | Netwerken & Firewall |
-| Delta2 ** (Aalst) ** | webserver | 2 | | mike2 |
-| Mike2 ** (Aalst) ** | sharepoint | 2 | | november2 |
-| November2 ** (Aalst) ** | sql | 2 | | delta2 |
+| Delta2 **(Aalst)** | webserver | 2 | | mike2 |
+| Mike2 **(Aalst)** | sharepoint | 2 | | november2 |
+| November2 **(Aalst)** | sql | 2 | | delta2 |
 
 ## Plan van aanpak 
 
@@ -47,4 +48,4 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 
 2. Volgende week: status domeincontrollers nakijken, Azure (Stephan) en kanban deelopdrachten aangemaakt
 
-** Iedereen: vergeet niet een persoonlijk logboek bij te houden! **
+**Iedereen: vergeet niet een persoonlijk logboek bij te houden!**
