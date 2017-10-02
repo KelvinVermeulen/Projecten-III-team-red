@@ -31,7 +31,7 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 
 | Rubriek | Taak | Aantal | Personen | Test... |
 | --- | --- | --- | --- | --- | 
-| Netwerken & Firewall |  | 3 | Laurens, Robin, Pieter, Ebu | Alfa2 & Bravo2 |
+| Netwerken & Firewall |  | 4 | Laurens, Robin, Pieter, Ebu | Alfa2 & Bravo2 |
 | Alfa2 & Bravo2 | DC | 2 | Patrick, Hilmi | Charlie2 |
 | Charlie2 | Mailserver | 2 | Jens, Antonio | Kilo2 |
 | Kilo2 | DHCP | 1 | Hilmi | Lima2 |
