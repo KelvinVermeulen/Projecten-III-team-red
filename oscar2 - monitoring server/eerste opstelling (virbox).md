@@ -17,3 +17,4 @@ In winser zelf verder aanpassen:
 **surfen werkt normaal dan**
 * javascript enabled in internet explorer
 * prtg downloaden via peassler.com (toevoegen aan trusted websites) en downloaden
+
