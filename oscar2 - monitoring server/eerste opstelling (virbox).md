@@ -28,7 +28,7 @@
 
 ## Verder opzetten windows server 2
 
-### In winser 2 zelf verder aanpassan:
+### In winser zelf verder aanpassan:
 * aanpassen computernaam naar 'PRTG-Client'
 * aanpassen werkgroep naar 'PRTGWERKGROEP'
 * ethernet hernoemen naar 'local'
