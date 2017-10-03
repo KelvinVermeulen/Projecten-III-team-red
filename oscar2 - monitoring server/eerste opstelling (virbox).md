@@ -12,7 +12,8 @@
 ### In winser zelf verder aanpassen:
 * 'ethernet' hernoemen naar 'internet'
 * 'ethernet 2' hernoemen naar 'local'
-* internet settings ipv6 uitzetten (ipv4 dhcp instellen)
+* internet settings ipv6 uitzetten
+* ipv4 adres instellen op '192.168.0.1' (local)
 
 | **surfen werkt normaal nu** |
 | --- |
@@ -30,3 +31,6 @@
 ### In winser 2 zelf verder aanpassan:
 * aanpassen computernaam naar 'PRTG-Client'
 * aanpassen werkgroep naar 'PRTGWERKGROEP'
+* ethernet hernoemen naar 'local'
+* ipv6 uizetten
+* ipv4 adres instellen op '192.168.0.2'
