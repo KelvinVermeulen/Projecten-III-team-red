@@ -4,7 +4,7 @@
 * username = administrator
 * wachtwoord = banaan666
 
-## Verder opzetten winser 1
+## Verder opzetten windows server 1
 
 ### In vm verder aanpassen:
 * extra NIC -> intern netwerk
@@ -17,6 +17,16 @@
 | **surfen werkt normaal nu** |
 | --- |
 * javascript enabled in internet explorer
-* prtg downloaden via peassler.com (toevoegen aan trusted websites) en downloaden
+* prtg downloaden via peassler.com (toevoegen aan trusted websites) en downloaden en installeren
+* aanpassen computername naar 'PRTG-Server'
+* werkgroepnaam aanpassen naar 'PRTGWERKGROEP'
 
-## Verder opzetten winser 2
+### Installatie prtg
+* username = prtgadmin
+* wachtwoord = banaan666
+
+## Verder opzetten windows server 2
+
+### In winser 2 zelf verder aanpassan:
+* aanpassen computernaam naar 'PRTG-Client'
+* aanpassen werkgroep naar 'PRTGWERKGROEP'
