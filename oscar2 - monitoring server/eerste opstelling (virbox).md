@@ -6,15 +6,17 @@
 
 ## Verder opzetten winser 1
 
-In vm verder aanpasesn:
+### In vm verder aanpassen:
 * extra NIC -> intern netwerk
 
-In winser zelf verder aanpassen:
+### In winser zelf verder aanpassen:
 * 'ethernet' hernoemen naar 'internet'
 * 'ethernet 2' hernoemen naar 'local'
 * internet settings ipv6 uitzetten (ipv4 dhcp instellen)
 
-**surfen werkt normaal dan**
+| **surfen werkt normaal nu** |
+| --- |
 * javascript enabled in internet explorer
 * prtg downloaden via peassler.com (toevoegen aan trusted websites) en downloaden
 
+## Verder opzetten winser 2
