@@ -4,7 +4,7 @@
 
 Gent: Laurens Bracke
 
-Aalst: ?
+Aalst: Robin Cleyman
 
 ## Slack
 
@@ -48,9 +48,9 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 | 8 | Lima2 | Fileserver | 2 | Cedric, Bram | Oscar2 |
 | 11 | Oscar2 | Monitoring | 2 | Sandrien, Arto | Papa2 & werkstations |
 | 12 | Papa2 & Werkstations | MSCS | 3 | Stephan, Thomas, Egon | Netwerken & Firewall |
-| 6 | Delta2 **(Aalst)** | webserver | 2 | | mike2 |
-| 9 | Mike2 **(Aalst)** | sharepoint | 2 | | november2 |
-| 10 | November2 **(Aalst)** | sql | 2 | | delta2 |
+| 6 | Delta2 **(Aalst)** | webserver | 2 | Egon, Joachim | mike2 |
+| 9 | Mike2 **(Aalst)** | sharepoint | 3 | Robin C, Robin D, Kenneth | november2 |
+| 10 | November2 **(Aalst)** | sql | 2 | Maarten, Benjamin | delta2 |
 
 
 ## Plan van aanpak 
