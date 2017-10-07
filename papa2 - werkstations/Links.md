@@ -14,6 +14,10 @@
 
 [Chocolatey](https://chocolatey.org/)
 
+[Chocolatey Demonstration](https://www.youtube.com/watch?v=HlnTZF3H1Ac)
+
+[Chocolatey (Windows Package Manager) Beginners Guide](https://www.youtube.com/watch?v=hfgZYpo5moA)
+
 ### Powershell
 
 [Powershell commando's voor System Center 2016](https://docs.microsoft.com/en-us/system-center/scsm/sm-cmdlets)
