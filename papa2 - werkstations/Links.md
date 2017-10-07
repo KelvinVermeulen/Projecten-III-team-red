@@ -10,6 +10,23 @@
 
 ## Research papa2
 
-## Research Werkstations
+### Automatisatie met Chocolatey
+
+[Chocolatey](https://chocolatey.org/)
+
+### Powershell
+
+[Powershell commando's voor System Center 2016](https://docs.microsoft.com/en-us/system-center/scsm/sm-cmdlets)
+
+### Research Werkstations
+
 [Deploying Operating Systems with System Center 2012 Configuration Manager](https://www.youtube.com/watch?v=99I354t500g)
+
+#### Lijst van software
+- Windows 7 Enterprise en/of Windows 10 Enterprise
+- Office 2013 of 2016
+- Adobe Acrobat Reader
+- Java packages
+- Adobe Flash voor IE en Firefox
+
 ## Varia
