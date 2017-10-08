@@ -65,7 +65,7 @@
  
 | Groep            | Gebruiker(s)                 |
 |------------------|------------------------------|
-| Administratie    | Lies LS. Smet Dirck DS. Smet |
+| Administratie    | Lies LS. Smet en Dirck DS. Smet |
 | Directie         | Tim TS. Smet                 |
 | IT Administratie | Jan JS. Smet                 |
 | Ontwikkeling     | Sylvie SS. Smet              |
