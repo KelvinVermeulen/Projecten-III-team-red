@@ -1,4 +1,5 @@
 ### Links:
+- markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code
 
 - tutorial: https://www.youtube.com/watch?v=pcj3h6TamAI
 
