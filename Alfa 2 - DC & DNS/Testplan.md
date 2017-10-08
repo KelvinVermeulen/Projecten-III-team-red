@@ -83,22 +83,6 @@
 
 ## Policies
 
-### Gui
-
-1. Start de server dat genaamd is als Alfa 2 in de VM
-2. Log in met "Aa123" als wachtwoord
-3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
-4. Nadat "Server Manger" geopend is, klik op "Tools" dat je rechts bovenaan van de pagina terug kan vinden en klik daarna op "Group Policy Management".
-5. Klap daarna Forest:red.local uit als volgt: Forest:red.local --> Domains --> red.local
-6. Na het uitklappen moet je daar de map red terug kunnen vinden met daarin de volgende mappen:
- - Administratie
- - Directie
- - IT Administratie
- - Ontwikkeling
- - Verkoop
- - Werkstation
-7. 
-
 1. Maak een nieuwe VM aan en installeer windows 10 daarop. Je kan de stappen op [dit](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine) pagina volgen voor het installatie van een Windows 10 op VM.
 2. Maak de geïnstalleerde computer lid van de domein. Om dit te doen volg de volgende stappen
 - Start de computer en log in
