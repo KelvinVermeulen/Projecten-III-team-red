@@ -133,7 +133,7 @@ Indien je Windows 10 al hebt geinstalleerd tijdens het controleren van DC moet j
 ## Fileserver
 1. Start de computer en log in met de gegevens in de rubriek policies.
 2. Bij elk gebruiker in elk groep moeten enkel de volgende folders te zien zijn in "mijn computer". Voer in elk folder een actie uit. Probeer bijvoorbeeld een document te lezen (testen van lees rechten) en en een document aan te maken (notepad) en op te slaan, indien dat lukt is alles goed geconfigureerd:
-
+! [FileServer](https://github.com/HoGentTIN/p3ops-red/blob/master/Alfa%202%20-%20DC%20%26%20DNS/FileServer.png)
 
 
 
