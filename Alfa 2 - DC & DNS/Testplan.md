@@ -14,6 +14,14 @@
 3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Nadat CMD geopend is, type "Winver" en je ziet welke Windows versie er geïnstalleerd is. Indien er Windows Server 2016 staat is de server installatie succesvol uitgevoerd.
 
+## Netwerkkaart
+1. Start de server dat genaamd is als Alfa 2 in de VM
+2. Log in met "Aa12345" als wachtwoord
+3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
+4. Type ipconfig en durk op enter.
+5. De ip adres meot als volgt geconfigureerd zijn: (momenteel wachten op de netwerk gedeelte)
+6. Indien de ip adres klopt is de netwerk juist geconfigureerd
+
 ## Domeincontroller en DNS
 ### DC en DNS geïnstalleerd?
 1. Start de server dat genaamd is als Alfa 2 in de VM
@@ -124,4 +132,3 @@ Indien je Windows 10 al hebt geinstalleerd tijdens het controleren van DC moet j
 
 ## Fileserver
 
-## Netwerkkaart
