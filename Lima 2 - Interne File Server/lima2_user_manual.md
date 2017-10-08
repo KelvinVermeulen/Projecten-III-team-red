@@ -1,9 +1,11 @@
-# DISCLAIMER: THIS IS A WORK IN PROGRESS, AND THEREFORE ONLY MEANT AS A DRAFT
+# DISCLAIMER: _THIS IS A WORK IN PROGRESS, AND THEREFORE ONLY MEANT AS A DRAFT_
 
 ***
 
-user manual:
-(poging Bram)
+
+# User manual
+
+### user manual (poging Bram 02/10/2017):
 
 log:
 op virtualbox aanmaken Lima2 met window server 2016 met 2 processoren aan 2048 Mb ram, schijfruimte 32Gb, dynamisch gealloceerd;
