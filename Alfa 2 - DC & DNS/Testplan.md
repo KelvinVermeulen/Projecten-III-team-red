@@ -62,6 +62,7 @@
  - Klik één per één op de groepen die je terug kan vinden in de mappen in stap 6.
  - Klik daarna op de tab "Members"
  - Indien je daar de gebruikers als volgt kan terug vinden, is alles goed geconfigureerd:
+ 
 | Groep            | Gebruiker(s)                 |
 |------------------|------------------------------|
 | Administratie    | Lies LS. Smet Dirck DS. Smet |
