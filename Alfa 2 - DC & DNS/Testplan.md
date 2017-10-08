@@ -11,7 +11,7 @@
 ### CMD
 1. Start de server dat genaamd is als Alfa 2 in de VM
 2. Log in met "Aa123" als wachtwoord
-3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen.
+3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Nadat CMD geopend is, type "Winver" en je ziet welke Windows versie er geïnstalleerd is. Indien er Windows Server 2016 staat is de server installatie succesvol uitgevoerd.
 
 ## Domeincontroller en DNS
@@ -31,11 +31,12 @@
 
 1. Start de server dat genaamd is als Alfa 2 in de VM
 2. Log in met "Aa123" als wachtwoord
-3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen.
+3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Nadat CMD geopend is, type "HOSTNAME" en je ziet wat de naam van de server is. Indien het "ns1" is, is de naam goed geconfigureerd. Type hierna "wmic computersystem get domain" om de domain naam te vinden. Indien er "red.local" staat is dat ook goed geconfigureerd.
 
 ## Gebruikersgroepen, gebruikers en werkstations
 
+### Gui
 1. Start de server dat genaamd is als Alfa 2 in de VM
 2. Log in met "Aa123" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
@@ -70,6 +71,16 @@
 | IT Administratie | Jan JS. Smet                 |
 | Ontwikkeling     | Sylvie SS. Smet              |
 | Verkoop          | Bert BS. Smet                |
+
+
+### CMD
+1. Start de server dat genaamd is als Alfa 2 in de VM
+2. Log in met "Aa123" als wachtwoord
+3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
+4. Type "dsa.msc" in en klik op enter. "Active directory users and computers" wordt geopend.
+5. Volg hierna de bovenstaande Gui vanaf stap 5
+
+
 ## Policies
 
 ## Fileserver
