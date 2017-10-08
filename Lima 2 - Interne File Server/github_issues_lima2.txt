@@ -1,0 +1,17 @@
+
+lima2(geschatte tijd: 20uur (inclusief cheatsheat)) 
+
+-schijven afdelingen instellen volgens tabel 3.1 (Cedric)
+
+-quotas instellen (Cedric)
+
+-shared map ShareVerkoop (Bram)
+
+-rechten instellen volgens tabel 3.2 (Bram)
+
+testplan (geschatte tijd: 30min) (Cedric)
+
+testrapport (geschatte tijd: 30min) zal worden uitgevoerd door kilo) (Bram)
+
+User manual (geschatte tijd: 20uur gedeeld met lima2) instructies (Bram & Cedric)
+
