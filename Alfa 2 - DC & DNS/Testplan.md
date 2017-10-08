@@ -20,14 +20,14 @@
 
 ## Server naam en domein naam
 
-## GUI
+### GUI
 1. Start de server dat genaamd is als Alfa 2 in de VM
 2. Log in met "Aa123" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
 4. Nadat "Server Manger" geopend is, klik op "Local Server" dat je link van de pagina terug kan vinden.
 5. Controlleer of de "Computer Name" op "ns1" en de "Domain" op "red.local" staat. Indien dat zo is, is de server naam en domein succesvol geconfigureerd.
 
-## CMD
+### CMD
 
 1. Start de server dat genaamd is als Alfa 2 in de VM
 2. Log in met "Aa123" als wachtwoord
@@ -40,7 +40,7 @@
 1. Start de server dat genaamd is als Alfa 2 in de VM
 2. Log in met "Aa123" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
-4. Nadat "Server Manger" geopend is, klik op "Tools" dat je rechts bovenaan van de pagina terug kan vinden en klik daarna op "Ative directory users en groups".
+4. Nadat "Server Manger" geopend is, klik op "Tools" dat je rechts bovenaan van de pagina terug kan vinden en klik daarna op "Ative directory users and computers".
 5. Klap daarna red.local uit. je moet een map "Red" moeten zien.
 6. Daarin moet je de volgende mappen terug kunnen vinden:
  - Administratie
@@ -82,6 +82,43 @@
 
 
 ## Policies
+
+### Gui
+
+1. Start de server dat genaamd is als Alfa 2 in de VM
+2. Log in met "Aa123" als wachtwoord
+3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
+4. Nadat "Server Manger" geopend is, klik op "Tools" dat je rechts bovenaan van de pagina terug kan vinden en klik daarna op "Group Policy Management".
+5. Klap daarna Forest:red.local uit als volgt: Forest:red.local --> Domains --> red.local
+6. Na het uitklappen moet je daar de map red terug kunnen vinden met daarin de volgende mappen:
+ - Administratie
+ - Directie
+ - IT Administratie
+ - Ontwikkeling
+ - Verkoop
+ - Werkstation
+7. 
+
+1. Maak een nieuwe VM aan en installeer windows 10 daarop. Je kan de stappen op [dit](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine) pagina volgen voor het installatie van een Windows 10 op VM.
+2. Maak de geïnstalleerde computer lid van de domein. Om dit te doen volg de volgende stappen
+- Start de computer en log in
+- Ga naar "Mijn computer", doe rechtermuisklik en klik op "eigenschappen"
+- Klik daarna op "Instellingen wijzigen" in de gedeelte "Instellingen voor computernaam,domein en werkgroep"
+- Klik daarna op de geopende pagina op wijzigen
+- Vink daarna de "domein" aan en geef als domeinnaam "red.local" in. Er wordt een gebruikersnaam (Administrator) en wachtwoord (Aa12345) gevraagd, geef dat in en druk op enter. De computer zal opnieuw moeten opgestart worden, en de computer zal lid worden van red.local.
+
+3. Nadat de computer een lid is geworden van de domein. Log uit en log in met de volgede gebruikers (In de derde kolom wordt beschreven wat normaal gezien niet moet werken. Indien dat klopt zijn de policies goed geconfigureerd):
+
+| Groep            | Gebruikersnaam en wachtwoord                |Beperking                 |
+|------------------|------------------------------|------------------------------|
+| Administratie    | Lies.Smet - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu, eigenschappenvan de netwerkadapters kan niet geopend worden |
+| Directie         | Tim.Smet - P@ssword                |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu                |
+| IT Administratie | Jan.Smet - P@ssword                 |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu                 |
+| Ontwikkeling     | Sylvie.Smet - P@ssword              |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu             |
+| Verkoop          | Bert.Smet - P@ssword                |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu, eigenschappenvan de netwerkadapters kan niet geopend worden                |
+
+
+
 
 ## Fileserver
 
