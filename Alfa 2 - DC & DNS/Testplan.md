@@ -19,7 +19,7 @@
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Type ipconfig en durk op enter.
-5. De ip adres meot als volgt geconfigureerd zijn: (momenteel wachten op de netwerk gedeelte)
+5. De ip adres moet als volgt geconfigureerd zijn: (momenteel wachten op de netwerk gedeelte)
 6. Indien de ip adres klopt is de netwerk juist geconfigureerd
 
 ## Domeincontroller en DNS
