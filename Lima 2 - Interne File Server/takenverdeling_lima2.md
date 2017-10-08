@@ -1,6 +1,6 @@
 ### Voorlopige takenverdeling issues lima 2 
 
-lima2(geschatte tijd: 20uur (inclusief cheatsheat/User manual)) 
+- lima2 uitvoering (geschatte tijd: 20uur (inclusief cheatsheat/User manual)) 
 
 - schijven afdelingen instellen volgens tabel 3.1 (Cedric)
 
