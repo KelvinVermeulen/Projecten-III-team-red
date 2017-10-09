@@ -25,26 +25,9 @@
 - ~~add new generation 1 vm: Lima2_win_ser_2016 with 2048MB startup memory~~
 - ~~add virtual harddisk Lima2_win_ser_2016_disk1 with 50GB~~
 - ~~use code: GN8DC-F98HQ-T9893-TTGW6-RRHYF code~~
-- run the script below with powershell as an admin (obviously change the names/paths accordingly)
--`New-VM -Name Lima2_WinSer2016
-       -Path "C:\Users\theso\Desktop\Super Phun Thyme\2017-2018\Projecten III\p3ops-red\Lima 2 - Interne File Server"
-       -NewVHDPath "C:\Users\theso\Desktop\Super Phun Thyme\2017-2018\Projecten III\p3ops-red\Lima 2 - Interne File Server"
-       -NewVHDSizeBytes 50GB `
-       -Generation 1
-       -MemoryStartupBytes 2GB `
-       ~~-SwitchName NotSureYet`~~ 
-       
-       ▲ dit laten staan
-       
-       ▼ hierop kunt ge wa uitproberen :p 
-       
-       `New-VM -Name Lima2_WinSer2016
-       -Path "C:\Users\theso\Desktop\Super Phun Thyme\2017-2018\Projecten III\p3ops-red\Lima 2 - Interne File Server"
-       -NoVHD
-       -NewVHDSizeBytes 50GB `
-       -Generation 1
-       -MemoryStartupBytes 2GB `
-       
+- run the script below with powershell as an admin by typing: .\lima2_deployment_script.ps1 (obviously change the names/paths accordingly)
+
+
        
 ***
       
@@ -59,5 +42,3 @@ create quote for subfolder
 bepaalde soorten files blocken in file screen management?
 
 #### randnotities automation
-
-SwitchName: switch name where the network adapter will be connected

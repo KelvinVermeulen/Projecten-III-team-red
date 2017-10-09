@@ -10,3 +10,5 @@
 - hyper-V machine deployment: https://www.starwindsoftware.com/blog/automate-the-hyper-v-virtual-machine-deployment-with-powershell
 
 - powershell spaces fix?: https://stackoverflow.com/questions/8883215/powershell-passing-calculated-paths-with-spaces
+
+- powershell hyper-v main script: https://technet.microsoft.com/en-us/library/jj933287.aspx
