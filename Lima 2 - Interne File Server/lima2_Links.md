@@ -12,3 +12,5 @@
 - powershell spaces fix?: https://stackoverflow.com/questions/8883215/powershell-passing-calculated-paths-with-spaces
 
 - powershell hyper-v main script: https://technet.microsoft.com/en-us/library/jj933287.aspx
+
+- automatiseren via unattend.xml = https://social.technet.microsoft.com/wiki/contents/articles/36609.windows-server-2016-unattended-installation.aspx
