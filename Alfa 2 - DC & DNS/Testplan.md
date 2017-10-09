@@ -76,15 +76,14 @@
  - Verkoop
  - Werkstation
 7. In de bovenstaande mappen (behalve in de map Werkstation" moet je een groep met dezelfde naam en min. één gerbuiker terug kunnen vinden.
-8. Indien dat het geval is, zijn de groepen en goed aangemaakt.
+8. Indien dat het geval is, zijn de groepen goed aangemaakt.
 9. In de map "Werkstation" moet je vijf werkstations terug kunnen vinden met de volgende namen:
- - Administratie
- - Directie
- - IT Administratie
- - Ontwikkeling
- - Verkoop
- - Werkstation
- Indien dat het geval is, zijn de werkstations ook goed aangemaakt
+ - AClient
+ - DClient
+ - ITClient
+ - OClient
+ - VClient
+ <br>Indien dat het geval is, zijn de werkstations ook goed aangemaakt
  10. Als laatst controleren we of de gerbuikers tot de juiste groep(en) behoren. Dit doen we als volgt:
  - Klik één per één op de groepen die je terug kan vinden in de mappen in stap 6.
  - Klik daarna op de tab "Members"

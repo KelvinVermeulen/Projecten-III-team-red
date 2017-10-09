@@ -8,8 +8,12 @@
 
 [Windows 2012 R2](https://e5.onthehub.com/WebStore/OfferingsOfMajorVersionList.aspx?pmv=4b523f0e-3adf-e211-9000-f04da23fc520&cmi_mnuMain=2b44b80c-dfc9-e111-971c-f04da23e67f6&cmi_mnuMain_child=112a5706-3bdb-e111-9c76-f04da23fc522&cmi_mnuMain_child_child=6b5163fa-40db-e111-9c76-f04da23fc522&ws=9382cda9-c42d-e211-aed3-f04da23e67f6&vsro=8)
 
+<<<<<<< HEAD
 
 
+=======
+[SQL Server 2014 ](https://e5.onthehub.com/WebStore/OfferingDetails.aspx?o=15f3d457-e30a-e511-940c-b8ca3a5db7a1&pmv=00000000-0000-0000-0000-000000000000&ws=9382cda9-c42d-e211-aed3-f04da23e67f6&vsro=8)
+>>>>>>> fdea48e41bc86f24d8e6a5032beb5320f7f289a6
 ## Research papa2
 
 ### Automatisatie met Chocolatey
@@ -23,6 +27,10 @@
 ### Powershell
 
 [Powershell commando's voor System Center 2016](https://docs.microsoft.com/en-us/system-center/scsm/sm-cmdlets)
+
+### Research Papa2
+
+[SCCM-pdf](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=26179&tool=Document&browser=Table&tool_action=Viewer&publication=1148505)
 
 ### Research Werkstations
 

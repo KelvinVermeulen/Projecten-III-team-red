@@ -27,7 +27,8 @@ Titel:  nummer taak - naam taak: beschrijving
 Description:
 - Verantwoordelijke
 - (Verantwoordelijke uitvoeren testplan)
-- Geschatte tijd
+- Geschatte tijd (**opgelet:** dit is exclusief de tijd nodig om te testen)
+- Geschatte tijd **om te testen**
 - Beschrijving (kort en duidelijk)
 - Dependencies
 
@@ -41,13 +42,13 @@ We zullen PowerShell en Microsoft Azure gebruiken. Stephan zal kijken of het mog
 
 |Nr. | Rubriek | Taak | Aantal | Personen | Test... |
 | --- | --- | --- | --- | --- | --- | 
-| 1 & 2 | Netwerken & Firewall |  | 4 | Laurens, Robin, Pieter, Ebu | Alfa2 & Bravo2 |
+| 1 & 2 | Netwerken & Firewall |  | 4 | Laurens, Robin / Pieter, Ebu | L&R testen P&E / P&E testen L&R |
 | 3 & 4 | Alfa2 & Bravo2 | DC | 2 | Patrick, Hilmi | Charlie2 |
 | 5 | Charlie2 | Mailserver | 2 | Jens, Antonio | Kilo2 |
 | 7 | Kilo2 | DHCP | 1 | Hilmi | Lima2 |
 | 8 | Lima2 | Fileserver | 2 | Cedric, Bram | Oscar2 |
 | 11 | Oscar2 | Monitoring | 2 | Sandrien, Arto | Papa2 & werkstations |
-| 12 | Papa2 & Werkstations | MSCS | 3 | Stephan, Thomas, Egon | Netwerken & Firewall |
+| 12 | Papa2 & Werkstations | MSCS | 3 | Stephan, Thomas, Egon | Alfa2 & Bravo2 |
 | 6 | Delta2 **(Aalst)** | webserver | 2 | Egon, Joachim | mike2 |
 | 9 | Mike2 **(Aalst)** | sharepoint | 3 | Robin C, Robin D, Kenneth | november2 |
 | 10 | November2 **(Aalst)** | sql | 2 | Maarten, Benjamin | delta2 |
