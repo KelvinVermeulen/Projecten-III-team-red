@@ -23,6 +23,10 @@
 
 [Powershell commando's voor System Center 2016](https://docs.microsoft.com/en-us/system-center/scsm/sm-cmdlets)
 
+### Research Papa2
+
+[SCCM-pdf](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=26179&tool=Document&browser=Table&tool_action=Viewer&publication=1148505)
+
 ### Research Werkstations
 
 [Deploying Operating Systems with System Center 2012 Configuration Manager](https://www.youtube.com/watch?v=99I354t500g)
