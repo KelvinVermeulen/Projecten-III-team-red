@@ -27,7 +27,8 @@ Titel:  nummer taak - naam taak: beschrijving
 Description:
 - Verantwoordelijke
 - (Verantwoordelijke uitvoeren testplan)
-- Geschatte tijd
+- Geschatte tijd (**opgelet:** dit is exclusief de tijd nodig om te testen)
+- Geschatte tijd **om te testen**
 - Beschrijving (kort en duidelijk)
 - Dependencies
 
