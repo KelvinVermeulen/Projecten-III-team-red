@@ -42,3 +42,5 @@ create quote for subfolder
 bepaalde soorten files blocken in file screen management?
 
 #### randnotities automation
+add-*vm*
+add-vmharddiskdrive ?
