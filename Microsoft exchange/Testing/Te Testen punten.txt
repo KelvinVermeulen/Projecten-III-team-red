@@ -1,0 +1,6 @@
+Te testen:
+
+-ADLDS windows feature installed
+-Exchange manegment shell
+-NET Framework 4.5.2
+-Net Framework 4.5.2 on Domain-Controller
