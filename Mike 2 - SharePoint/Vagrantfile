@@ -1,0 +1,9 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "gusztavvargadr/w16s"
+  config.vm.provider "hyperv" do |h|
+    h.vmname = "Sharepoint"
+    h.memory = 3072
+    end
+  config.vm.synced_folder ".", "/vagrant", type: "smb", smb_username: "vagrant", smb_password: "vagrant"
+  config.vm.provision :shell, path: "scripts/nederlands.ps1"
+  end
