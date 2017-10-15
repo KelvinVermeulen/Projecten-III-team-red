@@ -10,3 +10,7 @@ hier kan je allerlei links terugvinden die we hebben gebruikt voor het opstellen
 - [Basic config (2)](https://linoxide.com/firewall/pfsense-setup-basic-configuration/)
 
 - [Video tutorial config](https://www.youtube.com/watch?v=cVBMuWpnIw4)
+
+- [PfSense zonder webconfiguratie (PHP pfSense Shell)](https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shelll)
+
+- [Ansible pfSense](https://github.com/amatas/ansible-pfsense)
