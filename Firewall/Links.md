@@ -14,3 +14,7 @@ hier kan je allerlei links terugvinden die we hebben gebruikt voor het opstellen
 - [PfSense zonder webconfiguratie (PHP pfSense Shell)](https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shelll)
 
 - [Ansible pfSense](https://github.com/amatas/ansible-pfsense)
+
+- [Koen Zomers pfSenseBackup (incl. GitHub repo)](https://knowledge.zomers.eu/pfsense/Pages/How-to-automate-pfSense-backup.aspx)
+
+- [Restore during install (XML + USB)][https://doc.pfsense.org/index.php/Automatically_Restore_During_Install)
