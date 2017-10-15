@@ -14,3 +14,5 @@
 - powershell hyper-v main script: https://technet.microsoft.com/en-us/library/jj933287.aspx
 
 - automatiseren via unattend.xml = https://social.technet.microsoft.com/wiki/contents/articles/36609.windows-server-2016-unattended-installation.aspx
+
+- Custom script toevoegen aan windows Setup https://technet.microsoft.com/en-us/library/dd744268(WS.10).aspx
