@@ -28,6 +28,7 @@ exit
 ip default-gateway 172.18.0.1
 interface range f0/1-5
 switchport mode access
+switchport access vlan 200
 exit
 interface range f0/20-21
 channel-group 1 mode desirable
