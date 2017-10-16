@@ -14,8 +14,8 @@ SwitchName: switch name where the network adapter will be connected
 #variables 
 
 $WSISO = "C:\nl_windows_server_2016_x64_dvd_9719756.iso"  #WinSer2016 Iso
-$CLI1VHD = 50GB                 #Hard disk 1
-$CLI2VHD = 50GB                 #Hard disk 2
+$CLI1VHD = 100GB                 #Hard disk 1
+$CLI2VHD = 100GB                 #Hard disk 2
 $SRV1 = "Lima2_WinSer2016"                #WinSer2016 box
 $VMLOC = "C:\HyperV"
 $NetworkSwitch5 = "Switch5"	# Name of the Network Switch
