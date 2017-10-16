@@ -26,9 +26,14 @@
 - ~~add virtual harddisk Lima2_win_ser_2016_disk1 with 50GB~~
 - ~~use code: GN8DC-F98HQ-T9893-TTGW6-RRHYF code~~
 - run the script below with powershell as an admin by typing: .\lima2_deployment_script.ps1 (obviously change the names/paths accordingly)
-(manueel verder)
+(manueel verder 16/10/2017)
+- start hyper-v en ga naar de settings van de aangemaakte vm (eerst vm afsluiten)
+- add nog een harddrive in ide controller 0
+- maak voor deze een virtuele harddisk aan (format: VHDX, type: Dynamic, name: Disk2, location: C:\HyperV\Lima2_WinSer2016\, size: 100Gb, )  
+- stel in, taal: nederlands(belgiê) keyboardlayouy: belgisch (komma)
+- administrator wachtwoord: Admin123
+- log in met Administrator, pw:Admin123 
 - 
-
        
 ***
       
