@@ -32,6 +32,11 @@
 
 [SCCM-pdf](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=26179&tool=Document&browser=Table&tool_action=Viewer&publication=1148505)
 
+### Automatisatie Papa2
+
+[SCCM automatisch installeren](https://douwevanderuit.wordpress.com/2014/02/10/howto-install-a-primary-site-server-and-all-prereqs-with-powershell/)
+
+
 ### Research Werkstations
 
 [Deploying Operating Systems with System Center 2012 Configuration Manager](https://www.youtube.com/watch?v=99I354t500g)
