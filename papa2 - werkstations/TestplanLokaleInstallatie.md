@@ -32,23 +32,10 @@ Hierna open je de Tool ADSI Edit en maak je de volgende aanpassingen.
 ![foto](ImagesTestplan/HandmatigInstalleren/adsiedit09.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/adsiedit10.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/adsiedit11.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit12.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
 
 Vervolgens moet je de Active Directory Schema extenden.
 
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
+![foto](ImagesTestplan/HandmatigInstalleren/adsiedit12.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/adsiedit13.png)
 
 Daarna moet je alle Roles & Features installeren.
