@@ -1,6 +1,6 @@
-#Interessante links
+# Interessante links
 
-##Installing Exchange
+## Installing Exchange
 - [Installing Exchange Server 2016](https://practical365.com/exchange-server/installing-exchange-server-2016/)
 - [Exchange prerequisites](https://practical365.com/exchange-server/exchange-server-2016-pre-requisites/)
 - [Deploy a new installation of Exchannge 2016](https://technet.microsoft.com/en-us/library/aa998619(v=exchg.160).aspx)
