@@ -54,7 +54,7 @@ switchport trunk allowed vlan 200
 exit
 
 interface range f0/22-23
-channel-group 1 mode desirable
+channel-group 2 mode desirable
 interface port-channel 2
 switchport mode trunk
 switchport trunk allowed vlan 400
@@ -106,8 +106,6 @@ ip ssh time-out 60
 end
 
 configure terminal
-interface g0/0
-no shutdown
 interface g0/0.200
 encapsulation dot1q 200
 ip address 172.18.0.1 255.255.254.0
@@ -120,5 +118,8 @@ interface g0/0.400
 encapsulation dot1q 400
 ip address 172.18.2.32 255.255.255.224
 no shutdown
-
+interface g0/0
+no shutdown
+end
+copy running-config startup-config
 ```
