@@ -46,6 +46,7 @@ Basisconfiguratie elke router:
 
 VPN configuratie:
 
+boot system flash flash:c2801--advsecurityk9-mz.124-3g.bin 
 	
 										
 										
