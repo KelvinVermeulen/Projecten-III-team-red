@@ -1,8 +1,8 @@
 # Testrapport Alfa 2
 
 'in de VM' verwijderen overal. Installatie is nu op een fysieke machine.
-- Geschatte tijd: 2u
-- Gerealiseerde tijd:
+- Geschatte tijd: 2u.
+- Gerealiseerde tijd: 15 minuten.
 
 ## Windows Server 2016 installatie
 
