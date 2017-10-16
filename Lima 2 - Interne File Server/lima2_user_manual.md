@@ -22,11 +22,12 @@
 
 - install hyper-V op de pc waarop je werkt (win 10 pro nodig)
 - voer in powershell uit: Enable-WindowsOptionalFeature -Online -FeatureName:Microsoft-Hyper-V -All
-- ~~add new generation 1 vm: Lima2_win_ser_2016 with 2048MB startup memory~~
+- ~~add new generation 2 vm: Lima2_win_ser_2016 with 2048MB startup memory~~
 - ~~add virtual harddisk Lima2_win_ser_2016_disk1 with 50GB~~
 - ~~use code: GN8DC-F98HQ-T9893-TTGW6-RRHYF code~~
 - run the script below with powershell as an admin by typing: .\lima2_deployment_script.ps1 (obviously change the names/paths accordingly)
-
+(manueel verder)
+- 
 
        
 ***

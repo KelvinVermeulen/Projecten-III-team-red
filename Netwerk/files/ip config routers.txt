@@ -4,36 +4,36 @@ red: 172.18.0.0
 green: 172.16.0.0
 
 classe b: 255.255.0.0
-172.8.0.0 ?
+
 
 Router 0:
 
 - naar firewall : 172.16.2.113
-- vpn : 172.8.4.1
-- naar router 2 : 172.8.4.2
+- vpn  		    : 172.16.2.112
+- naar router 2 : 172.16.0.111
 
 Router 1:
 
 - naar firewall : 172.18.2.113
-- vpn: 172.8.3.1
-- naar router 3 : 172.8.3.2
+- vpn: 			: 172.18.2.112
+- naar router 3 : 172.18.2.111
 
 Router 2:
 
-- naar router 3: 172.8.2.1
-- naar router 0: 172.8.2.2
-- naar router 4: 172.8.2.3
+- naar router 3: 172.16.3.112
+- naar router 0: 172.16.3.113
+- naar router 4: 172.16.3.111
 
 Router 3:
 
-- naar router 2: 172.8.1.1
-- naar router 1: 172.8.1.2
-- naar router 4: 172.8.1.3
+- naar router 2 : 172.18.3.112
+- naar router 1 : 172.18.3.113
+- naar router 4 : 172.18.3.111
 
 Router 4:
 
-- internet : ? 172.0.0.0
-- naar router 2: 172.8.0.1
-- naar router 3: 172.8.0.2 
+- internet : /
+- naar router 2: 172.16.4.113
+- naar router 3: 172.18.4.113
 
 

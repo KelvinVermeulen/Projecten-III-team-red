@@ -1,10 +1,10 @@
-Charlie2 -> Jens & Antonio
+#Charlie2 - Jens & Antonio
 
-Github:
+###Github:
 	-Trunk
 	-Release
 
-Kanban:
+##Kanban:
 	-tijd 
 	-personen (wie aan gewerkt)
 	-geschatte tijd

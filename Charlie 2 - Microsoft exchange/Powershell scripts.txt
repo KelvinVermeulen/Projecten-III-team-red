@@ -1,1 +1,0 @@
-Get-WmiObject -List | Where-Object {$.name -match 'Microsoft .NET Framework'}
