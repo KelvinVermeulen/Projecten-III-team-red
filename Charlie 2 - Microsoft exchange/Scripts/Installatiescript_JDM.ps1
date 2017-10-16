@@ -1,3 +1,6 @@
+#Remove-Item ExchangeFiles 
+
+
 ECHO "Installing OS roles and features"
 
 Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, 
@@ -25,8 +28,27 @@ ECHO "done installing EMS"
 
 ECHO "RSAT-ADDS feature for AD"
 Install-WindowsFeature RSAT-ADDS, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt,
- RSAT-Clustering-PowerShell,
+RSAT-Clustering-PowerShell
 ECHO "done installing RSAT-ADDS"
+
+ECHO "DONE checking Pre-Requisites"
+<#
+#setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
+
+new-item ExchangeFiles -itemtype directory 
+ECHO "Place Setupfiles in C:\Users\Administrator\Documents\ExchangeFiles"
+
+Write-Host "Press any key to continue"
+
+$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
+Write-Host
+Write-Host "A"
+Write-Host "B"
+Write-Host "C"
+
+#>
+
 
 Write-Host "Press any key to restart"
 
@@ -36,5 +58,4 @@ Write-Host
 Write-Host "A"
 Write-Host "B"
 Write-Host "C"
-
 Restart-Computer
