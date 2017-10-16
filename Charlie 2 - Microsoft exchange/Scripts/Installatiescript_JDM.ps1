@@ -1,8 +1,10 @@
-#Remove-Item ExchangeFiles 
-
+if(Test-Path ExchangeFiles)
+{
+Remove-Item ExchangeFiles 
+}
+ECHO "Checking pre-requisites"
 
 ECHO "Installing OS roles and features"
-
 Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, 
  RPC-over-HTTP-proxy, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45,
  Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression,
@@ -24,7 +26,7 @@ ECHO "Exchange Management Shell opt"
 Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,
 IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,
 IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
-ECHO "done installing EMS"
+ECHO "done installing EMS opt"
 
 ECHO "RSAT-ADDS feature for AD"
 Install-WindowsFeature RSAT-ADDS, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt,
@@ -32,11 +34,12 @@ RSAT-Clustering-PowerShell
 ECHO "done installing RSAT-ADDS"
 
 ECHO "DONE checking Pre-Requisites"
-<#
-#setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
 
 new-item ExchangeFiles -itemtype directory 
 ECHO "Place Setupfiles in C:\Users\Administrator\Documents\ExchangeFiles"
+
+<#
+#setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
 
 Write-Host "Press any key to continue"
 
