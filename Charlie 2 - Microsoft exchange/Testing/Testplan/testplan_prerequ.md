@@ -57,7 +57,7 @@
 		
 		ECHO "RSAT-ADDS feature for AD"
 		Install-WindowsFeature RSAT-ADDS, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt,
-		 RSAT-Clustering-PowerShell,
+		 RSAT-Clustering-PowerShell
 		ECHO "done installing RSAT-ADDS"
 		
 		Write-Host "Press any key to restart"
@@ -74,6 +74,7 @@
 
 6. Nu voert u de eerste script(test) opnieuw uit.
 7. Indien de kolom "Install State" "Installed" weergeeft voor de software dan was de test succesvol.
+	![](https://i.imgur.com/Ay8Qo3S.png)
 
 
 
