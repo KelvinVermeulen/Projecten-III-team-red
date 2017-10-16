@@ -33,7 +33,22 @@
 - stel in, taal: nederlands(belgiê) keyboardlayouy: belgisch (komma)
 - administrator wachtwoord: Admin123
 - log in met Administrator, pw:Admin123 
-- 
+- Dvd station uitwerpen en veranderen naar Q
+- Systeempartities schijf 1 : 
+	- C: 32 gb System 
+	- D: 33 gb verkoopData
+	- E: 35 gb OntwikkelingData
+-Systeempartities schijf 0 : 
+	- F: 20 gb ITData  (Schijf formateren en zo naam toewijzen)
+	- G: 20 gb DirData 
+	- H: 20 gb AdminData
+	- Y: 20 gb HomeDirs
+	- Z: 20 gb ProfileDirs
+- in dashboard: add roles and features. File server (bestand server) selecteren + bestandserver bronbeheer en installeren
+  ## Install-windowsFeature -Name <>
+- bestand- en opslagservices shares selecteren, start wizard nieuwe share, smb snel, share locatie D:, Sharenaam "VerkoopData", extern pad: "\\WIN-TPNTL1C3H68\VerkoopData"
+- caching van share toestaan, gegevenstoegang versleutelen 
+- machtigingen aanpassen
        
 ***
       
