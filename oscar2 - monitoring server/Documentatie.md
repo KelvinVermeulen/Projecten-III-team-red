@@ -3,6 +3,7 @@
 ## Hyper-V
 
 ### VM aanmaken
+
 1. In Hyper-V Manager, in het rechtse paneel 'Actions' > New > Virtual Machine...
 
 2. In de wizard klik op next. Kies een gepaste naam (hier: MonitoringServer).
@@ -20,28 +21,74 @@ Klik op next.
 
 8. Om te finaliseren controleer settings, klik op finish.
 
-## VM configureren
+### VM configureren
+
 1. In de Hyper-V manager, ga naar de settings van je VM en selecteer Network Adapter. Vink 'Enable Virtual LAN identification' aan en vul 300 in.
 Klik op Apply.
 
 2. Ga da naar Integration Services, vink Guest Services aan. Klik op Apply.
 
-3. In de Hyper-V manager, rechtsklik op je VM en klik op start.
+3. In het rechtse paneel in Hyper-V manager open de Virtual Switch Manager.
 
-4. In de Windows Setup, kies Time and currency format: Dutch (Belgium) en Keyboard setting: Belgian (Period).
+4. Selecteer External en klik op 'Create Virtual Switch'.
 
-5. Klik op Install now.
+5. Geef een naam voor je switch op en selecteer Internal network. Klik op Apply en druk op Ok.
 
-6. Geef een geldige product key mee. Klik op next.
+6. Ga na de settings van je VM. Ga naar de Network Adapter.
 
-7. Kies de GUI installatie. Klik op next. Accepteer de license terms. Klik op next.
+7. Selecteer NAT onder Virtual Switch. Druk op Apply en Ok.
 
-8. Kies voor een custom install.
+8. Op je host ga naar de Wi-Fi adapter. Ga naar de properties, tabblad sharing. Klik op 'Allow other network access users to connect'. Zet de Home Networking connection op vEthernet (NAT).
+Noteer het IP-adres dat in het venster verschijnt.
 
-9. Maak een nieuwe harde schijf aan en kies voor de primary partitie. Klik op next.
+9. Ga naar de properties van vEthernet (NAT) adapter. Ga naar properties van IPv4 en vul bij Use the following DNS server: 172.18.2.67 Klik op Ok.
 
-10.
+10. In de Hyper-V manager, rechtsklik op je VM en klik op start.
 
-### installatie PRTG
+11. In de Windows Setup, kies Time and currency format: Dutch (Belgium) en Keyboard setting: Belgian (Period).
 
-* & 'c:\Users\Arto\Downloads\PRTG Network Monitor 17.3.33.2830 Setup (Stable).exe' /silent
+12. Klik op Install now.
+
+13. Geef een geldige product key mee. Klik op next.
+
+14. Kies de GUI installatie. Klik op next. Accepteer de license terms. Klik op next.
+
+15. Kies voor een custom install.
+
+16. Maak een nieuwe harde schijf aan en kies voor de primary partitie. Klik op next.
+
+17. Na installatie wordt een nieuwe gebruiker aangemaakt. Deze noemt automatisch Administrator, gebruik als pw Admin1. Klik op Finish.
+
+### Server configureren
+
+1. Log in als Administrator (pw: Admin1).
+
+2. Ga naar het Network and Sharing Center en klik op Adapter.
+
+3. Ga naar de properties van je Ethernet en disable IPv6. In de properties van IPv4 stel IP-adres 172.18.2.6 met als subnetmask 255.255.255.224 in. Met DNS Server: 172.18.2.67.
+
+## PRTG
+
+### Installatie PRTG
+1. Ga naar de website van PRTG. https://www.paessler.com/prtg/download
+
+2. Kies voor de Freeware Download.
+
+3. Zorg dat Javascript aanstaat in de browser. (Internet Options > Security Settings > Scripting > Active scripting > enable )
+
+4. Noteer de License Name (prtgtrial) en License Key en begin de download door de knop 'Download here'.
+
+5. Unzip de gedownloade zip-file. Start de PRTG Network Monitor 17.3.33.2830 Setup (Stable) applicatie.
+
+6. Kies English als taal, klik op Next.
+
+7. Accepteer de license agreement, klik op next.
+
+8. Vul een gepaste hogent emailadres in. Klik op next.
+
+9. Vul de voordien gegeven license name en license key in. Klik op next.
+
+10. Na installatie start automatisch de PRTG Network monitor op.
+
+
+### Configureren PRTG
