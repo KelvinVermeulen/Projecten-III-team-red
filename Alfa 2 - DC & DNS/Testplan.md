@@ -33,8 +33,7 @@
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
 4. Indien er aan de linkerkant AD DS en DNS saat, zijn de rollen succesvol geïnstalleerd
 ### Controleren of DC en DNS werkt
-1. Maak een nieuwe VM aan en installeer windows 10 daarop. Je kan de stappen op [dit](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine) pagina volgen voor het installatie van een Windows 10 op VM.
-2. Verander de ip adres van de computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
+1. Verander de ip adres van uw computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
 - IP adres: 172.18.2.70
 - Subnetmask: 255.255.0.0
 - Default Gateway: 172.18.2.65
@@ -115,10 +114,7 @@
 
 ## Policies
 
-Indien je Windows 10 al hebt geinstalleerd tijdens het controleren van DC moet je dit nu niet doen en kan je doorgaan naar stap 3!
-
-1. Maak een nieuwe VM aan en installeer windows 10 daarop. Je kan de stappen op [dit](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine) pagina volgen voor het installatie van een Windows 10 op VM.
-2. Verander de ip adres van de computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
+2. Verander de ip adres van uw computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
 - IP adres: 172.18.2.70
 - Subnetmask: 255.255.0.0
 - Default Gateway: 172.18.2.65
