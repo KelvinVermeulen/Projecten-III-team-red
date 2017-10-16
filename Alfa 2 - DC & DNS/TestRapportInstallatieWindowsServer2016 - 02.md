@@ -1,7 +1,7 @@
 # Testrapport Alfa 2
 
 - Geschatte tijd: 2u
-- Gerealiseerde tijd:
+- Gerealiseerde tijd: 1u
 
 ## Windows Server 2016 installatie
 ### GUI
