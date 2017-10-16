@@ -3,7 +3,7 @@
 ##  Installatie Prerequesites voor Exchange Server
 
 1. Start een computer met Windows Server op.
-2. Voer volgende script uit	in Powershell:
+2. Voer volgende script uit	in Powershell(of maak gebruik van de script in de repository Charlie 2 -Exchange Server/Testing/ScriptOmTeTesten_JDM.ps1):
 
 		<#TestScript#>
 		
@@ -28,7 +28,8 @@
 
 	![avilable](https://i.imgur.com/0JkdKJj.png)
 
-5. Nu moet u de Prerequisites voor de Exchange Server installeren a.h.v. volgende script:
+5. Nu moet u de Prerequisites voor de Exchange Server installeren a.h.v. volgende script(of maak gebruik van de script in de repository Charlie 2 -Exchange Server/Scripts/Installatiescript_JDM.ps1):
+
 		ECHO "Installing OS roles and features"
 		
 		Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, 
@@ -72,7 +73,7 @@
 
 
 6. Nu voert u de eerste script(test) opnieuw uit.
-7. Indien de kolom <<"Install State">> "Installed" weergeeft voor de software dan was de test succesvol.
+7. Indien de kolom "Install State" "Installed" weergeeft voor de software dan was de test succesvol.
 
 
 
