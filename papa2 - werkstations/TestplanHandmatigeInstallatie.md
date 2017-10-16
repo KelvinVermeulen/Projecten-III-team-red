@@ -86,8 +86,7 @@ We zullen ook nog WSUS moeten configureren op de server. Voeg de rol toe zoals h
 2de aandachtspunt! Voer de WSUS configuratiewizard na de installatie NIET uit. Dit kan conflicten veroorzaken met WSUS for Configuration Manager 2012 R2 later.
 ![foto](ImagesTestplan/HandmatigInstalleren/wsus05.png)
 
-Configureer vervolgens de Firewall met deze settings.
-
+Configureer vervolgens de Firewall met deze settings. Open al eerste Server Manager vanuit de Tools en open Group Policy en volg daarna de stappen.
 ![foto](ImagesTestplan/HandmatigInstalleren/fw01.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/fw02.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/fw03.png)
@@ -100,8 +99,7 @@ Configureer vervolgens de Firewall met deze settings.
 ![foto](ImagesTestplan/HandmatigInstalleren/fw10.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/fw11.png)
 
-Open deze poorten.
-
+Open daarna deze poorten nog. Hiervoor moet je Group Policy Management openen en een nieuwe policy maken door deze een naam te geven en de rest van de stappen te volgen.
 ![foto](ImagesTestplan/HandmatigInstalleren/oo01.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/oo02.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/oo03.png)
@@ -112,8 +110,7 @@ Open deze poorten.
 ![foto](ImagesTestplan/HandmatigInstalleren/oo08.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/oo09.png)
 
-Installeer tenslotte System Center 2012 R2 en ook deze hotfixes.
-
+Installeer tenslotte System Center 2012 R2 en ook deze hotfixes door deze stappen te volgen en de lijst met hotfixes te downloaden en installeren.
 ![foto](ImagesTestplan/HandmatigInstalleren/in01.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/in02.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/in03.png)
@@ -134,7 +131,7 @@ Installeer tenslotte System Center 2012 R2 en ook deze hotfixes.
 
 Na de installatie van SC2012R2 moeten deze configuraties nog gebeuren.
 
-p.179
+p.148
 
 ## Test report
 
