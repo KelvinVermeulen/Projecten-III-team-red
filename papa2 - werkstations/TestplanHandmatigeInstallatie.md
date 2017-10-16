@@ -130,8 +130,38 @@ Installeer tenslotte System Center 2012 R2 en ook deze hotfixes door deze stappe
 - Installing Hotfix (KB2907591)
 
 Na de installatie van SC2012R2 moeten deze configuraties nog gebeuren.
+Als eerste gaan we discovery en bounderies configureren via deze stappen:
+![foto](ImagesTestplan/HandmatigInstalleren/bd01.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd02.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd03.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd04.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd05.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd06.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd07.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd08.png)
+![foto](ImagesTestplan/HandmatigInstalleren/bd09.png)
 
-p.148
+Hierna moeten de Site System Roles nog geconfigureerd worden.
+![foto](ImagesTestplan/HandmatigInstalleren/ss01.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss02.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss03.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss04.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss05.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss06.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss07.png)
+![foto](ImagesTestplan/HandmatigInstalleren/ss08.png)
+
+Als laatste moet je gewoon nog de client settings configureren.
+![foto](ImagesTestplan/HandmatigInstalleren/cs01.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs02.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs03.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs04.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs05.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs06.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs07.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs08.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs09.png)
+![foto](ImagesTestplan/HandmatigInstalleren/cs10.png)
 
 ## Test report
 
