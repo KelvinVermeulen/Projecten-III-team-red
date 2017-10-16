@@ -2,39 +2,43 @@
 ## Windows Server 2016 installatie
 
 ### GUI
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
 4. Nadat "Server Manger" geopend is, klik op "Local Server" dat je links van de pagina terug kan vinden.
 5. Controller of de "Operating system version" op "Windows Server 2016 Standard staat". Indien dat zo is, is de server installatie succesvol uitgevoerd.
 
 ### CMD
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Nadat CMD geopend is, type "Winver" en je ziet welke Windows versie er geïnstalleerd is. Indien er Windows Server 2016 staat is de server installatie succesvol uitgevoerd.
 
 ## Netwerkkaart
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Type ipconfig en durk op enter.
-5. De ip adres moet als volgt geconfigureerd zijn: (momenteel wachten op de netwerk gedeelte)
+5. De ip adres moet als volgt geconfigureerd zijn: 
+- IP Adres: 172.18.2.67
+- Netmask: 255.255.0.0
+- Default Gateway: 172.18.2.65
+- DNS: 172.18.2.67
 6. Indien de ip adres klopt is de netwerk juist geconfigureerd
 
 ## Domeincontroller en DNS
 ### DC en DNS geïnstalleerd?
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
 4. Indien er aan de linkerkant AD DS en DNS saat, zijn de rollen succesvol geïnstalleerd
 ### Controleren of DC en DNS werkt
 1. Maak een nieuwe VM aan en installeer windows 10 daarop. Je kan de stappen op [dit](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine) pagina volgen voor het installatie van een Windows 10 op VM.
 2. Verander de ip adres van de computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
-- IP adres: 192.168.1.30
-- Subnetmask: 255.255.255.0
-- Default Gateway: 192.168.1.10
-- DNS Server: 192.168.1.10
+- IP adres: 172.18.2.70
+- Subnetmask: 255.255.0.0
+- Default Gateway: 172.18.2.65
+- DNS Server: 172.18.2.67
 3. Maak na de netwerkconfiguratie de geïnstalleerde computer lid van de domein. Om dit te doen volg de volgende stappen
 - Start de computer en log in
 - Ga naar "Mijn computer", doe rechtermuisklik en klik op "eigenschappen"
@@ -47,7 +51,7 @@
 ## Server naam en domein naam
 
 ### GUI
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
 4. Nadat "Server Manger" geopend is, klik op "Local Server" dat je link van de pagina terug kan vinden.
@@ -55,7 +59,7 @@
 
 ### CMD
 
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Nadat CMD geopend is, type "HOSTNAME" en je ziet wat de naam van de server is. Indien het "ns1" is, is de naam goed geconfigureerd. Type hierna "wmic computersystem get domain" om de domain naam te vinden. Indien er "red.local" staat is dat ook goed geconfigureerd.
@@ -63,7 +67,7 @@
 ## Gebruikersgroepen, gebruikers en werkstations
 
 ### Gui
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
 4. Nadat "Server Manger" geopend is, klik op "Tools" dat je rechts bovenaan van de pagina terug kan vinden en klik daarna op "Ative directory users and computers".
@@ -99,7 +103,7 @@
 
 
 ### CMD
-1. Start de server dat genaamd is als Alfa 2 in de VM
+1. Start de server dat genaamd is als Alfa 2 
 2. Log in met "Aa12345" als wachtwoord
 3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
 4. Type "dsa.msc" in en klik op enter. "Active directory users and computers" wordt geopend.
@@ -115,10 +119,10 @@ Indien je Windows 10 al hebt geinstalleerd tijdens het controleren van DC moet j
 
 1. Maak een nieuwe VM aan en installeer windows 10 daarop. Je kan de stappen op [dit](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine) pagina volgen voor het installatie van een Windows 10 op VM.
 2. Verander de ip adres van de computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
-- IP adres: 192.168.1.30
-- Subnetmask: 255.255.255.0
-- Default Gateway: 192.168.1.10
-- DNS Server: 192.168.1.10
+- IP adres: 172.18.2.70
+- Subnetmask: 255.255.0.0
+- Default Gateway: 172.18.2.65
+- DNS Server: 172.18.2.67
 3. Maak de geïnstalleerde computer lid van de domein. Om dit te doen volg de volgende stappen
 - Start de computer en log in
 - Ga naar "Mijn computer", doe rechtermuisklik en klik op "eigenschappen"

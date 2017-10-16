@@ -5,25 +5,42 @@ configure terminal
 hostname Switch4
 banner motd %Unauthorized access prohibited%
 enable secret DirkThijs
+ip domain-name red.local
+crypto key generate rsa
+1024
+username red secret DirkThijs
 line con 0
 password BertVanVreckem
 login
-line vty 0 4
-password BertVanVreckem
-login
+line vty 0 15
+password DirkThijs
+transport input ssh
+login local
+exit
+ip ssh version 2
+ip ssh authentication-retries 2
+ip ssh time-out 60
 interface vlan 200
+description Switch4 met VLAN 200
 ip address 172.18.0.2 255.255.254.0
 no shutdown
 exit
 ip default-gateway 172.18.0.1
-interface range f0/2-6
-...
+interface range f0/1-5
+switchport mode access
 exit
-interface f0/1
+interface range f0/20-21
+channel-group 1 mode desirable
+interface port-channel 1
 switchport mode trunk
-switchport trunk allowed vlan ...
-switchport trunk native vlan 1
+switchport trunk allowed vlan 200
 exit
-...
-
+interface range f0/6-19
+shutdown
+exit
+interface range f0/22-24
+shutdown
+interface range g0/1-2
+shutdown
+end
 copy running-config startup-config
