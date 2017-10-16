@@ -4,19 +4,21 @@
 - Ook VTP (?)
 - Geen DTP, Slide 24 Chapter 2 CN IV
 
+
+**Ter illustratie**
+
 ````
 
-line vty 0 4
+line vty 0 15
 transport input ssh
 login local
-access-class 21 in
 exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
 
 interface range fa0/1-2
-channel-group 1 mode active
+channel-group 1 mode desirable
 interface port-channel 1
 switchport mode trunk
 switchport trunk allowed vlan1,2,20
