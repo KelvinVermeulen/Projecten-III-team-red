@@ -59,7 +59,7 @@ Daarna moet je alle Roles & Features installeren.
 
 Installeer nu Windows ADK.
 
-![foto](ImagesTestPlan/HandmatigInstalleren/adk01.png)
+![foto](ImagesTestplan/HandmatigInstalleren/adk01.png)
 ![foto](ImagesTestPlan/HandmatigInstalleren/adk02.png)
 ![foto](ImagesTestPlan/HandmatigInstalleren/adk03.png)
 ![foto](ImagesTestPlan/HandmatigInstalleren/adk04.png)
