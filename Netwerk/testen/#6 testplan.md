@@ -1,4 +1,4 @@
-# Testrapport
+# Testplan
 
 * Verantwoordelijke uitvoering: Laurens en Robin
 * Verantwoordelijke testen: Ebu en Pieter
