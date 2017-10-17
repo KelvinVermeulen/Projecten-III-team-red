@@ -23,20 +23,17 @@ Klik op next.
 
 ### VM configureren
 
-1. In de Hyper-V manager, ga naar de settings van je VM en selecteer Network Adapter. Vink 'Enable Virtual LAN identification' aan en vul 300 in.
-Klik op Apply.
-
-2. Ga da naar Integration Services, vink Guest Services aan. Klik op Apply.
-
 3. In het rechtse paneel in Hyper-V manager open de Virtual Switch Manager.
 
 4. Selecteer External en klik op 'Create Virtual Switch'.
 
-5. Geef een naam voor je switch op en selecteer Internal network. Klik op Apply en druk op Ok.
+5. Geef een naam voor je switch (NAT) op en selecteer Extern netwerk.
+Kies een goede Adapter (hier: VirtualBox Host-Only Ethernet Adapter) Klik op Apply en druk op Ok.
 
-6. Ga na de settings van je VM. Ga naar de Network Adapter.
+1. In de Hyper-V manager, ga naar de settings van je VM en selecteer NAT als virtuele swtich. Vink 'Enable Virtual LAN identification' aan en vul 300 in.
+Klik op Apply.
 
-7. Selecteer NAT onder Virtual Switch. Druk op Apply en Ok.
+2. Ga da naar Integration Services, vink Guest Services aan. Klik op Apply.
 
 8. Op je host ga naar de Wi-Fi adapter. Ga naar de properties, tabblad sharing. Klik op 'Allow other network access users to connect'. Zet de Home Networking connection op vEthernet (NAT).
 Noteer het IP-adres dat in het venster verschijnt.
@@ -66,10 +63,16 @@ Noteer het IP-adres dat in het venster verschijnt.
 2. Ga naar het Network and Sharing Center en klik op Adapter.
 
 3. Ga naar de properties van je Ethernet en disable IPv6. In de properties van IPv4 stel IP-adres 172.18.2.6 met als subnetmask 255.255.255.224 in. Met DNS Server: 172.18.2.67.
+Default Gateway: 172.18.2.67
+
+4. In PowerShell run volgend commando: Install-WindowsFeature -Name web-asp-net45.
 
 ## PRTG
 
 ### Installatie PRTG
+
+**Kan eventueel vervangen worden door installatiebestand mee te geven**
+
 1. Ga naar de website van PRTG. https://www.paessler.com/prtg/download
 
 2. Kies voor de Freeware Download.
