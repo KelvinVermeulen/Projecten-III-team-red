@@ -5,7 +5,10 @@ https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor
 https://www.paessler.com/manuals/prtg/detailed_system_requirements
 ### Hyper-V installeren en VM aanmaken
 https://technet.microsoft.com/en-us/library/hh846766(v=ws.11).aspx
-
+### Automatische installatie prtg
+https://stackoverflow.com/questions/41041684/how-to-run-an-exe-file-to-install-an-application
+https://social.technet.microsoft.com/Forums/en-US/13e4dbcc-91ee-4f3d-914b-b4fca00c7269/application-installation-via-powershell?forum=winserverpowershell
+http://community.idera.com/powershell/ask_the_experts/f/200/t/13603
 ### Sharepoint sensor
 https://www.paessler.com/manuals/prtg/wmi_sharepoint_process_sensor
 
