@@ -103,6 +103,8 @@ ip ssh time-out 60
 end
 
 configure terminal
+interface g0/0
+ip helper-address 172.18.2.2
 interface g0/0.400
 encapsulation dot1q 400
 ip address 172.18.2.33 255.255.255.224
