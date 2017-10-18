@@ -39,11 +39,11 @@ VLAN 500 : Gateway 172.18.2.65
 
 - Charlie2: 
 
-![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/charlie.PNG
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/charlie.PNG)
 
 - Delta2: 
 
-![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/delta2.PNG
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/delta2.PNG)
 
 VLAN 300: Gateway 172.18.2.1
 
