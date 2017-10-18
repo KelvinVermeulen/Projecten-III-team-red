@@ -20,7 +20,7 @@ Opstelling Packet-tracer:
 
 Subnet-table VLSM red-local:
 
-
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/vlsm%20table.PNG)
 
 - Overeenkomst met Packet-tracer / geen fouten teruggevonden / toewijzingen in orde
 
@@ -31,25 +31,45 @@ VLAN 500 : Gateway 172.18.2.65
 
 - Alfa2: 
 
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/alfa2.PNG)
+
 - Bravo2: 
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/bravo.PNG)
 
 - Charlie2: 
 
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/charlie.PNG
+
 - Delta2: 
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/delta2.PNG
 
 VLAN 300: Gateway 172.18.2.1
 
 - Kilo2: 
 
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/kilo.PNG)
+
 - Lima2:
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/lima.PNG)
 
 - Mike2:
 
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/mike.PNG)
+
 - November2:
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/november.PNG)
 
 - Oscar2:
 
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/oscar.PNG)
+
 - Papa2:
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/papa.PNG)
 
 ## Packet-tracer tabel 
 
