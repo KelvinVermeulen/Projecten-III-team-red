@@ -8,7 +8,11 @@
 
 Opstelling brochure:
 
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/red%20local%20brochure.PNG)
+
 Opstelling Packet-tracer:
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/red%20local%20packet%20tracer.PNG)
 
 - Opstellingen komen overeen
 
@@ -21,7 +25,7 @@ Subnet-table VLSM red-local:
 - Overeenkomst met Packet-tracer / geen fouten teruggevonden / toewijzingen in orde
 
 
-## Nagaan servers Packet-tracer (IP ,DG en subnetmask) 
+## Nagaan servers Packet-tracer 
 
 VLAN 500 : Gateway 172.18.2.65
 
