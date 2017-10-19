@@ -1,0 +1,52 @@
+function main() {
+
+    Timezone
+    Install_IIS
+    Install_ASP.NET
+    #renameComputer
+    #setDomain
+
+}
+
+function Timezone()
+{
+    Set-TimeZone -Name "Central Europe Standard Time" 
+}
+
+function Install_IIS()
+{
+    Write-Host "Istalling IIS ..." -ForegroundColor Green
+    Install-WindowsFeature -name Web-Server -IncludeManagementTool
+    
+}
+
+function Install_ASP.NET
+{
+    Write-Host "Installing NET-Framework-45-ASPNET ... " -ForegroundColor Green
+    Add-WindowsFeature NET-Framework-45-ASPNET
+    Write-Host "Installing NET-HTTP-Activation ..." -ForegroundColor Green
+    Add-WindowsFeature NET-HTTP-Activation    
+}
+
+function renameComputer()
+{
+$domain="red.local"
+$password = "delta2" | ConvertTo-SecureString -asPlainText -Force
+$username = "$domain\delta2" 
+$credential = New-Object
+    
+    Rename-Computer -NewName "Delta2" -DomainCredential $credential -Restart # rename server
+}
+
+function setDomain()
+{
+
+$domain="red.local"
+$password = "delta2" | ConvertTo-SecureString -asPlainText -Force
+$username = "$domain\myUserAccount" 
+$credential = New-Object System.Management.Automation.PSCredential($username,$password)
+
+    Add-Computer -DomainName $domain -Credential $credential
+}
+
+main 
