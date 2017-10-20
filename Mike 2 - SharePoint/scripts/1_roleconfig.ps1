@@ -1,5 +1,5 @@
 # Role config
-
+Write-Host "1_roleconfig.ps1 started"
 Write-Host "Windows Server 2016 - Configuration"
 
 Write-Host " - Importing Module Servermanager..."  

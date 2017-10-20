@@ -1,12 +1,9 @@
 # The top-level folder in the installation folder tree
+New-Item c:\SharePointInstall -type directory
 $RootFolder = "C:\SharePointInstall"
 
-# The folder for prerequisites installed before the Prerequisite Installer
-# There are a number of updates to Windows Server 2012 R2 that must be installed
-# before SharePoint Server 2016's Prerequisite Installer can be run
-$Prereqs1Folder = "$RootFolder\SharePoint_Prerequisites\Windows_Server_2012_R2_Updates"
-
 # The folder for prerequisites used by the Prerequisite Installer
+New-Item $RootFolder\SharePoint_Prerequisites\PrerequisiteInstaller -type directory
 $Prereqs2Folder = "$RootFolder\SharePoint_Prerequisites\PrerequisiteInstaller"
 
 # END CONFIGURATION BLOCK
@@ -35,8 +32,8 @@ $Downloads = @{
             #     http://go.microsoft.com/fwlink/?LinkId=320724
             #     https://download.microsoft.com/download/9/1/D/91DA8796-BE1D-46AF-8489-663AB7811517/setup_msipc_x64.msi
             "http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" = "$Prereqs2Folder\setup_msipc_x64.exe";
-            # Microsoft WCF Data Services 5.0 for OData V3 = "$Prereqs2Folder\WcfDataServices.exe";
-            "https://www.microsoft.com/en-us/download/confirmation.aspx?id=29306"
+            # Microsoft WCF Data Services 5.0 for OData V3
+            "https://www.microsoft.com/en-us/download/confirmation.aspx?id=29306" = "$Prereqs2Folder\WcfDataServices.exe";
             # Microsoft WCF Data Services 5.6 required for SharePoint 2016
             "https://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" = "$Prereqs2Folder\WcfDataServices56.exe";
             # .NET Framework 4.7 Offline Installer https://www.microsoft.com/en-us/download/details.aspx?id=55167
