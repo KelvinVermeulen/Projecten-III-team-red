@@ -15,7 +15,7 @@
                 <Disk wcm:action="add">
                     <CreatePartitions>
                         <CreatePartition wcm:action="add">
-                            <Size>32</Size>
+                            <Size>500</Size>
                             <Order>1</Order>
                             <Type>Primary</Type>
                         </CreatePartition>
@@ -27,6 +27,12 @@
                         <CreatePartition wcm:action="add">
                             <Order>3</Order>
                             <Size>50</Size>
+                            <Type>Primary</Type>
+                        </CreatePartition>
+                        <CreatePartition wcm:action="add">
+                            <Extend>true</Extend>
+                            <Order>9</Order>
+                            <Size>32</Size>
                             <Type>Primary</Type>
                         </CreatePartition>
                     </CreatePartitions>
@@ -62,13 +68,13 @@
                     </CreatePartitions>
                     <ModifyPartitions>
                         <ModifyPartition wcm:action="add">
-                            <Active>true</Active>
+                            <Active>false</Active>
                             <Extend>false</Extend>
                             <Format>NTFS</Format>
                             <Label>System</Label>
                             <Letter>S</Letter>
-                            <Order>1</Order>
-                            <PartitionID>1</PartitionID>
+                            <Order>9</Order>
+                            <PartitionID>9</PartitionID>
                         </ModifyPartition>
                         <ModifyPartition wcm:action="add">
                             <Active>false</Active>
@@ -132,6 +138,16 @@
                             <Format>NTFS</Format>
                             <Extend>false</Extend>
                             <Active>false</Active>
+                        </ModifyPartition>
+                        <ModifyPartition wcm:action="add">
+                            <TypeID></TypeID>
+                            <PartitionID>1</PartitionID>
+                            <Order>1</Order>
+                            <Letter>S</Letter>
+                            <Label>Boot</Label>
+                            <Active>true</Active>
+                            <Extend>false</Extend>
+                            <Format>NTFS</Format>
                         </ModifyPartition>
                     </ModifyPartitions>
                     <DiskID>2</DiskID>
