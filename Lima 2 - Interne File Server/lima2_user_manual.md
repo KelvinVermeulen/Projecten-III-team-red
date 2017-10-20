@@ -78,7 +78,14 @@
 - in answerFilePane: windows shell setup openklappen
 - terug zelfde component rightclick en Add setting to pass 7 oobeSystem
 - registeredOrganization en owner = '-'
-- 
+- autoLogon &rarr enabled = true, LogonCount 2, username = Administrator (domain local.red maar nu nog niet ingevuld voor test)
+- Passwoord onder autologon &rarr Invullen (Admin123 nu als test)
+- Onder UserAccounts &rarr Zelfde adminpasswoord invullen.
+
+!!VALIDATE ANSWER FILE &rarr normaal dat er validation messages komen, echter mogen er geen errors zijn!! Nu answer file opslaan in root van ISO als "autounattend.xml"
+
+
+
 #### randnotities voor later (manual execution) 
 
 add roles and features, file server resource manager
