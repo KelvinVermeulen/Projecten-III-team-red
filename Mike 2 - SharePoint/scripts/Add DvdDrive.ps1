@@ -1,20 +1,19 @@
 Write-Host 'Stopping VM WinSer16'
-Stop-VM -Name WinSer16
+Stop-VM -Name WinSer16 -Force
 Write-Host 'WinSer16 Stopped'
 Write-Host 'Adding Dvd Disks'
-Write-Host 'Adding 1/2: Windows Server 2016 ISO'
+Write-Host 'Adding 1/3: Windows Server 2016 ISO'
 Add-VMDvdDrive -VMName WinSer16 -ControllerLocation 1 -ControllerNumber 0
 Set-VMDvdDrive -VMName WinSer16 -ControllerLocation 1 -ControllerNumber 0 -Path C:\ISO\WindowsServer2016EN.iso
 Write-Host 'Windows Server 2016 ISO Added'
-Write-Host 'Adding 2/2: Windows SharePoint Server 2016 ISO'
+Write-Host 'Adding 2/3: Windows SharePoint Server 2016 ISO'
 Add-VMDvdDrive -VMName WinSer16 -ControllerLocation 0 -ControllerNumber 1
 Set-VMDvdDrive -VMName WinSer16 -ControllerLocation 0 -ControllerNumber 1 -Path C:\ISO\WindowsSharePointServer2016EN.iso
 Write-Host 'Windows SharePoint Server 2016 ISO Added'
-Write-Host 'Done'
-Write-Host 'Changing Location'
-#Robin cleyman
-#Set-Location 'C:\Users\Robin Cleyman\Documents\HoGent\AJ3S1\Projecten III - Systeembeheer\git\p3ops-red\Mike 2 - SharePoint'
-#Robin D'Hondt
-Set-Location 'C:\Users\marev\Desktop\School\Projecten III\p3ops-red\Mike 2 - SharePoint'
-Write-Host 'Ready for vagrant up'
+Write-Host 'Adding 3/3: Mike 2 Prerequisites ISO'
+Add-VMDvdDrive -VMName WinSer16 -ControllerLocation 1 -ControllerNumber 1
+Set-VMDvdDrive -VMName WinSer16 -ControllerLocation 1 -ControllerNumber 1 -Path C:\ISO\Mike2.iso
+Write-Host 'Mike 2 Prerequisites ISO Added'
+Write-Host 'Starting VM'
 Start-VM -Name WinSer16
+Write-Host 'Done'
