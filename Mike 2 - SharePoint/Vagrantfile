@@ -4,6 +4,7 @@ Vagrant.configure("2") do |config|
     h.vmname = "WinSer16"
     h.memory = 3072
 	# 1GB-1024 2GB-2048 3GB-3072 4GB-4096 8GB-8192 
+	# Test config.vm.provision :shell, path: "scripts/Add DvdDrive.ps1"
     end
   config.vm.synced_folder ".", "/vagrant", type: "smb", smb_username: "vagrant", smb_password: "vagrant"
   config.vm.provision :shell, path: "scripts/nederlands.ps1"
