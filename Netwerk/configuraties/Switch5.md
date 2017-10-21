@@ -116,7 +116,7 @@ ip address 172.18.2.1 255.255.255.224
 no shutdown
 interface g0/0.400
 encapsulation dot1q 400
-ip address 172.18.2.32 255.255.255.224
+ip address 172.18.2.34 255.255.255.224
 no shutdown
 interface g0/0
 no shutdown
