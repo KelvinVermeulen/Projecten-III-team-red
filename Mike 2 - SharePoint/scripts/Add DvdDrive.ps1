@@ -16,8 +16,5 @@ Set-VMDvdDrive -VMName WinSer16 -ControllerLocation 1 -ControllerNumber 1 -Path 
 Write-Host 'Mike 2 Prerequisites ISO Added'
 Write-Host 'Starting VM'
 Start-VM -Name WinSer16
-<<<<<<< HEAD
 Write-Host 'Done'
-=======
-Write-Host 'Done'
->>>>>>> 957c4f7bffa541a31a3cfd5419918d09bb3ee3df
+
