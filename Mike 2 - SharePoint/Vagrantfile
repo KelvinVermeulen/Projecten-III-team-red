@@ -8,6 +8,6 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/vagrant", type: "smb", smb_username: "vagrant", smb_password: "vagrant"
   config.vm.provision :shell, path: "scripts/nederlands.ps1"
   config.vm.provision :shell, path: "scripts/1_roleconfig.ps1"
-  config.vm.provision :shell, path: "scripts/2_sharepoint.ps1"
+  config.vm.provision :shell, path: "scripts/2_Copy files.ps1"
   
   end
