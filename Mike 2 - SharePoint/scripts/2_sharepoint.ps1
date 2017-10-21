@@ -33,11 +33,11 @@ $Downloads = @{
             #     https://download.microsoft.com/download/9/1/D/91DA8796-BE1D-46AF-8489-663AB7811517/setup_msipc_x64.msi
             "http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" = "$Prereqs2Folder\setup_msipc_x64.exe";
             # Microsoft WCF Data Services 5.0 for OData V3
-            "https://www.microsoft.com/en-us/download/confirmation.aspx?id=29306" = "$Prereqs2Folder\WcfDataServices.exe";
+            "https://download.microsoft.com/download/8/F/9/8F93DBBD-896B-4760-AC81-646F61363A6D/WcfDataServices.exe" = "$Prereqs2Folder\WcfDataServices.exe";
             # Microsoft WCF Data Services 5.6 required for SharePoint 2016
-            "https://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" = "$Prereqs2Folder\WcfDataServices56.exe";
+            "https://download.microsoft.com/download/9/B/C/9BC5D029-12FC-4BEF-9515-67746FD9059F/WcfDataServices.exe" = "$Prereqs2Folder\WcfDataServices56.exe";
             # .NET Framework 4.7 Offline Installer https://www.microsoft.com/en-us/download/details.aspx?id=55167
-            "https://www.microsoft.com/en-us/download/confirmation.aspx?id=55167" = "$Prereqs2Folder\NDP47-KB3186497-x86-x64-AllOS-ENU.exe";
+            "https://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe" = "$Prereqs2Folder\NDP47-KB3186497-x86-x64-AllOS-ENU.exe";
             # Cumulative Update Package 7 for AppFabric 1.1 for Windows Server https://support.microsoft.com/en-us/kb/3092423
             "https://download.microsoft.com/download/F/1/0/F1093AF6-E797-4CA8-A9F6-FC50024B385C/AppFabric-KB3092423-x64-ENU.exe" = "$Prereqs2Folder\AppFabric-KB3092423-x64-ENU.exe";
             # Visual C++ Redistributable for Visual Studio 2012 Update 4 http://go.microsoft.com/fwlink/?LinkId=327788
