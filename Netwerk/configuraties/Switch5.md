@@ -1,7 +1,6 @@
 Configuratie voor Switch 5:
 
 ```
-
 enable
 configure terminal
 hostname Switch5
@@ -76,13 +75,13 @@ shutdown
 end
 copy running-config startup-config
 
+
 ```
 
 
 Configuratie voor Router op Switch 5:
 
 ```
-
 enable
 configure terminal
 hostname RouterSwitch5
@@ -106,6 +105,13 @@ ip ssh time-out 60
 end
 
 configure terminal
+router eigrp 1
+network 172.18.0.0 0.0.1.255
+network 172.18.2.0 0.0.0.31
+network 172.18.2.32 0.0.0.31
+no auto-summary
+exit
+
 interface g0/0.200
 encapsulation dot1q 200
 ip address 172.18.0.1 255.255.254.0

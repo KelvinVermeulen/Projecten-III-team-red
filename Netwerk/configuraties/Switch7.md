@@ -1,5 +1,6 @@
 Configuratie voor Switch 7:
 
+```
 enable
 configure terminal
 hostname Switch7
@@ -45,3 +46,5 @@ interface range g0/1-2
 shutdown
 end
 copy running-config startup-config
+
+```
