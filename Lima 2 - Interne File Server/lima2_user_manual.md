@@ -64,5 +64,8 @@ create quote for subfolder
 bepaalde soorten files blocken in file screen management?
 
 #### randnotities automation
-add-*vm*
-add-vmharddiskdrive ?
+- zie links file shares & quotas with powershell
+- C:\> Get-FsrmQuota -Path "d:\www\example.com"
+- PS C:\> Set-FsrmQuota -Path "d:\www\example.com" -Size 4.5GB
+- D:\www> Get-FsrmQuota
+- 
