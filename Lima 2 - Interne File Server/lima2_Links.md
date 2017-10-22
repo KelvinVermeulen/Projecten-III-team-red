@@ -22,3 +22,5 @@
 - shared folder quotas installen https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/ 
 
 - managing file shares in powershell http://windowsitpro.com/powershell/managing-file-shares-windows-powershell
+
+- win_ser_2016_box (gen 1!!!) https://app.vagrantup.com/gusztavvargadr/boxes/w16s
