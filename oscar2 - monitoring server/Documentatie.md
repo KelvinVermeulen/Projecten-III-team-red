@@ -101,8 +101,14 @@ Default Gateway: **172.18.2.67**
 2. Schakel aan op het netwerk
 
 3. Voor de domeincontroller te monitoren:
+    
+    0. Voeg de domeincontroller toe:
+    
+        * rechtsklik 
 
     1. Voeg een ping sensor toe
+        
+        * rechtklik
     
     2. Voeg een DNS sensor toe
     
