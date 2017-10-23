@@ -91,11 +91,36 @@ Default Gateway: **172.18.2.67**
 
 9. Vul de voordien gegeven license name en license key in. Klik op next.
 
-10. Na installatie start automatisch de PRTG Network monitor op `!! in google chrome !!`.
+10. Na installatie start automatisch de PRTG Network monitor op **!! in google chrome !!**.
 
 
 ### Configureren PRTG + eventuele installaties op systeem
 
 1. In PowerShell run volgend commando: `Install-WindowsFeature -Name web-asp-net45`.
 
-2.
+2. Schakel aan op het netwerk
+
+3. Voor de domeincontroller te monitoren:
+
+    1. Voeg een ping sensor toe
+    
+    2. Voeg een DNS sensor toe
+    
+    3. Voeg een Folder sensor toe
+    
+    4. Voeg een CPU sensor toe
+    
+    5. Voeg een geheugen sensor toe
+
+4. Voor de Fileserver te monitoren:
+
+    1. Voeg een ping sensor toe
+    
+    2. Voeg een geheugen sensor toe
+    
+    3. Voeg een Folder sensor toe
+    
+    4. Voeg een CPU sensor toe
+    
+    
+    
