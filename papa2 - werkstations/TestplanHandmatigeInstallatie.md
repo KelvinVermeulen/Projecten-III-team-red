@@ -45,7 +45,7 @@ Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het
 
 ## Test report
 
-
+Client Push Policy in-en outbound rules toevoegen.
 
 ## Resources
 
