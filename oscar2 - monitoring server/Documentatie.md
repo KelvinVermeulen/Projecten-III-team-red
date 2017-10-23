@@ -91,7 +91,7 @@ Default Gateway: 172.18.2.67
 
 9. Vul de voordien gegeven license name en license key in. Klik op next.
 
-10. Na installatie start automatisch de PRTG Network monitor op `in google chrome!!`.
+10. Na installatie start automatisch de PRTG Network monitor op `!! in google chrome !!`.
 
 
 ### Configureren PRTG + eventuele installaties op systeem
