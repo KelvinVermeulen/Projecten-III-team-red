@@ -105,6 +105,9 @@ ip address 172.18.2.129 255.255.255.224
 no shutdown
 interface g0/0
 no shutdown
+interface g0/1
+ip address 172.18.2.34
+no shutdown
 end
 copy running-config startup-config
                   
