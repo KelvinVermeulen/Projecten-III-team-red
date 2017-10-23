@@ -23,7 +23,6 @@ ip ssh authentication-retries 2
 ip ssh time-out 60
 vlan 999
 vlan 200
-vlan 400
 exit
 interface vlan 999
 ip address 172.18.2.132 255.255.255.240
@@ -46,15 +45,6 @@ no shutdown
 exit
 
 
-interface range f0/22-23
-channel-group 2 mode desirable
-exit
-interface port-channel 2
-switchport mode trunk
-switchport trunk native vlan 999
-no shutdown
-exit
-
 interface g0/1
 switchport mode trunk
 switchport trunk native vlan 999
@@ -64,7 +54,7 @@ interface range f0/1-3
 shutdown
 interface range f0/10-19
 shutdown
-interface f0/24
+interface range f0/22-24
 shutdown
 interface g0/2
 shutdown
@@ -109,10 +99,6 @@ interface g0/0.300
 encapsulation dot1q 300
 ip address 172.18.2.1 255.255.255.224
 no shutdown
-interface g0/0.400
-encapsulation dot1q 400
-ip address 172.18.2.34 255.255.255.224
-no shutdown
 interface g0/0.999
 encapsulation dot1q 999 native
 ip address 172.18.2.129 255.255.255.224
@@ -121,13 +107,6 @@ interface g0/0
 no shutdown
 end
 copy running-config startup-config
-
-                                    configure terminal
-                                    router eigrp 1
-                                    network 172.18.0.0 0.0.1.255
-                                    network 172.18.2.0 0.0.0.31
-                                    network 172.18.2.32 0.0.0.31
-                                    no auto-summary
-                                    exit
+                  
 
 ```
