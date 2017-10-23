@@ -13,8 +13,19 @@
 6. Indien er een ip-adres binnen het range 192.168.1.50 - 192.168.1.100, een subnetmask van 255.255.255.0, een default-gateway van 192.168.1.10 en een dns van 192.168.1.10 werd toegekend, is de server goed geconfigureerd.
 
 ## Fysiek
+!!!! Let op, momenteel in de switch nog niet geconfigureerd door de netwerk team. Hierdoor is de ip-adres instellingen verschillend dan de ip-adres hieronder. Indien de ip adres momenteel als volgt geconfigureerd is, klopt stap 3 en kan je verder testen:
+- IP-adres: 172.18.2.2
+- Subnetmask: 255.255.255.224
+- Default-Gateway: 172.18.2.67
+- DNS: 172.18.2.67 en 172.18.2.68
+!!!!
 1. Start de dhcp server dat aangesloten is aan de netwerk dat geconfigureerd is door team "Netwerken" en log in met de volgende wachtwoord: Aa12345. Indien de team "Netwerken" nog geen switch geconfigureerd heeft, neem een switch uit de kast sluit de server daaraan.
 2. Neem een computer uit de kast, sluit de ethernetkabel aan in één van de poorten van de switch en installeer windows 10 daarop. [Klik hier om het stappenplan voor de installatie van Windows 10 via een USB stick op een computer te volgen.](https://www.youtube.com/watch?v=SKbR6XT7fcA)
+3. Controleer of de ip adres van de server goed geconfigureerd is. Open hiervoor CMD, type ipconfig en druk op enter. Indien de ip-adres als volgt geconfigureerd is, is het goed:
+- IP-adres: 172.18.2.2
+- Subnetmask: 255.255.255.224
+- Default-Gateway: 172.18.2.1
+- DNS: 172.18.2.67 en 172.18.2.68
 3. Nadat de installatie voltooid is, open CMD, type ipconfig en kijk of er automatisch een IP-adres toegekend is.
 4. Haal de ethernetkabel uit de switch en sluit het aan op een andere poort.
 5. Type de ipconfig /release in CMD en druk op enter, type daarna ipconfig /renew en druk opnieuw op enter.
