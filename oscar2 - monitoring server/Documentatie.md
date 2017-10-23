@@ -87,11 +87,15 @@ Default Gateway: 172.18.2.67
 
 7. Accepteer de license agreement, klik op next.
 
-8. Vul een gepaste hogent emailadres in. Klik op next.
+8. Vul een gepast hogent emailadres in. Klik op next.
 
 9. Vul de voordien gegeven license name en license key in. Klik op next.
 
 10. Na installatie start automatisch de PRTG Network monitor op.
 
 
-### Configureren PRTG
+### Configureren PRTG + eventuele installaties op systeem
+
+1. In PowerShell run volgend commando: Install-WindowsFeature -Name web-asp-net45.
+
+2.
