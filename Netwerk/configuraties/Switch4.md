@@ -21,21 +21,26 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-interface vlan 200
-description Switch4 met VLAN 200
-ip address 172.18.0.2 255.255.254.0
+vlan 999
+exit
+interface vlan 999
+ip address 172.18.2.131 255.255.255.240
 no shutdown
 exit
-ip default-gateway 172.18.0.1
+ip default-gateway 172.18.2.129
 interface range f0/1-5
 switchport mode access
 switchport access vlan 200
+no shutdown
 exit
 interface range f0/20-21
 channel-group 1 mode desirable
+no shutdown
+exit
 interface port-channel 1
 switchport mode trunk
-switchport trunk allowed vlan 200
+switchport trunk native vlan 999
+no shutdown
 exit
 interface range f0/6-19
 shutdown
