@@ -32,9 +32,10 @@ Open hierna Server manager en Tools nog eens om te controleren of de nodige role
 ![foto](ImagesTestplan/HandmatigInstalleren/wsus01.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/wsus02.png)
 
-Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Policy manage console. Kijk vervolgens bij de Inbound Rules of de uitzondering voor File and Printer Sharing services is toegevoegd.
+Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Policy manage console. Kijk vervolgens bij de Inbound Rules en Outbond Rules of de uitzondering voor File and Printer Sharing services is toegevoegd.
 
-![foto](ImagesTestplan/HandmatigInstalleren/fw03.png)
+![foto](ImagesTestplan/HandmatigInstalleren/inbound.png)
+![foto](ImagesTestplan/HandmatigInstalleren/outbound.png)
 
 Controleer vervolgens of er een installatie is uitgevoerd van MS SQL server 2012 (of jonger) door het programma te openen en of de poort voor SQL replication in orde is.
 
@@ -44,7 +45,7 @@ Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het
 
 ## Test report
 
-    To do door ...
+Client Push Policy in-en outbound rules toevoegen.
 
 ## Resources
 
