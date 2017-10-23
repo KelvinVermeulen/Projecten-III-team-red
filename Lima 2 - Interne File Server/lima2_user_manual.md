@@ -56,3 +56,8 @@ bepaalde soorten files blocken in file screen management?
 - PS C:\> Set-FsrmQuota -Path "d:\www\example.com" -Size 4.5GB
 - D:\www> Get-FsrmQuota
 - 
+
+#### netwerkinformatie
+- ip: 172.18.2.3
+- subnetmask: 255.255.255.224
+- default gateway: 172.18.2.1
