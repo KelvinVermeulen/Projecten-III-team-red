@@ -30,7 +30,7 @@ Klik op next.
 5. Geef een naam voor je switch (NAT) op en selecteer Extern netwerk.
 Kies een goede Adapter (hier: VirtualBox Host-Only Ethernet Adapter) Klik op Apply en druk op Ok.
 
-1. In de Hyper-V manager, ga naar de settings van je VM en selecteer NAT als virtuele swtich. Vink 'Enable Virtual LAN identification' aan en vul 300 in.
+1. In de Hyper-V manager, ga naar de settings van je VM en selecteer NAT als virtuele swtich. Vink 'Enable Virtual LAN identification' aan en vul **300** in.
 Klik op Apply.
 
 2. Ga da naar Integration Services, vink Guest Services aan. Klik op Apply.
@@ -38,7 +38,7 @@ Klik op Apply.
 8. Op je host ga naar de Wi-Fi adapter. Ga naar de properties, tabblad sharing. Klik op 'Allow other network access users to connect'. Zet de Home Networking connection op vEthernet (NAT).
 Noteer het IP-adres dat in het venster verschijnt.
 
-9. Ga naar de properties van vEthernet (NAT) adapter. Ga naar properties van IPv4 en vul bij Use the following DNS server: 172.18.2.67 Klik op Ok.
+9. Ga naar de properties van vEthernet (NAT) adapter. Ga naar properties van IPv4 en vul bij Use the following DNS server: **172.18.2.67** Klik op Ok.
 
 10. In de Hyper-V manager, rechtsklik op je VM en klik op start.
 
@@ -62,8 +62,8 @@ Noteer het IP-adres dat in het venster verschijnt.
 
 2. Ga naar het Network and Sharing Center en klik op Adapter.
 
-3. Ga naar de properties van je Ethernet en disable IPv6. In de properties van IPv4 stel IP-adres 172.18.2.6 met als subnetmask 255.255.255.224 in. Met DNS Server: 172.18.2.67.
-Default Gateway: 172.18.2.67
+3. Ga naar de properties van je Ethernet en disable IPv6. In de properties van IPv4 stel IP-adres **172.18.2.6** met als subnetmask **255.255.255.224** in. Met DNS Server: **172.18.2.67**.
+Default Gateway: **172.18.2.67**
 
 4. In PowerShell run volgend commando: Install-WindowsFeature -Name web-asp-net45.
 
@@ -81,7 +81,7 @@ Default Gateway: 172.18.2.67
 
 4. Noteer de License Name (prtgtrial) en License Key en begin de download door de knop 'Download here'.
 
-5. Unzip de gedownloade zip-file. Start de PRTG Network Monitor 17.3.33.2830 Setup (Stable) applicatie.
+5. Unzip de gedownloade zip-file. Start de PRTG Network Monitor **17.3.33.2830** Setup (Stable) applicatie.
 
 6. Kies English als taal, klik op Next.
 
@@ -96,6 +96,6 @@ Default Gateway: 172.18.2.67
 
 ### Configureren PRTG + eventuele installaties op systeem
 
-1. In PowerShell run volgend commando: Install-WindowsFeature -Name web-asp-net45.
+1. In PowerShell run volgend commando: `Install-WindowsFeature -Name web-asp-net45`.
 
 2.
