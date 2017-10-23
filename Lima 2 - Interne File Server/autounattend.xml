@@ -15,128 +15,14 @@
                 <Disk wcm:action="add">
                     <CreatePartitions>
                         <CreatePartition wcm:action="add">
-                            <Order>8</Order>
-                            <Size>50</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                        <CreatePartition wcm:action="add">
-                            <Order>4</Order>
-                            <Size>50</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                        <CreatePartition wcm:action="add">
-                            <Order>5</Order>
-                            <Size>50</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                        <CreatePartition wcm:action="add">
-                            <Order>7</Order>
-                            <Size>50</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                        <CreatePartition wcm:action="add">
-                            <Order>6</Order>
-                            <Size>50</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                    </CreatePartitions>
-                    <ModifyPartitions>
-                        <ModifyPartition wcm:action="add">
-                            <Active>true</Active>
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Label>System</Label>
-                            <Letter>S</Letter>
-                            <Order>1</Order>
-                            <PartitionID>1</PartitionID>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <Active>false</Active>
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Label>VerkoopData</Label>
-                            <Letter>D</Letter>
-                            <Order>2</Order>
-                            <PartitionID>2</PartitionID>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <Active>false</Active>
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Label>OntwikkelData</Label>
-                            <Letter>E</Letter>
-                            <Order>3</Order>
-                            <PartitionID>3</PartitionID>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <PartitionID>7</PartitionID>
-                            <Order>7</Order>
-                            <Letter>Y</Letter>
-                            <Label>HomeDirs</Label>
-                            <Format>NTFS</Format>
-                            <Extend>false</Extend>
-                            <Active>false</Active>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <Active>false</Active>
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Label>AdminData</Label>
-                            <Letter>H</Letter>
-                            <Order>6</Order>
-                            <PartitionID>6</PartitionID>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <Order>5</Order>
-                            <PartitionID>5</PartitionID>
-                            <Letter>G</Letter>
-                            <Label>DirData</Label>
-                            <Format>NTFS</Format>
-                            <Extend>false</Extend>
-                            <Active>false</Active>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Active>false</Active>
-                            <Label>ITData</Label>
-                            <Letter>F</Letter>
-                            <Order>4</Order>
-                            <PartitionID>4</PartitionID>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <PartitionID>8</PartitionID>
-                            <Order>8</Order>
-                            <Letter>Z</Letter>
-                            <Label>ProfileDirs</Label>
-                            <Format>NTFS</Format>
-                            <Extend>false</Extend>
-                            <Active>false</Active>
-                        </ModifyPartition>
-                    </ModifyPartitions>
-                    <DiskID>1</DiskID>
-                </Disk>
-                <Disk wcm:action="add">
-                    <CreatePartitions>
-                        <CreatePartition wcm:action="add">
                             <Order>1</Order>
                             <Size>500</Size>
                             <Type>Primary</Type>
                         </CreatePartition>
                         <CreatePartition wcm:action="add">
-                            <Order>10</Order>
-                            <Size>50</Size>
+                            <Extend>true</Extend>
                             <Type>Primary</Type>
-                        </CreatePartition>
-                        <CreatePartition wcm:action="add">
-                            <Order>3</Order>
-                            <Size>50</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                        <CreatePartition wcm:action="add">
                             <Order>2</Order>
-                            <Size>32</Size>
-                            <Type>Primary</Type>
                         </CreatePartition>
                     </CreatePartitions>
                     <ModifyPartitions>
@@ -148,24 +34,6 @@
                             <Letter>S</Letter>
                             <Order>1</Order>
                             <PartitionID>1</PartitionID>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <PartitionID>10</PartitionID>
-                            <Order>10</Order>
-                            <Letter>E</Letter>
-                            <Label>OntwikkelingData</Label>
-                            <Format>NTFS</Format>
-                            <Extend>false</Extend>
-                            <Active>false</Active>
-                        </ModifyPartition>
-                        <ModifyPartition wcm:action="add">
-                            <Active>false</Active>
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Label>VerkoopData</Label>
-                            <Letter>C</Letter>
-                            <Order>3</Order>
-                            <PartitionID>3</PartitionID>
                         </ModifyPartition>
                         <ModifyPartition wcm:action="add">
                             <PartitionID>2</PartitionID>
@@ -186,7 +54,7 @@
                     <InstallFrom>
                         <MetaData wcm:action="add">
                             <Key>/IMAGE/NAME</Key>
-                            <Value>Windows Server 2016 SERVERDATACENTER</Value>
+                            <Value>Windows Server 2016 SERVERSTANDARD</Value>
                         </MetaData>
                     </InstallFrom>
                     <InstallTo>
@@ -194,12 +62,13 @@
                         <PartitionID>2</PartitionID>
                     </InstallTo>
                     <InstallToAvailablePartition>false</InstallToAvailablePartition>
-                    <WillShowUI>Always</WillShowUI>
+                    <WillShowUI>OnError</WillShowUI>
                 </OSImage>
             </ImageInstall>
             <UserData>
                 <ProductKey>
-                    <WillShowUI>Always</WillShowUI>
+                    <WillShowUI>OnError</WillShowUI>
+                    <Key></Key>
                 </ProductKey>
                 <AcceptEula>true</AcceptEula>
                 <FullName>Lima2</FullName>
@@ -209,10 +78,11 @@
     </settings>
     <settings pass="specialize">
         <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <ComputerName>Lima 2</ComputerName>
+            <ComputerName>Lima2</ComputerName>
             <TimeZone>Romance Standard Time</TimeZone>
             <RegisteredOrganization>-</RegisteredOrganization>
             <ProductKey>KMNV3-J879T-JQQGW-J82BP-7CF64</ProductKey>
+            <RegisteredOwner>Windows User</RegisteredOwner>
         </component>
     </settings>
     <settings pass="oobeSystem">
@@ -236,5 +106,5 @@
             <RegisteredOwner>-</RegisteredOwner>
         </component>
     </settings>
-    <cpi:offlineImage cpi:source="wim:d:/school/project/install.wim#Windows Server 2016 SERVERDATACENTER" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+    <cpi:offlineImage cpi:source="wim:d:/school/project/install.wim#Windows Server 2016 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
 </unattend>
