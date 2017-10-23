@@ -5,19 +5,6 @@
 
 # User manual
 
-### user manual (poging Bram 02/10/2017):
-
-- op virtualbox aanmaken Lima2 met window server 2016 met 2 processoren aan 2048 Mb ram, schijfruimte 32Gb, dynamisch gealloceerd;
-- 2de hdd aangemaakt met 50Gb
-- 2 netwerkkaarten: 1 NAT, 1 intnet;
-
-- partitie aanmaken
-
-- admin account met wachtwoord: Admin123
-
-- add role and services dfs namespaces & dfps replication (onder file and storage services)
-- onder mmc computer management>storage>disk management: instellen partities volgens tabel 3.1
-
 ### User manual (poging Cedric 08/10/2017):
 
 - install hyper-V op de pc waarop je werkt (win 10 pro nodig)
@@ -64,5 +51,13 @@ create quote for subfolder
 bepaalde soorten files blocken in file screen management?
 
 #### randnotities automation
-add-*vm*
-add-vmharddiskdrive ?
+- zie links file shares & quotas with powershell
+- C:\> Get-FsrmQuota -Path "d:\www\example.com"
+- PS C:\> Set-FsrmQuota -Path "d:\www\example.com" -Size 4.5GB
+- D:\www> Get-FsrmQuota
+- 
+
+#### netwerkinformatie
+- ip: 172.18.2.3
+- subnetmask: 255.255.255.224
+- default gateway: 172.18.2.1

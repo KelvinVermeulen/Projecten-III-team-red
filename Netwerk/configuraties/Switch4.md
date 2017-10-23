@@ -1,8 +1,9 @@
-Configuratie voor Switch 7:
+Configuratie voor Switch 4:
 
+```
 enable
 configure terminal
-hostname Switch7
+hostname Switch4
 banner motd %Unauthorized access prohibited%
 enable secret DirkThijs
 ip domain-name red.local
@@ -20,23 +21,28 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-interface vlan 500
-description Switch7 met VLAN 500
-ip address 172.18.2.66 255.255.255.224
+vlan 999
+exit
+interface vlan 999
+ip address 172.18.2.131 255.255.255.240
 no shutdown
 exit
-ip default-gateway 172.18.2.65
-interface range f0/1-4
+ip default-gateway 172.18.2.129
+interface range f0/1-5
 switchport mode access
-switchport access vlan 500
+switchport access vlan 200
+no shutdown
 exit
 interface range f0/20-21
 channel-group 1 mode desirable
+no shutdown
+exit
 interface port-channel 1
 switchport mode trunk
-switchport trunk allowed vlan 500
+switchport trunk native vlan 999
+no shutdown
 exit
-interface range f0/5-19
+interface range f0/6-19
 shutdown
 exit
 interface range f0/22-24
@@ -45,3 +51,5 @@ interface range g0/1-2
 shutdown
 end
 copy running-config startup-config
+
+```

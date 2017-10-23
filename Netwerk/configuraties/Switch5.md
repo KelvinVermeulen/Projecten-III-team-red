@@ -1,7 +1,6 @@
 Configuratie voor Switch 5:
 
 ```
-
 enable
 configure terminal
 hostname Switch5
@@ -22,46 +21,43 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-
-interface vlan 200
-description Switch5 met VLAN 200
-ip address 172.18.1.254 255.255.254.0
+vlan 999
+vlan 200
+vlan 400
+exit
+interface vlan 999
+ip address 172.18.2.132 255.255.255.240
 no shutdown
 exit
-
-interface vlan 300
-description Switch5 met VLAN 300
-ip address 172.18.2.30 255.255.255.224
-no shutdown
-exit
-
-interface vlan 400
-description Switch5 met VLAN 400
-ip address 172.18.2.62 255.255.255.224
-no shutdown
-exit
-
+ip default-gateway 172.18.2.129
 interface range f0/4-9
 switchport mode access
 switchport access vlan 300
+no shutdown
 exit
-
 interface range f0/20-21
 channel-group 1 mode desirable
+no shutdown
+exit
 interface port-channel 1
 switchport mode trunk
-switchport trunk allowed vlan 200
+switchport trunk native vlan 999
+no shutdown
 exit
+
 
 interface range f0/22-23
 channel-group 2 mode desirable
+exit
 interface port-channel 2
 switchport mode trunk
-switchport trunk allowed vlan 400
+switchport trunk native vlan 999
+no shutdown
 exit
 
 interface g0/1
 switchport mode trunk
+switchport trunk native vlan 999
 no shutdown
 
 interface range f0/1-3
@@ -76,13 +72,13 @@ shutdown
 end
 copy running-config startup-config
 
+
 ```
 
 
 Configuratie voor Router op Switch 5:
 
 ```
-
 enable
 configure terminal
 hostname RouterSwitch5
@@ -103,9 +99,8 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-end
 
-configure terminal
+
 interface g0/0.200
 encapsulation dot1q 200
 ip address 172.18.0.1 255.255.254.0
@@ -116,10 +111,23 @@ ip address 172.18.2.1 255.255.255.224
 no shutdown
 interface g0/0.400
 encapsulation dot1q 400
-ip address 172.18.2.32 255.255.255.224
+ip address 172.18.2.34 255.255.255.224
+no shutdown
+interface g0/0.999
+encapsulation dot1q 999 native
+ip address 172.18.2.129 255.255.255.224
 no shutdown
 interface g0/0
 no shutdown
 end
 copy running-config startup-config
+
+                                    configure terminal
+                                    router eigrp 1
+                                    network 172.18.0.0 0.0.1.255
+                                    network 172.18.2.0 0.0.0.31
+                                    network 172.18.2.32 0.0.0.31
+                                    no auto-summary
+                                    exit
+
 ```

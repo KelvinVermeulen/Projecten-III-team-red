@@ -18,3 +18,9 @@
 - Custom script toevoegen aan windows Setup https://technet.microsoft.com/en-us/library/dd744268(WS.10).aspx
 
 - windows server unattended https://medium.com/tech-jobs-academy/creating-a-windows-server-2012-r2-core-unattended-installation-iso-ab8071c03279
+
+- shared folder quotas installen https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/ 
+
+- managing file shares in powershell http://windowsitpro.com/powershell/managing-file-shares-windows-powershell
+
+- win_ser_2016_box (gen 1!!!) https://app.vagrantup.com/gusztavvargadr/boxes/w16s
