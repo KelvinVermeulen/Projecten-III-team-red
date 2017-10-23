@@ -33,9 +33,13 @@
 	- Z: 20 gb ProfileDirs
 - in dashboard: add roles and features. File server (bestand server) selecteren + bestandserver bronbeheer en installeren
   ## Install-windowsFeature -Name <>
-- bestand- en opslagservices shares selecteren, start wizard nieuwe share, smb snel, share locatie D:, Sharenaam "VerkoopData", extern pad: "\\WIN-TPNTL1C3H68\VerkoopData"
+- bestand- en opslagservices shares selecteren, start wizard nieuwe share, smb snel, share locatie D:, Sharenaam "VerkoopData", extern pad: "\\Lima2\VerkoopData" (wordt automatisch gedaan)
 - caching van share toestaan, gegevenstoegang versleutelen 
-- machtigingen aanpassen
+- machtigingen aanpassen (bv, nieuwe share VerkoopData met IT administratie met full control en Verkoop met lees- en schrijfrechten
+- in VerkoopData een map "ShareVerkoop" aanmaken
+- rightclick op de folder, en in de tab "Delen" click je op delen (via geavanceerd moet je it administratie op full control zetten)
+- om te testen moet je inloggen met Lien.Smet en Aa12345 , maar dit kan nog niet door de roam
+
        
 ***
 
@@ -49,6 +53,10 @@ rightclick>create quota in Disk of choice, limit,
 create subfolder in disk
 create quote for subfolder
 bepaalde soorten files blocken in file screen management?
+virtual switch manager, switch 5 external network (ethernet adapter) instellen
+ip adressen instellen op 172.18.2.3 met subnet automatisch, en default gateway 172.18.2.67
+workgroup aanpassen zodat je red.local joined met Administrator & Aa12345
+nu continue user manual ▲ vanaf bestand- en opslagservices shares selecteren
 
 #### randnotities automation
 - zie links file shares & quotas with powershell
