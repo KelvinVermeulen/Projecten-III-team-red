@@ -21,21 +21,26 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-interface vlan 500
-description Switch7 met VLAN 500
-ip address 172.18.2.66 255.255.255.224
+vlan 999
+exit
+interface vlan 999
+ip address 172.18.2.134 255.255.255.240
 no shutdown
 exit
-ip default-gateway 172.18.2.65
+ip default-gateway 172.18.2.130
 interface range f0/1-4
 switchport mode access
 switchport access vlan 500
+no shutdown
 exit
 interface range f0/20-21
 channel-group 1 mode desirable
+no shutdown
+exit
 interface port-channel 1
 switchport mode trunk
-switchport trunk allowed vlan 500
+switchport trunk native vlan 999
+no shutdown
 exit
 interface range f0/5-19
 shutdown

@@ -21,46 +21,44 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-
-interface vlan 400
-description Switch6 met VLAN 400
-ip address 172.18.2.61 255.255.255.224
+vlan 999
+vlan 500
+vlan 400
+exit
+interface vlan 999
+ip address 172.18.2.133 255.255.255.240
 no shutdown
 exit
-
-interface vlan 500
-description Switch6 met VLAN 500
-ip address 172.18.2.94 255.255.255.224
-no shutdown
-exit
-
-interface vlan 600
-description Switch6 met VLAN 600
-ip address 172.18.2.110 255.255.255.240
-no shutdown
-exit
+ip default-gateway 172.18.2.130
 
 interface fa0/1
 switchport mode access
 switchport access vlan 600
 no shutdown
+exit
 
 interface range f0/20-21
 channel-group 1 mode desirable
+no shutdown
+exit
 interface port-channel 1
 switchport mode trunk
-switchport trunk allowed vlan 500
+switchport trunk native vlan 999
+no shutdown
 exit
 
 interface range f0/22-23
 channel-group 2 mode desirable
+exit
 interface port-channel 2
 switchport mode trunk
-switchport trunk allowed vlan 400
+switchport trunk native vlan 999
+no shutdown
 exit
 
 interface g0/1
 switchport mode trunk
+switchport trunk native vlan 999
 no shutdown
 
 interface range f0/2-19
@@ -98,18 +96,6 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-end
-
-configure terminal
-router eigrp 1
-network 172.18.2.32 0.0.0.31
-network 172.18.2.64 0.0.0.31
-network 172.18.2.96 0.0.0.15
-no auto-summary
-exit
-
-interface g0/0
-ip helper-address 172.18.2.2
 interface g0/0.400
 encapsulation dot1q 400
 ip address 172.18.2.33 255.255.255.224
@@ -122,9 +108,24 @@ interface g0/0.600
 encapsulation dot1q 600
 ip address 172.18.2.97 255.255.255.240
 no shutdown
+interface g0/0.999
+encapsulation dot1q 999 native
+ip address 172.18.2.130 255.255.255.224
+no shutdown
 interface g0/0
 no shutdown
 end
 copy running-config startup-config
+
+                                configure terminal
+                                router eigrp 1
+                                network 172.18.2.32 0.0.0.31
+                                network 172.18.2.64 0.0.0.31
+                                network 172.18.2.96 0.0.0.15
+                                no auto-summary
+                                exit
+
+                                interface g0/0
+                                ip helper-address 172.18.2.2
 
 ```
