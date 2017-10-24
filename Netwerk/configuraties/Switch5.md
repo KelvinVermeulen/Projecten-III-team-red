@@ -94,6 +94,7 @@ ip ssh time-out 60
 interface g0/0.200
 encapsulation dot1q 200
 ip address 172.18.0.1 255.255.254.0
+ip helper-address 172.18.2.2
 no shutdown
 interface g0/0.300
 encapsulation dot1q 300
@@ -106,10 +107,16 @@ no shutdown
 interface g0/0
 no shutdown
 interface g0/1
-ip address 172.18.2.34
+ip address 172.18.2.34 255.255.255.224
 no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 172.18.2.33
+ip route 172.18.2.130 255.255.255.255 172.18.2.33
+ip route 172.18.2.133 255.255.255.255 172.18.2.33
+ip route 172.18.2.134 255.255.255.255 172.18.2.33
+
 end
 copy running-config startup-config
-                  
+
 
 ```
