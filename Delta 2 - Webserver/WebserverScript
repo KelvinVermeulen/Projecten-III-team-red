@@ -25,7 +25,7 @@ function Install_ASP.NET
     Write-Host "Installing NET-Framework-45-ASPNET ... " -ForegroundColor Green
     Add-WindowsFeature NET-Framework-45-ASPNET
     Write-Host "Installing NET-HTTP-Activation ..." -ForegroundColor Green
-    Add-WindowsFeature NET-HTTP-Activation    
+    Add-WindowsFeature NET-WCF-HTTP-Activation45    
 }
 
 function renameComputer()
