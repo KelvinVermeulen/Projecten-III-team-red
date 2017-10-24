@@ -31,6 +31,9 @@ https://www.paessler.com/manuals/prtg/add_a_sensor
 ?
 
 ### mailserver
+**!! Bij settings op PRTG ipv IP-adres meegeven de FQDN meegeven !!**
+
+**Om op target server remote powershell te controleren, gebruik "get-service winrm" & "enable-psremoting -force" in powershell**
 
 Sensor: Totale grote van items, aantal items en tijd sinds laatste logon.
 
@@ -43,7 +46,7 @@ Benodigdheden:
 - Heeft "elevated rechten" voor de gebruiker van de sensor op exchange systeem nodig. Niet enkel admin rechten.
 - **.NET 4.0 of hoger op probe system**
 
-### DHCP
+### NIET MEER TE DOEN - DHCP
 
 Sensor: Address of server + offered IP, response time, lease time
 
@@ -88,6 +91,8 @@ Benodigdheden:/ (credentials van windows systeem nodig)
 Sensor: executie tijd van volledige request, tijd van query, aantal rijen die aangepast zijn.
 
 URL: https://www.paessler.com/manuals/prtg/microsoft_sql_v2_sensor
+
+URL: https://www.paessler.com/manuals/prtg/wmi_microsoft_sql_server_2014_sensor
 
 Benodigdheden:
 - **.NET 4.0 op probe, credentials, poort en timeout van parent device.**
