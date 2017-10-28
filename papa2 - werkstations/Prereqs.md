@@ -2,7 +2,7 @@
 
 ## ADSI Edit (AD/DC)
 
-In Tools, onder Server Mananger, open ADSI Edit en rechterklik op ADSI Edit en Connect to, ok.
+In Tools, onder Server Mananger, open ADSI Edit en rechterklik op ADSI Edit en Connect to, Ok (verander de naam niet!).
 Klik vervolgens op CN=System, New, Object.
 Selecteer container, next.
 Vul dan de naam System Management in bij Value en druk op next.
@@ -17,14 +17,20 @@ Hierna opend de Delegation of Control Wizard. Selecteer alle permissies (General
 
 ## EXTADSH.exe (AD/DC)
 
-Mount vervolgens een ISO op de virtuele machine en ga naar \SMSSETUP\BIN\X64 en houdt vervolgens shift ingedrukt en rechterklik daarna op extadsh.exe en selecteer Copy as Path.
+Mount vervolgens de ISO van SCCM op de virtuele machine en ga naar \SMSSETUP\BIN\X64 en houdt vervolgens shift ingedrukt en rechterklik daarna op extadsh.exe en selecteer Copy as Path.
 Paste hierna dit pad in een CMD-terminal.
+Als het niet direct lukt, wacht even en probeer opnieuw.
+Als het daarna nog steeds niet lukt voer dan het onderstaande commando in en probeer opnieuw.
+    
+    repadmin /syncall
+    
+Als het daarna nog steeds niet lukt, herstart de machine en begin opnieuw vanaf stap 1 van EXTASH.exe.
 
 ## Firewall Settings (AD/DC - Firewall)
 
 Open Group Policy Management console onder Tools bij Server Manager.
 Rechterklik in dit scherm op Red.local onder Domains en klik daarna op Create a GPO in this domain, and Link it here...
-Noem de New GPO Client Push Policy Settings (Source Starter GPO mag je op (none) laten staan).
+Noem de nieuwe GPO bv.: Client Push Policy Settings (Source Starter GPO mag je op (none) laten staan).
 Rechterklik vervolgens op deze nieuwe policy en klik op Edit. Expand computer configuration, Windows settings, Security settings, Windows Firewall with advanced security. Rechterklik op Inbound rules en klik op New Rule.
 Selecteer onder Predefined op File and Printer Sharing, Next, controleer of alles aangevinkt is en selecteer anders alles, Next, Allow the connection en Finish.
 Doe hetzelfde nog eens voor Outbond Rules, maar met hetzelfde proces.
@@ -96,8 +102,9 @@ Ga terug naar de Server Manager en voeg ook deze tools nog toe:
 
 Het pad waar je updates moet opslaan moet je verwijzen naar onze server.
 De databank waarnaar verwezen moet worden zal ook de databank van Papa2 worden.
+Als de installatie bij 'check connection' geen string invult, vul dan zelf localhost of (local) in.
 
-### MS SQL 2014 hotfix
+## MS SQL 2014 hotfix
 
 Download de volgende hotfixes als je wilt werken met MS SQL 2014 als databank voor SCCM en plak deze in de installatiefolder van de image waarin de setup staat van SCCM (\SMSSETUP\BIN\X64\Setup.exe).
 
