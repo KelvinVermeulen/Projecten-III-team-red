@@ -2,6 +2,7 @@
 
 - Keymap: `be.iso.kbd: Belgian ISO-8859-1`
 - Partitioning: `Auto (UFS)`
+
 **Nu wordt pfSense geïnstalleerd**
 
 
@@ -72,3 +73,24 @@ Onderste poort is WAN, bovenste is LAN.
 ![Verloop](img/extra/wiz2.PNG)
 ![Verloop](img/extra/wiz3.PNG)
 ![Verloop](img/extra/wiz4.PNG)
+
+
+## Aliassen
+
+`Firewall` -> `Aliases` -> `IP`
+
+![Rules aliassen](img/firewall/aliassen.PNG)
+
+`Firewall` -> `Aliases` -> `Ports`
+
+![Rules aliassen](img/firewall/ports.PNG)
+
+![Rules aliassen](img/firewall/portsDC.PNG)
+
+![Rules aliassen](img/firewall/portsMonitoring.PNG)
+
+**Opmerking:** 
+- `Dynamic (TCP/UDP)` werd nog niet toegevoegd voor DC's.
+- `High port ranges 49152-65535 and 1024-5000` werden nog niet toegevoegd voor monitoring-server.
+
+
