@@ -5,19 +5,20 @@
 
 ## Wat moet getest worden
 
-- Download het pkt bestand "" te vinden in netwerken ""
-- Deze opstelling moet overeenkomen met de opstelling van de brochure ( het routergedeelte)
+- Download het pkt bestand "opstelling router zonder vpn.pkt" te vinden in netwerken/files/Routers + VPN
+- Deze opstelling moet overeenkomen met de opstelling van de brochure (het routergedeelte)
 
 ## Testwijze
-
+(wachtwoord : cisco )
 1. Open de Packet-tracer en kijk of alle apparaten zoals beschreven in de brochure
 2. Kijk of alle Routers de juist configuratie hebben ( juiste ip adres/subnetmask aan de juiste poorten)
 terug te vinden zijn in de PT. Het deel zonder red/green local.
-3. Ga na op je kan pingen van pc1 naar pc2
-4. Ga na of de VPN verbinding werkt.
+3. Ga na op je kan pingen van pc2 naar pc3
+
 
 ## Wat bevat het testrapport?
 
 Een overzicht van alle verbindingen tussen de routers.
 Een ping test tussen de pc's.
-Een test van de VPN.
+
+(VPN is aparte issue , dus apart testplan hiervoor)

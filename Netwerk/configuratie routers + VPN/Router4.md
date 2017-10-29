@@ -20,6 +20,10 @@ no shut
 int Se0/2
 ip add 192.168.0.1 255.255.255.0
 no shut
+int Se0/0
+no ip address
+encapsulation frame-relay
+no shut
 exit
 do wr
 copy running-config startup-config
