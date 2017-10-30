@@ -49,7 +49,7 @@
   - Alles aanvinken in de quotum tab, en het waarschuwingsniveau instellen op 75% van de limiethoeveelheid.
 - Stel in dat er voor AdminData dagelijks een schaduwkopie wordt gemaakt van de data.
 - Dit doe je door rightclick op AdminData>shadowcopy, selecteer schijf H en click op "instellingen" en stel een dagelijkse planning in voor 7:00, 12:00 en 18:00. Stel de hoeveelheid op 5000Mb in en stel dit in op schijf C:/
-- 
+- op alle schijven moet je rightclick doen, eigenschappen, en dan onder de "delen"-tab, alle schijven delen via geavanceerd delen, (default name is goed)
 
 ***
 
