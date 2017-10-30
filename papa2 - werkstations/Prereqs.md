@@ -26,7 +26,7 @@ Als het daarna nog steeds niet lukt voer dan het onderstaande commando in en pro
     
 Als het daarna nog steeds niet lukt, herstart de machine en begin opnieuw vanaf stap 1 van EXTASH.exe.
 
-## Firewall Settings (AD/DC - Firewall)
+## Client Push Settings (AD/DC)
 
 Open Group Policy Management console onder Tools bij Server Manager.
 Rechterklik in dit scherm op Red.local onder Domains en klik daarna op Create a GPO in this domain, and Link it here...
@@ -35,7 +35,7 @@ Rechterklik vervolgens op deze nieuwe policy en klik op Edit. Expand computer co
 Selecteer onder Predefined op File and Printer Sharing, Next, controleer of alles aangevinkt is en selecteer anders alles, Next, Allow the connection en Finish.
 Doe hetzelfde nog eens voor Outbond Rules, maar met hetzelfde proces.
 
-## Open SQL Ports (AD/DC - Firewall)
+## Open SQL Ports (AD/DC)
 Ga opnieuw naar Group Policy Management console onder Tools bij Server Manager. 
 Rechterklik opnieuw op Red.local en klik opnieuw op Create a GPO in this domain, and Link it here...
 Geef deze policy opnieuw een naam (bv.: SQL poorten voor SCCM2012R2).
