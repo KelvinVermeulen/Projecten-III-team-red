@@ -7,9 +7,9 @@
 Auteur(s) testplan: Cedric Van Dorpe
 
 * Ga na of de tester de file server zonder hulp of voorkennis kan opstellen a.d.h.v. de user manual.
- - Doorloop alle stappen van de user manual om de file server op te stellen om de tests uit te kunnen voeren.
+  - Doorloop alle stappen van de user manual om de file server op te stellen om de tests uit te kunnen voeren.
 
- - Resultaat: De Test (Slaagt | Faalt)
+  - Resultaat: De Test (Slaagt | Faalt)
 
 * Ga na of de shares correct ingesteld zijn zoals beschreven in de user manual:
   - Log in als gebruiker van elke afdeling, en ga na of je toegang hebt tot de shares die tot je afdeling behoren (zie tabel brochure)
