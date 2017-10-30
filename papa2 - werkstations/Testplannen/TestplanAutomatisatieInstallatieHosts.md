@@ -17,12 +17,11 @@ In deze iteratie gaan we een MSCS lokaal installeren en configureren om in een e
 
 ## Documentation
 
-Ga als eerste naar de Active Directory die is geïnstalleerd en controleer of ADSI Edit een verbinding heeft met de Default naming context. Controleer ook in dit scherm of System Management is aangemaakt onder CN=System.
+Ga als eerste naar de lokale Active Directory die is geïnstalleerd en controleer of ADSI Edit een verbinding heeft met de Default naming context. Controleer ook in dit scherm of System Management is aangemaakt onder CN=System.
 
 ![foto](ImagesTestplan/HandmatigInstalleren/adsiedit05.png)
 
 Ga vervolgens naar Active Directory Users and Computers (onder Server Manager, Tools) en controleer of de Advanced Features aanstaan (onder View). Controleer vervolgens of de primary site server computer account rechten heeft tot het System Management object onder System.
-
 
 Open hierna Server manager en Tools nog eens om te controleren of de nodige roles, role services en features zijn geïnstalleerd.
 
@@ -37,11 +36,13 @@ Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Poli
 ![foto](ImagesTestplan/HandmatigInstalleren/inbound.PNG)
 ![foto](ImagesTestplan/HandmatigInstalleren/outbound.PNG)
 
-Controleer vervolgens of er een installatie is uitgevoerd van MS SQL server 2012 (of jonger) door het programma te openen en of de poort voor SQL replication in orde is.
+Controleer vervolgens of er een installatie is uitgevoerd van MS SQL server 2014 door op de Windows-toets te duwen en SQL 2014 te typen. Open deze niet!
 
 ![foto](ImagesTestplan/HandmatigInstalleren/oo09.png)
 
 Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het programma te openen.
+
+Controleer ook onder de C:\-schijf naar alle logs of er geen fouten gegooid zijn.
 
 ## Test report
 
