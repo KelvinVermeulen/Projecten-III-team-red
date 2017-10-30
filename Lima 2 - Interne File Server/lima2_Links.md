@@ -24,3 +24,5 @@
 - [managing file shares in powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
 
 - [shadow copy with powershell](https://msdn.microsoft.com/en-us/library/aa389391(v=vs.85).aspx)
+
+- [manual execution for 30/10, shadow copy & disk quota](https://msdn.microsoft.com/en-us/library/aa389391(v=vs.85).aspx)
