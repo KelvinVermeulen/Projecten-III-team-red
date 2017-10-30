@@ -46,6 +46,7 @@
 - - VerkoopData, DirData en AdminData op maximum 100MB per gebruiker instellen. 
   -  OntwikkelingData en ITData maximum 200Mb per gebruiker instellen.
   - Hiervoor moet je rechtsclicken op de folder>eigenschappen>quotum, quotumbeheer inschakelen en vervolgens de juiste waarden ingeven.
+  - Alles aanvinken in de quotum tab, en het waarschuwingsniveau instellen op 75% van de limiethoeveelheid.
 - Stel in dat er voor AdminData dagelijks een schaduwkopie wordt gemaakt van de data.
 - Dit doe je door ...
 
