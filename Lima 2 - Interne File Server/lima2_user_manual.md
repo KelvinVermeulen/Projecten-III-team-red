@@ -17,7 +17,7 @@
 - start hyper-v en ga naar de settings van de aangemaakte vm (eerst vm afsluiten)
 - add nog een harddrive in ide controller 0
 - maak voor deze een virtuele harddisk aan (format: VHDX, type: Dynamic, name: Disk2, location: C:\HyperV\Lima2_WinSer2016\, size: 100Gb, )  
-- stel in, taal: nederlands(belgiê) keyboardlayouy: belgisch (komma)
+- stel in, taal: nederlands(belgiê) keyboardlayout: belgisch (komma)
 - administrator wachtwoord: Admin123
 - log in met Administrator, pw:Admin123 
 - Dvd station uitwerpen en veranderen naar Q
