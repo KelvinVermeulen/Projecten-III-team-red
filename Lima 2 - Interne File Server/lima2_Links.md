@@ -21,6 +21,6 @@
 
 - [shared folder quotas installen](https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/) 
 
-- [managing file shares in powershell] (http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
+- [managing file shares in powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
 
 - [shadow copy with powershell](https://msdn.microsoft.com/en-us/library/aa389391(v=vs.85).aspx)
