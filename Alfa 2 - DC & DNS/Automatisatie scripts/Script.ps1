@@ -6,13 +6,6 @@ Restart-computer
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName red.local
 
-
-#IP adres wijzigen
-$ipaddress = "192.168.1.1"
-$dnsaddress = "192.168.1.1"
-New-NetIPAddress -InterfaceAlias Ethernet -IPAddress $ipaddress -AddressFamily IPv4 -PrefixLength 24
-Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses $dnsaddress
-
 #OU aanmaken
 New-ADOrganizationalUnit -Name "RED" ;
 
