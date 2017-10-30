@@ -11,17 +11,17 @@ In deze iteratie gaan we een MSCS lokaal installeren en configureren om in een e
 
 |Objectief|Korte beschrijving|Uitgevoerd|
 |---------|------------------|-------|
-|Documentatie|De uitleg met hoe we te werk zijn gegaan om MSCS lokaal te installeren.||
-|Test rapport|Er is een rapport geschreven over het testplan||
-|Resources|De nodige ondersteunende filmpjes en uitleg zoeken op YouTube en Google, om toch al eens (half) te zien hoe het moet.||
+|Documentatie|De uitleg met hoe we te werk zijn gegaan om MSCS lokaal te installeren.|X|
+|Test rapport|Er is een rapport geschreven over het testplan|X|
+|Resources|De nodige ondersteunende filmpjes en uitleg zoeken op YouTube en Google, om toch al eens (half) te zien hoe het moet.|X|
 
 ## Documentation
 
-Ga als eerste naar de lokale Active Directory die is geïnstalleerd en controleer of ADSI Edit een verbinding heeft met de Default naming context. Controleer ook in dit scherm of System Management is aangemaakt onder CN=System.
+Ga als eerste naar ADSI Edit onder Server Manager en Tools. Controleer of ADSI Edit een verbinding heeft, er zou een object met de naam Default naming context moeten staan. Controleer ook in dit scherm of System Management is aangemaakt onder CN=System.
 
 ![foto](ImagesTestplan/HandmatigInstalleren/adsiedit05.png)
 
-Ga vervolgens naar Active Directory Users and Computers (onder Server Manager, Tools) en controleer of de Advanced Features aanstaan (onder View). Controleer vervolgens of de primary site server computer account rechten heeft tot het System Management object onder System.
+Ga vervolgens naar Active Directory Users and Computers (onder Server Manager, Tools) en controleer of de Advanced Features aanstaan (onder View). Controleer vervolgens of de primary site server computer account rechten heeft tot het System Management object onder System, door te rechterklikken op System Mangement, Properties en onder Security te kijken of Administrators, Enterprise Admins en Domain Admins alle rechten hebben op deze folder.
 
 Open hierna Server manager en Tools nog eens om te controleren of de nodige roles, role services en features zijn geïnstalleerd.
 
@@ -31,7 +31,9 @@ Open hierna Server manager en Tools nog eens om te controleren of de nodige role
 ![foto](ImagesTestplan/HandmatigInstalleren/wsus01.png)
 ![foto](ImagesTestplan/HandmatigInstalleren/wsus02.png)
 
-Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Policy manage console. Kijk vervolgens bij de Inbound Rules en Outbond Rules of de uitzondering voor File and Printer Sharing services is toegevoegd.
+Controleer ook of de Windows ADK geïnstalleerd is door op de Windows-toets te drukken en naar Apps te gaan. Scroll tot het einde en onder Windows Kits.
+
+Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Policy manage console. Controleer of er hier 2 GPO's (Client Push Policy Settings en SQL ports for SCCM) zijn aangemaakt. Rechterklik vervolgens op deze GPO's en kijk vervolgens onder Windows Settings, Security Settings, Windows Firewall with Advanced Settings bij de Inbound Rules en Outbond Rules of de uitzondering voor File and Printer Sharing services en poorten 1433 en 4022 zijn toegevoegd.
 
 ![foto](ImagesTestplan/HandmatigInstalleren/inbound.PNG)
 ![foto](ImagesTestplan/HandmatigInstalleren/outbound.PNG)
@@ -50,4 +52,4 @@ Client Push Policy in-en outbound rules toevoegen.
 
 ## Resources
 
-De nodige documentatie hebben we verzameld in [dit bestand](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/Links.md) opgeslaan.
+De nodige documentatie hebben we verzameld en opgeslaan in [dit bestand](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/Links.md)
