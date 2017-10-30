@@ -43,15 +43,18 @@
 - in VerkoopData een map "ShareVerkoop" aanmaken
 - rightclick op de folder, en in de tab "Delen" click je op delen (via geavanceerd moet je it administratie op full control zetten)
 - om te testen moet je inloggen met Lien.Smet en Aa12345 , maar dit kan nog niet door de roam
-- quotas
-       
+- - VerkoopData, DirData en AdminData op maximum 100MB per gebruiker instellen. 
+  -  OntwikkelingData en ITData maximum 200Mb per gebruiker instellen.
+  - Hiervoor moet je rechtsclicken op de folder>eigenschappen>quotum, quotumbeheer inschakelen en vervolgens de juiste waarden ingeven.
+- temp
+
 ***
 
 
 #### randnotities voor later (manual execution) 
 - tools>file server resource manager
 - quota management>quota
-- rightclick>create quota in Disk of choice, limit,   
+- rightclick>create quota in Disk of choice, limit,
 - create subfolder in disk
 - create quote for subfolder
 - bepaalde soorten files blocken in file screen management?
