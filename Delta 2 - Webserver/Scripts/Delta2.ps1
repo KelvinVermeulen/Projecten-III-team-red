@@ -2,6 +2,8 @@ function main(){
 
     Timezone
 
+    Firewall
+    
     Install_IIS
 
     Install_ASP.NET
@@ -17,6 +19,11 @@ function main(){
 function Timezone()
 {
     Set-TimeZone -Name "Central Europe Standard Time" 
+}
+
+function Firewall()
+{
+    Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 }
 
 function Install_IIS()
@@ -180,7 +187,7 @@ $credential = New-Object System.Management.Automation.PSCredential($username,$pa
 
 }
 
- 
+
 
 
 main 
