@@ -157,23 +157,24 @@ function setIpAddress()
 <# Als $wmi niets teruggeeft bij het uitvoeren, aanpassen van de switch in Hyper-V #>
 
 $wmi = Get-WmiObject win32_networkadapterconfiguration -filter "ipenabled = 'true'"
-$wmi.EnableStatic("10.0.0.15", "255.255.255.0")
-$wmi.SetGateways("10.0.0.1", 1)
-$wmi.SetDNSServerSearchOrder("10.0.0.100")
+$wmi.EnableStatic("172.18.2.70", "255.255.255.224")
+$wmi.SetGateways("172.18.2.65", 1)
+$wmi.SetDNSServerSearchOrder("172.18.2.68")
 
-Write-Host "New Ip address and DNS are set. And ready to go ;) " -ForegroundColor Green
+#New-NetIPAddress -InterfaceAlias Ethernet -IPAddress $ipaddress -AddressFamily IPv4 -PrefixLength 24
+#Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses $dnsaddress
+
+#Write-Host "New Ip address and DNS are set. And ready to go ;) " -ForegroundColor Green
 
 }
 
 function setDomain()
 {
 
-$domain="red.local"
-$password = "delta2" | ConvertTo-SecureString -asPlainText -Force
-$username = "$domain\myUserAccount" 
-$credential = New-Object System.Management.Automation.PSCredential($username,$password)
 
-    Add-Computer -DomainName $domain -Credential $credential
+$credential = New-Object System.Management.Automation.PSCredential("red.local\Administrator",(ConvertTo-SecureString "Aa12345" -AsPlainText -Force))
+Add-Computer -DomainName red.local -Credential $credential
+
 }
 
 function renameServer()
