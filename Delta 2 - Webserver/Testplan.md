@@ -23,9 +23,9 @@
     
  - Met volgende netwerkinstellingen :
     + IP adres : 172.18.2.70
-    + Netmask :
-    + Default Gateway :
-    + DNS :
+    + Netmask : 255.255.255.224
+    + Default Gateway : 172.18.2.65
+    + DNS : 172.18.2.68
     
   - De server moet tot het domein "red.local" behoren.
   
