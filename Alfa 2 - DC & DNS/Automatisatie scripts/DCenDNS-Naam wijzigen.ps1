@@ -10,4 +10,15 @@ Restart-computer
 
 #DC en DNS installeren en domeinnaam instellen
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName red.local
+Install-ADDSForest
+-CreateDnsDelegation:$true
+-DatabasePath “C:\Windows\NTDS”
+-DomainMode “Win2012R2”
+-DomainName “red.local”
+-DomainNetbiosName “RED”
+-ForestMode “Win2012R2”
+-InstallDns:$true
+-LogPath “C:\Windows\NTDS”
+-NoRebootOnCompletion:$false
+-SysvolPath “C:\Windows\SYSVOL”
+-Force:$true
