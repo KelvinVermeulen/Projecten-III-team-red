@@ -1,24 +1,10 @@
-#Computer naam wijzigen
-Rename-computer -newname ns1
-
-#IP adres wijzigen
-$ipaddress = "192.168.1.1"
-$dnsaddress = "192.168.1.1"
-New-NetIPAddress -InterfaceAlias Ethernet -IPAddress $ipaddress -AddressFamily IPv4 -PrefixLength 24
-Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses $dnsaddress
-Restart-computer
+#Computer naam wijzigen --> Niet nodig waneer je de Windows Server automatisch laat installeren met autoUnattend.xml
+#Rename-computer -newname ns1
+#Restart-computer
 
 #DC en DNS installeren en domeinnaam instellen
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest
--CreateDnsDelegation:$true
--DatabasePath “C:\Windows\NTDS”
--DomainMode “Win2012R2”
--DomainName “red.local”
--DomainNetbiosName “RED”
--ForestMode “Win2012R2”
--InstallDns:$true
--LogPath “C:\Windows\NTDS”
--NoRebootOnCompletion:$false
--SysvolPath “C:\Windows\SYSVOL”
--Force:$true
+Install-ADDSForest -DomainName "red.local" -SafeModeAdministratorPassword:(ConvertTo-SecureString -String "Aa12345" -AsPlainText -Force) -DatabasePath "C:\Windows\NTDS" -DomainMode "Win2012R2" -DomainNetbiosName "RED" -ForestMode "Win2012R2" -InstallDns: $true -LogPath "C:\Windows\NTDS" -NoRebootOnCompletion: $false -SysvolPath "C:\Windows\SYSVOL" -Force: $true
+
+#OU aanmaken
+New-ADOrganizationalUnit -Name "RED" ;
