@@ -1,6 +1,5 @@
 #Computer naam wijzigen --> Niet nodig waneer je de Windows Server automatisch laat installeren met autoUnattend.xml
-#Rename-computer -newname ns1
-#Restart-computer
+Rename-computer -newname ns1
 
 #IP-adres en default gateway wijzigen
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "192.168.1.2" -PrefixLength 24 -DefaultGateway "192.168.1.1"
@@ -84,3 +83,5 @@ New-GPLink -Name FileServer -Target "OU=Directie,OU=RED,DC=red,dc=local"
 Import-GPO -BackupID "058EA888-9327-48D6-98A4-DCA8FF5ACC64" -Path "F:\backup\" -TargetName "Netwerkadapter"
 Import-GPO -BackupID "C1C534A3-1039-42B5-9C3A-CBFBD710B182" -Path "F:\backup\" -TargetName "ControlPanelGameLink"
 Import-GPO -BackupID "7F004945-6DF1-4DD0-9E1D-2F2977A22CB3" -Path "F:\backup\" -TargetName "FileServer"
+
+Restart-computer
