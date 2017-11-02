@@ -3,8 +3,10 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "192.168.1.3" -PrefixLeng
 #DNS Server wijzigen
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 192.168.1.2
 
+Rename-Computer -NewName DHCPServer 
+
+
 $cred = New-Object System.Management.Automation.PSCredential("red.local\Administrator",(ConvertTo-SecureString "Aa12345" -AsPlainText -Force))
 Add-Computer -DomainName red.local -Credential $cred
-Rename-Computer -NewName DHCPServer 
 
 Restart-Computer
