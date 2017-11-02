@@ -1,6 +1,6 @@
-#Computer naam wijzigen
-Rename-computer -newname ns1
-Restart-computer
+#Computer naam wijzigen --> Niet nodig waneer je de Windows Server automatisch laat installeren met autoUnattend.xml
+#Rename-computer -newname ns1
+#Restart-computer
 
 #DC en DNS installeren en domeinnaam instellen
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
