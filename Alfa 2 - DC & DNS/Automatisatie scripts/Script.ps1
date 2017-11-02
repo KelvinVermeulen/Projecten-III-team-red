@@ -18,11 +18,11 @@ New-ADOrganizationalUnit -Name "Verkoop" -Path "OU=RED,DC=red,DC=local";
 New-ADOrganizationalUnit -Name "Werkstations" -Path "OU=RED,DC=red,DC=local";
 
 #Groepen aanmaken
-New-ADGroup -Name "Administratie" -SamAccountName "Administratie" -GroupCategory Security -GroupScope Global -DisplayName "Administratie" -Path "OU=RED,OU=Administratie,DC=red,DC=local"
-New-ADGroup -Name "Directie" -SamAccountName "Directie" -GroupCategory Security -GroupScope Global -DisplayName "Directie" -Path "OU=RED,OU=Directie,DC=red,DC=local"
-New-ADGroup -Name "IT Administratie" -SamAccountName "IT Administratie" -GroupCategory Security -GroupScope Global -DisplayName "IT Administratie" -Path "OU=RED,OU=IT Administratie,DC=red,DC=local"
-New-ADGroup -Name "Ontwikkeling" -SamAccountName "Ontwikkeling" -GroupCategory Security -GroupScope Global -DisplayName "Ontwikkeling" -Path "OU=RED,OU=Ontwikkeling,DC=red,DC=local"
-New-ADGroup -Name "Verkoop" -SamAccountName "Verkoop" -GroupCategory Security -GroupScope Global -DisplayName "Verkoop" -Path "OU=RED,OU=Verkoop,DC=red,DC=local"
+New-ADGroup -Name "Administratie" -SamAccountName "Administratie" -GroupCategory Security -GroupScope Global -DisplayName "Administratie" -Path "OU=Administratie,OU=RED,DC=red,DC=local"
+New-ADGroup -Name "Directie" -SamAccountName "Directie" -GroupCategory Security -GroupScope Global -DisplayName "Directie" -Path "OU=Directie,OU=RED,DC=red,DC=local"
+New-ADGroup -Name "IT Administratie" -SamAccountName "IT Administratie" -GroupCategory Security -GroupScope Global -DisplayName "IT Administratie" -Path "OU=IT Administratie,OU=RED,DC=red,DC=local"
+New-ADGroup -Name "Ontwikkeling" -SamAccountName "Ontwikkeling" -GroupCategory Security -GroupScope Global -DisplayName "Ontwikkeling" -Path "OU=Ontwikkeling,OU=RED,DC=red,DC=local"
+New-ADGroup -Name "Verkoop" -SamAccountName "Verkoop" -GroupCategory Security -GroupScope Global -DisplayName "Verkoop" -Path "OU=Verkoop,OU=RED,DC=red,DC=local"
 
 #Gebruiker aanmaken in de groep Administratie
 New-AdUser  -AccountPassword (ConvertTo-SecureString "P@ssword" -AsPlainText -Force)  -DisplayName "John Smet" -Name "John Smet" -Path "OU=Administratie,OU=RED,DC=red,DC=local" -Surname "Smet" -GivenName "John" -UserPrincipalName ("john.smet"+"@hilbay.gent") -Enabled $true -ChangePasswordAtLogon $true;
@@ -55,15 +55,15 @@ $group = Get-ADGroup "CN=Verkoop,OU=Verkoop,OU=RED,DC=red,DC=local";
 Add-ADGroupMember $group -Members $user;
 
 #Groep policies aanmaken en linken met OU's
-new-gpo -name ControlPanelGameLink | new-gplink -target "OU=RED,OU=Administratie,DC=red,dc=local"
-New-GPLink -Name ControlPanelGameLink -Target "OU=RED,OU=Verkoop,DC=red,dc=local"
-New-GPLink -Name ControlPanelGameLink -Target "OU=RED,OU=IT Administratie,DC=red,dc=local"
-New-GPLink -Name ControlPanelGameLink -Target "OU=RED,OU=Ontwikkeling,DC=red,dc=local"
-New-GPLink -Name ControlPanelGameLink -Target "OU=RED,OU=Directie,DC=red,dc=local"
+new-gpo -name ControlPanelGameLink | new-gplink -target "OU=Administratie,OU=RED,DC=red,dc=local"
+New-GPLink -Name ControlPanelGameLink -Target "OU=Verkoop,OU=RED,DC=red,dc=local"
+New-GPLink -Name ControlPanelGameLink -Target "OU=IT Administratie,OU=RED,DC=red,dc=local"
+New-GPLink -Name ControlPanelGameLink -Target "OU=Ontwikkeling,OU=RED,DC=red,dc=local"
+New-GPLink -Name ControlPanelGameLink -Target "OU=Directie,OU=RED,DC=red,dc=local"
 
 #Groep policies aanmaken en linken met OU's
-new-gpo -name Netwerkadapter | new-gplink -target "OU=RED,OU=Verkoop,DC=red,dc=local"
-New-GPLink -Name Netwerkadapter -Target "OU=RED,OU=IT Administratie,DC=red,dc=local"
+new-gpo -name Netwerkadapter | new-gplink -target "OU=Verkoop,OU=RED,DC=red,dc=local"
+New-GPLink -Name Netwerkadapter -Target "OU=IT Administratie,OU=RED,DC=red,dc=local"
 
 #Policies importeren
 Import-GPO -BackupID "058EA888-9327-48D6-98A4-DCA8FF5ACC64" -Path "" -TargetName "Netwerkadapter"
