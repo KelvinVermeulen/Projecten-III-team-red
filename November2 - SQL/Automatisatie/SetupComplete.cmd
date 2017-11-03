@@ -6,3 +6,4 @@ powershell "& 'C:\Users\Administrator\Documents\Scripts\1.preInstallDirectories.
 powershell "& 'C:\Users\Administrator\Documents\Scripts\2.InstallJava.ps1'"
 powershell "& 'C:\Users\Administrator\Documents\Scripts\3.FirewallEnable.ps1'"
 powershell "& 'C:\Users\Administrator\Documents\Scripts\4.InstallSql.ps1'"
+powershell "& 'C:\Users\Administrator\Documents\Scripts\5.InstallSqlManagementStudio.ps1'"

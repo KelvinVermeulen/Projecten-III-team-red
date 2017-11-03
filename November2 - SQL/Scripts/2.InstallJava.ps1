@@ -1,3 +1,3 @@
 ﻿#Java.exe moet via bootable usb meegegeven worden.
 Write-Host 'Java installeren'
-Start-Process -FilePath "c:\reqs\JreJava.exe" -ArgumentList '/s' -wait -PassThru
+Start-Process -FilePath "C:\Users\Administrator\Documents\Installattie\JreJava.exe" -ArgumentList '/s' -wait -PassThru
