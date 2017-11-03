@@ -1,28 +1,97 @@
 # Configuratie pfSense
 
+We gaan de firewall configureren met volgende instellingen:
 - Keymap: `be.iso.kbd: Belgian ISO-8859-1`
 - Partitioning: `Auto (UFS)`
 
-**Nu wordt pfSense geïnstalleerd**
+**Hierna wordt pfSense geïnstalleerd.**
 
 
 Na het heropstarten:
 
-"Enter the parent interface name for the new VLAN (or nothing if finished):"
+1. "Enter the parent interface name for the new VLAN (or nothing if finished):"
+Druk hierna op `<Enter>`.
 
-`<Enter>`
-
-We steken een kabel in, in `bge0`, zodat deze de WAN-interface wordt.
-
-WAN: bge0
-LAN: em0
+2. We steken een kabel in, in `bge0`, zodat deze de WAN-interface wordt.
 
 
-We veranderen het IP-adres (niet default 192.168.1.1/24) door op 2 te drukken.
+3. We veranderen het IP-adres (niet default 192.168.1.1/24) door te kiezen voor `2) Set interface(s) IP address`.
 
-Zie IP-adressen schema.
+## Configuratie WAN-interface
 
-Onderste poort is WAN, bovenste is LAN.
+We kiezen voor `1 - WAN (em0 - static)`.
+
+
+- `Configure IPv4 address WAN interface via DHCP? (y/n)`: 
+
+  Geef `n` in.
+  
+- `Enter the new WAN IPv4 address. Press <ENTER> for none:`:
+
+  Geef `172.18.2.114/28` in.
+  
+- `Enter the new WAN IPv4 subnet bit count (1 to 31):`:
+
+  Geef `28` in.
+  
+- `For a WAN, enter the new WAN IPv4 upstream gateway address.`:
+
+  Geef `172.18.2.113` in.
+  
+- `Configure IPv6 address WAN interface via DHCP? (y/n)`: 
+
+  Geef `n` in.
+  
+- `Enter the new WAN IPv6 address. Press <ENTER> for none:`:
+
+  Druk op `Enter`.
+  
+- `Do you want to revert to HTTP as the webConfigurator protocol? (y/n)`:
+
+   Geef `n` in.
+  
+ Hierna worden de instellingen toegepast.
+ 
+ ## Configuratie LAN-interface
+ 
+ We kiezen voor `2 - LAN (em1 - static)`.
+  
+  
+- `Enter the new LAN IPv4 address. Press <ENTER> for none:`:
+
+  Geef `172.18.2.98/28` in.
+  
+- `Enter the new WAN IPv4 subnet bit count (1 to 31):`:
+
+  Geef `28` in.
+  
+- `For a LAN, press <ENTER> for none:`:
+
+  Druk op `Enter`.
+  
+- `Enter the new LAN IPv6 address. Press <ENTER> for none:`:
+
+  Druk op `Enter`.
+  
+- `Do you want to enable the DHCP server on LAN? (y/n)`:
+
+  Geef `n` in.
+  
+- `Do you want to revert to HTTP as the webConfigurator protocol? (y/n)`:
+
+   Geef `n` in.  
+
+ Hierna worden de instellingen toegepast.
+ 
+
+Ook verbinden we een 2de kabel met een hostmachine (geef deze een IP-adres van `172.18.2.99`.)
+
+![IP Fedora](img/IPFedora.PNG)
+
+
+[Zie IP-adressen schema](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/files/Lokaal%20netwerk/VLSM-red.pdf)
+
+*Onderste poort is WAN, bovenste is LAN.*
 
 ![Voorbeeld](img/1.jpg)
 ![Voorbeeld](img/2.jpg)
