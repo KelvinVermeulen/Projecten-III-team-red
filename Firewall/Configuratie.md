@@ -178,7 +178,7 @@ Disable de DNS resolver.
 
 `Firewall` -> `Aliases` -> `Ports`
 
-![Rules aliassen](img/firewall/allPorts.PNG)
+![Rules aliassen](img/allPorts.PNG)
 
 <!--
 Teveel ports... rond 5-6 ports nodig
