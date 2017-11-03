@@ -17,8 +17,8 @@ ip ssh version 2
 int Se0/0
 ip add 192.168.3.2 255.255.255.0
 no shut
-int Fa1/0
-ip add 172.16.2.113 255.255.0.0
+int Gig0/1
+ip add 172.16.129.13 255.255.0.0
 no shut
 exit
 do wr
