@@ -18,7 +18,7 @@ int Se0/0
 ip add 192.168.4.2 255.255.255.0
 no shut
 int Fa1/0
-ip add 172.18.2.113 255.255.0.0
+ip add 172.18.0.1 255.255.255.0
 no shut
 exit
 do wr
@@ -26,3 +26,6 @@ copy running-config startup-config
 end
 
 ```
+
+
+
