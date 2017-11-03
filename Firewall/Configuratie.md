@@ -14,10 +14,9 @@ Druk hierna op `<Enter>`.
 
 2. We steken een kabel in, in `bge0`, zodat deze de WAN-interface wordt.
 
-
 3. We veranderen het IP-adres (niet default 192.168.1.1/24) door te kiezen voor `2) Set interface(s) IP address`.
 
-## Configuratie WAN-interface
+### Configuratie WAN-interface
 
 We kiezen voor `1 - WAN (em0 - static)`.
 
@@ -52,7 +51,7 @@ We kiezen voor `1 - WAN (em0 - static)`.
   
  Hierna worden de instellingen toegepast.
  
- ## Configuratie LAN-interface
+ ### Configuratie LAN-interface
  
  We kiezen voor `2 - LAN (em1 - static)`.
   
@@ -97,6 +96,28 @@ Ook verbinden we een 2de kabel met een hostmachine (geef deze een IP-adres van `
 ![Voorbeeld](img/2.jpg)
 ![Voorbeeld](img/3.jpg)
 
+
+## Basisconfiguratie pfSense
+
+We overlopen de `Setup Wizard` in `System`.
+
+1. Klik op `Next`.
+2. Klik nogmaals op `Next`.
+3. We vullen `General Information` in:
+
+- Hostname: `pfSense`
+- Domain: `red`
+- Primary DNS Server: `172.18.2.67`
+- Secondary DNS Server: `172.18.2.68`
+
+![Wizard](img/wiz.PNG)
+
+4. Bij `Time Server Information` veranderen we Timezone naar `Europe/Brussels`.
+5. De instellingen bij `Configure WAN Interface` zouden al ingesteld moeten zijn en hier veranderen we dus niets.
+6. Ditto voor `Configure LAN Interface`.
+7. Indien nodig kan je het paswoord wijzigen bij `Set Admin WebGUI Password`: we geven `pfsense` in.
+8. Klik op `Next`, nu kan je de server reloaden met `Reload`.
+
 # Afbeeldingen + verloop
 
 ## Interfaces
@@ -108,11 +129,12 @@ Ook verbinden we een 2de kabel met een hostmachine (geef deze een IP-adres van `
 ![Verloop](img/extra/5.PNG)
 
 ## System / Advanced / Admin Access
-
+<!--
 ![Verloop](img/extra/2.PNG)
+![Verloop](img/extra/2.2.PNG)
+-->
 **Alternate hostname: zonder spaties!**
 ![Verloop](img/extra/2.1.PNG)
-![Verloop](img/extra/2.2.PNG)
 
 ## System / General Setup
 
@@ -120,29 +142,33 @@ Ook verbinden we een 2de kabel met een hostmachine (geef deze een IP-adres van `
 ![Verloop](img/extra/3.1.PNG)
 ![Verloop](img/extra/3.2.PNG)
 
-**Do not use the DNS Forwarder/DNS Resolver**
+**Do not use the DNS Forwarder/DNS Resolver!**
 
 ![Verloop](img/extra/3.3.PNG)
 
 ## System / Routing / Gateways
 
+We passen hier de `Description`aan, dit is optioneel.
+
 ![Verloop](img/extra/4.PNG)
 
 ## Services / DNS Resolver / General Settings
+
+Disable de DNS resolver.
 
 ![Verloop](img/extra/6.PNG)
 ![Verloop](img/extra/6.1.PNG)
 
 
-**Schakel DNS Forwarder bij "Services" ook uit!**
+**Schakel DNS Forwarder bij "Services" ook uit (indien dit vooraf nog niet gebeurde)!**
 
+<!--
 ## Wizard
-
 ![Verloop](img/extra/wiz1.PNG)
 ![Verloop](img/extra/wiz2.PNG)
 ![Verloop](img/extra/wiz3.PNG)
 ![Verloop](img/extra/wiz4.PNG)
-
+-->
 
 ## Aliassen
 
