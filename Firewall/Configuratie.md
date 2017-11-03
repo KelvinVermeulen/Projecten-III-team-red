@@ -174,11 +174,11 @@ Disable de DNS resolver.
 
 `Firewall` -> `Aliases` -> `IP`
 
-![Rules aliassen](img/firewall/aliassen.PNG)
+![Aliassen IP](img/firewall/aliassen.PNG)
 
 `Firewall` -> `Aliases` -> `Ports`
 
-![Rules aliassen](img/allPorts.PNG)
+![Aliassen ports](img/allPorts.PNG)
 
 <!--
 Teveel ports... rond 5-6 ports nodig
@@ -190,6 +190,21 @@ Teveel ports... rond 5-6 ports nodig
 - `High port ranges 49152-65535 and 1024-5000` werden nog niet toegevoegd voor monitoring-server.
 -->
 
+## Rules
 
+`Firewall` -> `Rules`
+
+We voegen enkele poorten toe:
+
+- Source: `LAN net`
+- Destination Port: (zie afbeelding hieronder)
+
+![Rules firewall](img/newPorts.PNG)
+
+## Backup/restore configuratie
+
+`Diagnostics` -> `Backup & Restore`
+
+Download configuration as XML.
 
 
