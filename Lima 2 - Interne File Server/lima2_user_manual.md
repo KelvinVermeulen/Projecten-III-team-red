@@ -17,7 +17,7 @@
 - start hyper-v en ga naar de settings van de aangemaakte vm (eerst vm afsluiten)
 - add nog een harddrive in ide controller 0
 - maak voor deze een virtuele harddisk aan (format: VHDX, type: Dynamic, name: Disk2, location: C:\HyperV\Lima2_WinSer2016\, size: 100Gb, )  
-- stel in, taal: nederlands(belgiê) keyboardlayouy: belgisch (komma)
+- stel in, taal: nederlands(belgiê) keyboardlayout: belgisch (komma)
 - administrator wachtwoord: Admin123
 - log in met Administrator, pw:Admin123 
 - Dvd station uitwerpen en veranderen naar Q
@@ -32,8 +32,8 @@
 	- Y: 20 gb HomeDirs
 	- Z: 20 gb ProfileDirs
 - in dashboard: add roles and features. File server (bestand server) selecteren + bestandserver bronbeheer en installeren
-  ## Install-windowsFeature -Name <>
- - add roles and features, file server resource manager
+  //## Install-windowsFeature -Name <>
+- add roles and features, file server resource manager
 - virtual switch manager, switch 5 external network (ethernet adapter) instellen (op vlan 300?)
 - ip adressen instellen op 172.18.2.3 met subnet automatisch, en default gateway 172.18.2.67
 - workgroup aanpassen zodat je red.local joined met Administrator & Aa12345
@@ -49,7 +49,7 @@
   - Alles aanvinken in de quotum tab, en het waarschuwingsniveau instellen op 75% van de limiethoeveelheid.
 - Stel in dat er voor AdminData dagelijks een schaduwkopie wordt gemaakt van de data.
 - Dit doe je door rightclick op AdminData>shadowcopy, selecteer schijf H en click op "instellingen" en stel een dagelijkse planning in voor 7:00, 12:00 en 18:00. Stel de hoeveelheid op 5000Mb in en stel dit in op schijf C:/
-- 
+- op alle schijven moet je rightclick doen, eigenschappen, en dan onder de "delen"-tab, alle schijven delen via geavanceerd delen, (default name is goed)
 
 ***
 

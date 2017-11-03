@@ -24,7 +24,7 @@ $NetworkSwitch5 = "Switch5"	# Name of the Network Switch
 MD $VMLOC -ErrorAction SilentlyContinue
 $TestSwitch = Get-VMSwitch -Name $NetworkSwitch5 -ErrorAction SilentlyContinue; if ($TestSwitch.Count -EQ 0){New-VMSwitch -Name $NetworkSwitch5 -SwitchType Private}
 # Create Virtual Machines
-New-VM -Name $SRV1 -Path $VMLOC -NewVHDPath $VMLOC\$SRV1\Disk1.vhdx -NewVHDSizeBytes $CLI1VHD -SwitchName $NetworkSwitch5
+New-VM -Name $SRV1 -Path $VMLOC -NewVHDPath $VMLOC\$SRV1\Disk1.vhdx,$VMLOC\$SRV1\Disk2.vhdx -NewVHDSizeBytes $CLI1VHD, $CLI2VHD -SwitchName $NetworkSwitch5
 # Configure Virtual Machines
 Set-VMDvdDrive -VMName $SRV1 -Path $WSISO
 
