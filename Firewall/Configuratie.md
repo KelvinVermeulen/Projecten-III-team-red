@@ -178,14 +178,18 @@ Disable de DNS resolver.
 
 `Firewall` -> `Aliases` -> `Ports`
 
+![Rules aliassen](img/firewall/allPorts.PNG)
+
+<!--
+Teveel ports... rond 5-6 ports nodig
 ![Rules aliassen](img/firewall/ports.PNG)
-
 ![Rules aliassen](img/firewall/portsDC.PNG)
-
 ![Rules aliassen](img/firewall/portsMonitoring.PNG)
-
 **Opmerking:** 
 - `Dynamic (TCP/UDP)` werd nog niet toegevoegd voor DC's.
 - `High port ranges 49152-65535 and 1024-5000` werden nog niet toegevoegd voor monitoring-server.
+-->
+
+
 
 
