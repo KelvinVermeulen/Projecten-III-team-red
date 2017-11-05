@@ -6,7 +6,7 @@
 4. Maak een nieuwe map genaamd "script" aan in de root van de usb stick en kopier de bestanden uit de map ["Automatisatie scripts"](https://github.com/HoGentTIN/p3ops-red/tree/master/Alfa%202%20-%20DC%20%26%20DNS/Automatisatie%20scripts) daarin.
 5. Sluit de usb stick aan op de server waarin DC/DNS geïnstalleerd moet worden. 
 6. Start de computer aan, open boot menu en selecteer usb drive zodat de installatie uit de usb kan starten. De installatie zal nu automatisch starten en uitgevoerd worden.
-7. Nadat de installatie van klaar is, open de usb stick op de server en ga naar de aangemaakt map "script" in stap 4.
+7. Nadat de installatie klaar is, open de usb stick op de server en ga naar de aangemaakt map "script" in stap 4.
 8. Doe rechtermuisklik op "DC-DNS.ps1" en klik op "run with powershell". DC/DNS zal automatisch geïnstalleerd en geconfigureerd worden. De computer zal automatisch opnieuw opstarten nadat de installatie voltooid is.
 9. Nadat de computer herstart is, voer stap 7 opnieuw uit en doe rechtermuislik op "Users-GPO.ps1" en klik op "run with powershell". De gebruikers(groepen) en de GPO zullen nu aangemaakt worden.
 10. Nadat stap uitgevoerd is, is de installatie van de server voltooid.
