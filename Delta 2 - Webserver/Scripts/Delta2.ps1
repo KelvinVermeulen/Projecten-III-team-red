@@ -10,7 +10,7 @@ function main(){
 
     setIpAddress
     
-    #setDomain
+    setDomain
 
     renameServer
 
@@ -155,14 +155,14 @@ function setIpAddress()
 {
 
 <# Als $wmi niets teruggeeft bij het uitvoeren, aanpassen van de switch in Hyper-V #>
-
+<#
 $wmi = Get-WmiObject win32_networkadapterconfiguration -filter "ipenabled = 'true'"
 $wmi.EnableStatic("172.18.2.70", "255.255.255.224")
 $wmi.SetGateways("172.18.2.65", 1)
-$wmi.SetDNSServerSearchOrder("172.18.2.68")
-
-#New-NetIPAddress -InterfaceAlias Ethernet -IPAddress $ipaddress -AddressFamily IPv4 -PrefixLength 24
-#Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses $dnsaddress
+$wmi.SetDNSServerSearchOrder("0.0.0.0")
+#>
+New-NetIPAddress -InterfaceAlias Ethernet -IPAddress "172.18.0.5" -PrefixLength 24 -DefaultGateway "172.18.0.1"
+Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses "172.18.0.1"
 
 #Write-Host "New Ip address and DNS are set. And ready to go ;) " -ForegroundColor Green
 
@@ -181,7 +181,7 @@ function renameServer()
 {
 
 $domain="red.local"
-$password = "vagrant" | ConvertTo-SecureString -asPlainText -Force
+$password = "Aa12345" | ConvertTo-SecureString -asPlainText -Force
 $username = "Administrator" 
 $credential = New-Object System.Management.Automation.PSCredential($username,$password)
     Rename-Computer -NewName "Delta2" -DomainCredential $credential -Restart # rename server
