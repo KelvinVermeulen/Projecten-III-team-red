@@ -12,14 +12,14 @@
 10. Nadat stap uitgevoerd is, is de installatie van de server voltooid.
 
 ## Informatie over server
-Server naam: ns1
-Domein naam: red.local
-
-Server gebruikersnaam: Administrator
-Server wachtwoord: Aa12345
-
-Domein gebruikersnaam: Administrator@red.local
-Domein wachtwoord: Aa12345
+Server naam: ns1 <br>
+Domein naam: red.local<br>
+<br>
+Server gebruikersnaam: Administrator<br>
+Server wachtwoord: Aa12345<br>
+<br>
+Domein gebruikersnaam: Administrator@red.local<br>
+Domein wachtwoord: Aa12345<br>
 
 ## Informatie over de aangemaakte gebruikers en groepen:
 
