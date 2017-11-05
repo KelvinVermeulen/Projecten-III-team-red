@@ -32,3 +32,13 @@ Domein wachtwoord: Aa12345
 | Ontwikkeling     | Laura Smet              | laura.smet@red.local | P@ssword |
 | Verkoop          | Dirk Smet                | dirk.smet@red.local | P@ssword |
 
+## Informatie over de aangemaakte GPO:
+| Naam GPO            | Beschrijving                 | Van toepassing voor                 |
+|------------------|------------------------------|------------------------------|
+| ControlPanelGameLink    | Toegang tot contol panel en game link blokkeren | Iedereen|
+| Netwerkadapter         | Toegang tot netwerkadapter instellingen blokkeren               | Verkoop en administratie|
+| FileServer | Automatisch aanmaken van schijfen per user                 | Iedereen|
+
+
+
+
