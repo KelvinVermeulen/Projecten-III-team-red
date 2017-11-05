@@ -833,9 +833,11 @@ end
 
 ## Voorgaande problemen en wijzigingen configuratie
 
-[Zie verslag troubleshootign](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/configuratie%20routers%20%2B%20VPN/Verslag%20troubleshooting%20niet-lokaal%20netwerk.md)
+[Zie verslag troubleshooting](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/configuratie%20routers%20%2B%20VPN/Verslag%20troubleshooting%20niet-lokaal%20netwerk.md)
 
 - We merken ook op dat `GigabitEthernet 0/1` IP-adres `172.16.129.13` toegekend werd.
+
+- De paswoorden zijn voor de routers zijn `cisco`.
 
 
 ## Testen connectiviteit
@@ -844,4 +846,4 @@ end
 - Er telkens een werkende `ip route` is naar alle niet-direct verbonden netwerken (zie `running-config`).
 
 
-![Communicatie PC2 en PC3](img/ping.PNG)
+![Communicatie PC2 en PC3](../img/ping.PNG)
