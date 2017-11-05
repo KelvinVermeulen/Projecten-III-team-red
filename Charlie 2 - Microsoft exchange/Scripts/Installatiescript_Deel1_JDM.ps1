@@ -1,13 +1,3 @@
-#Check if exchangefiles already exist
-if(Test-Path ExchangeFiles)
-{
-$directoryInfo = Get-ChildItem ExchangeFiles | Measure-Object
-if($directoryInfo.count -eq 0)
-{
-	Remove-Item ExchangeFiles 
-}
-}
-
 
 #Checking pre-requisites
 ECHO "Checking pre-requisites"
@@ -40,56 +30,6 @@ Install-WindowsFeature RSAT-ADDS, RSAT-Clustering, RSAT-Clustering-CmdInterface,
 RSAT-Clustering-PowerShell
 ECHO "done installing RSAT-ADDS"
 ECHO "DONE checking Pre-Requisites"
-
-
-#making exchangefiles folder
-ECHO "Making folder for setupfiles"
-if(!(Test-Path ExchangeFiles))
-{
-new-item ExchangeFiles -itemtype directory 
-}else
-{
-ECHO "Already created"
-}
-ECHO "Place Setupfiles in C:\Users\Administrator\Documents\ExchangeFiles "
-
-Write-Host "Press any key to continue"
-$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-Write-Host
-
-#running setupfiles
-start-sleep -m 5
-.\ExchangeFiles\Exchange2016-x64.exe 
-
-#entering DIR & pressing enter
-start-sleep -m 50000
-$wshShell = new-object -com wscript.shell
-$wshShell.SendKeys("C:\Users\Administrator\Documents\ExchangeFiles")
-start-sleep -m 5
-$wshShell.SendKeys("{Enter}") 
-$wshShell.SendKeys("{Enter}")
-ECHO "Extracting"
-
-######NOT DONE########
-#Checking if extraction is complete
-start-sleep -m 500
-$ProcessActive = Get-Process |  Where {$_.name -Match "Extracting"} | Format-Wide -Column 1
-$CheckNull = $ProcessActive -eq $false
-
-do
-{
-ECHO "test"
-start-sleep -m 50000
-$ProcessActive = Get-Process |  Where {$_.name -Match "Extracting"} 
-$CheckTrue = $ProcessActive -eq $True
-ECHO "Still extracting"
-}
-while($CheckNull -eq $true)
-####################
-
-#Running setup.exe
-.\ExchangeFiles\setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
-
 
 
 
