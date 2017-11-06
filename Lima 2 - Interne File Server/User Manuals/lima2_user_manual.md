@@ -24,7 +24,7 @@
 - stel volgende partities in via Disk Management (schijfbeheer)
 - Systeempartities schijf 1 : 
 	- C: 32 gb System 
-	- D: 33 gb verkoopData
+	- D: 33 gb VerkoopData
 	- E: 35 gb OntwikkelingData
 - Systeempartities schijf 0 : 
 	- F: 20 gb ITData  (Schijf formateren en zo naam toewijzen)
