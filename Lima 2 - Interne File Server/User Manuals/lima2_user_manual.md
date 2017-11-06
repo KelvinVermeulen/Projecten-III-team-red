@@ -32,12 +32,12 @@
 	- H: 20 gb AdminData
 	- Y: 20 gb HomeDirs
 	- Z: 20 gb ProfileDirs
-- in dashboard: add roles and features. File server (bestand server) selecteren + bestandserver bronbeheer en installeren
+- in dashboard: add roles and features. File server (bestand server) selecteren
   //## Install-windowsFeature -Name <>
 - add roles and features, file server resource manager
 - virtual switch manager, switch 5 external network (ethernet adapter) instellen (op vlan 300?)
 - ip adressen instellen op 172.18.2.3 met subnet automatisch, en default gateway 172.18.2.67
-- workgroup aanpassen zodat je red.local joined met Administrator & Aa12345
+- Control panel, system settings: domain aanpassen zodat je red.local joined met Administrator & Aa12345
 - bestand- en opslagservices shares selecteren, start wizard nieuwe share, smb snel, share locatie D:, Sharenaam "VerkoopData", extern pad: "\\Lima2\VerkoopData" (wordt automatisch gedaan)
 - caching van share toestaan, gegevenstoegang versleutelen 
 - machtigingen aanpassen (bv, nieuwe share VerkoopData met IT administratie met full control en Verkoop met lees- en schrijfrechten
