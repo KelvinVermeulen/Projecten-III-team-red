@@ -42,7 +42,8 @@
 - caching van share toestaan, gegevenstoegang versleutelen 
 - machtigingen aanpassen (bv, nieuwe share VerkoopData met IT administratie met full control en Verkoop met lees- en schrijfrechten
 - in VerkoopData een map "ShareVerkoop" aanmaken
-- rightclick op de folder, en in de tab "Delen" click je op delen (via geavanceerd moet je it administratie op full control zetten)
+- rightclick op de folder, en in de tab "Delen" click je op delen (via geavanceerd moet je it administratie op full control zetten) // ook andere permisies nog??
+- op shareverkoop bij de permisies (share, niet geavanceerde share), read/write instellen voor Verkoop.
 - op alle schijven moet je rightclick doen, eigenschappen, en dan onder de "delen"-tab, alle schijven delen via geavanceerd delen, (default name is goed)
 - om te testen moet je inloggen met Lien.Smet en Aa12345
 - rechtsclicken op de folder>eigenschappen>quotum, quotumbeheer inschakelen en vervolgens de juiste waarden ingeven.
