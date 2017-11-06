@@ -96,7 +96,7 @@ Default Gateway: **172.18.2.67**
 
 ### Configureren PRTG + eventuele installaties op systeem
 
-1. In PowerShell run volgend commando: `Install-WindowsFeature -Name web-asp-net45`.
+1. In PowerShell run volgend commando: Install-WindowsFeature -Name web-asp-net45.
 
 2. Schakel aan op het netwerk
 

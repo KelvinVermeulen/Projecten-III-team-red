@@ -36,7 +36,7 @@
 	- **Netmask:** 255.255.0.0
 	- **Default Gateway:** 172.18.2.65
 	- **Preffered DNS:** 172.18.2.67
-	- **Alternate DNS:** 172.18.2.65
+	- **Alternate DNS:** 172.18.2.68
 6. Indien het ip adres klopt is het netwerk juist geconfigureerd
 
 ## Server naam en domein naam

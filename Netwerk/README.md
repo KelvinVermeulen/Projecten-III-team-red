@@ -9,4 +9,6 @@ In de PDF VLSM-red kan je terugvinden hoe alles is verdeeld.
 
 In de map `configuraties` kan je de txt-bestanden terugvinden voor alle switches en routers die we zullen configureren + extra uitleg waarom die op die manier geconfigureerd is. 
 
+#### Afbeelding
+
 ![afbeelding Packettracer](img/PT-local.png)

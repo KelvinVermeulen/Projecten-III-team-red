@@ -6,9 +6,9 @@
 
 - quotas instellen & shadow copy aanmaken (Cedric)
 
-- shared map ShareVerkoop (Bram)
+- shared map ShareVerkoop (Cedric)
 
-- rechten instellen volgens tabel 3.2 (Bram)
+- rechten instellen volgens tabel 3.2 (Cedric)
 
 - testplan (geschatte tijd: 30min) (Cedric)
 
@@ -16,3 +16,4 @@
 
 - User manual (en evtl. cheatsheet) (geschatte tijd: 20uur gedeeld met lima2) instructies (Bram & Cedric)
 
+- Automatisatie van opzetten VM via unattend.xml (Bram)
