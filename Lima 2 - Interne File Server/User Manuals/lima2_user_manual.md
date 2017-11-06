@@ -45,7 +45,7 @@
 - rightclick op de folder, en in de tab "Delen" click je op delen (via geavanceerd moet je it administratie op full control zetten)
 - op alle schijven moet je rightclick doen, eigenschappen, en dan onder de "delen"-tab, alle schijven delen via geavanceerd delen, (default name is goed)
 - om te testen moet je inloggen met Lien.Smet en Aa12345
-- - VerkoopData, DirData en AdminData op maximum 100MB per gebruiker instellen. 
+  - VerkoopData, DirData en AdminData op maximum 100MB per gebruiker instellen. 
   -  OntwikkelingData en ITData maximum 200Mb per gebruiker instellen.
   - Hiervoor moet je rechtsclicken op de folder>eigenschappen>quotum, quotumbeheer inschakelen en vervolgens de juiste waarden ingeven.
   - Alles aanvinken in de quotum tab, en het waarschuwingsniveau instellen op 75% van de limiethoeveelheid.
