@@ -5,12 +5,14 @@
 
 # Variables
 $SRV1 = "Lima2_WinSer2016"                #WinSer2016 box
-$VHD2 = 'D:\HyperV\Schijf2.vhdx'
+# $VHD2 = 'D:\HyperV\Schijf2.vhdx' tijdelijke comment voor week7 deployment
+$VHD2 = 'C:\HyperV\Schijf2.vhdx'
 $SRAM = 1GB				                # RAM assigned to Server Operating System
-$WSISO = "D:\school\project\Server2016-1Schijf.iso"  #WinSer2016 Iso
+$WSISO = "C:\Server2016-1Schijf.iso"  #WinSer2016 Iso
 $SRV1VHD = 100GB                 #Hard disk 1
 $SRV2VHD = 100GB               #Hard disk 2
-$VMLOC = "D:\HyperV"
+# $VMLOC = "D:\HyperV" tijdelijke comment voor week7 deployment
+$VMLOC = "C:\HyperV"
 $NetworkSwitch5 = "Switch5"	# Name of the Network Switch
 
 # Create VM Folder and Network Switch
