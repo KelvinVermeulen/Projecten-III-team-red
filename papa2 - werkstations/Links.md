@@ -32,6 +32,8 @@
 
 [SCCM automatisch installeren](https://douwevanderuit.wordpress.com/2014/02/10/howto-install-a-primary-site-server-and-all-prereqs-with-powershell/)
 
+[SQL server hotfix](https://www.alexandreviot.net/2015/05/06/sccm-2012-installation-with-sql-server-2014/)
+
 
 ### Research Werkstations
 
