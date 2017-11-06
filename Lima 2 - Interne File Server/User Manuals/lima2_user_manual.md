@@ -21,6 +21,7 @@
 - administrator wachtwoord: Admin123
 - log in met Administrator, pw:Admin123 
 - Dvd station uitwerpen en veranderen naar Q
+- stel volgende partities in via Disk Management (schijfbeheer)
 - Systeempartities schijf 1 : 
 	- C: 32 gb System 
 	- D: 33 gb verkoopData
