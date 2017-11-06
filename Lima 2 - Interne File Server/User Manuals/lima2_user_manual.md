@@ -26,7 +26,7 @@
 	- C: 32 gb System 
 	- D: 33 gb verkoopData
 	- E: 35 gb OntwikkelingData
--Systeempartities schijf 0 : 
+- Systeempartities schijf 0 : 
 	- F: 20 gb ITData  (Schijf formateren en zo naam toewijzen)
 	- G: 20 gb DirData 
 	- H: 20 gb AdminData
