@@ -59,6 +59,16 @@ Voor zeker te zijn van replicatie kun je best de volgende commando's eens uitvoe
 Hierna kun je controleren of alles in orde is door rsp.msc in te voeren in rsop.msc in cmd en door de boom van Computer Configuration te openen, Administrative Templates en Extra Registry Settings.
 Hieronder zul je normaal alle aangemaakte policies moeten vinden.
 
+## Testen
+
+Als je wilt controleren of alles gelukt is. Kun je kijken op de server waar je NIET deze configuratie hebt uitgevoerd. Door het replicatie proces zou op die server dan ook alle mappen en GPO's moeten aangemaakt geweest zijn.
+
+Dus, ga naar Server Manager, Tools, Active Directory Users and Computers. Duid daar onder View Advanced Features aan en je zou er de map System en daaronder System Management moeten zien. Deze worden niet aangemaakt door Windows Server, maar zijn wel nodig voor SCCM.
+
+ADSI Edit kan helaas niet echt getest worden.
+
+De GPO's kun je wel terug vinden door opnieuw Windows Firewall with advanced security onder Windows Settings, Security. Kijk daar bij de Inboud & Outbound rules.
+
 ## Web Server (IIS) (SCCM)
 
 Voeg vervolgens de volgende Roles, Roles Services en Features toe:
