@@ -1,54 +1,34 @@
 # Testplan
 
-In deze iteratie gaan we een MSCS lokaal installeren en configureren om in een eerste poging om alles in orde te brengen. Zodanig dat we daarna alles kunnen automatiseren.
+Dit testplan dient voor het controlleren of het gelukt is om een client uit te rollen met MSCS.
 
 ## Requirements
 
 - Doel: Na het lezen van dit testplan moeten de testers instaat zijn om in 5 minuten te kunnen uitleggen hoe je de Papa2-server lokaal moet installeren
-- Geschatte tijd: 02/09 tot 09/10
+- Geschatte tijd: 10/11 tot 13/11
 
 ## Testplan
 
 |Objectief|Korte beschrijving|Uitgevoerd|
 |---------|------------------|-------|
-|Documentatie|De uitleg met hoe we te werk zijn gegaan om MSCS lokaal te installeren.|X|
+|Documentatie|Uitleg die geschrijft hoe je controleert of de host geïnstalleerd is.|X|
 |Test rapport|Er is een rapport geschreven over het testplan|X|
 |Resources|De nodige ondersteunende filmpjes en uitleg zoeken op YouTube en Google, om toch al eens (half) te zien hoe het moet.|X|
 
 ## Documentation
 
-Ga als eerste naar ADSI Edit onder Server Manager en Tools. Controleer of ADSI Edit een verbinding heeft, er zou een object met de naam Default naming context moeten staan. Controleer ook in dit scherm of System Management is aangemaakt onder CN=System.
-
-![foto](ImagesTestplan/HandmatigInstalleren/adsiedit05.png)
-
-Ga vervolgens naar Active Directory Users and Computers (onder Server Manager, Tools) en controleer of de Advanced Features aanstaan (onder View). Controleer vervolgens of de primary site server computer account rechten heeft tot het System Management object onder System, door te rechterklikken op System Mangement, Properties en onder Security te kijken of Administrators, Enterprise Admins en Domain Admins alle rechten hebben op deze folder.
-
-Open hierna Server manager en Tools nog eens om te controleren of de nodige roles, role services en features zijn geïnstalleerd.
-
-![foto](ImagesTestplan/HandmatigInstalleren/web01.png)
-![foto](ImagesTestplan/HandmatigInstalleren/web02.png)
-![foto](ImagesTestplan/HandmatigInstalleren/web03.png)
-![foto](ImagesTestplan/HandmatigInstalleren/wsus01.png)
-![foto](ImagesTestplan/HandmatigInstalleren/wsus02.png)
-
-Controleer ook of de Windows ADK geïnstalleerd is door op de Windows-toets te drukken en naar Apps te gaan. Scroll tot het einde en onder Windows Kits.
-
-Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Policy manage console. Controleer of er hier 2 GPO's (Client Push Policy Settings en SQL ports for SCCM) zijn aangemaakt. Rechterklik vervolgens op deze GPO's en kijk vervolgens onder Windows Settings, Security Settings, Windows Firewall with Advanced Settings bij de Inbound Rules en Outbond Rules of de uitzondering voor File and Printer Sharing services en poorten 1433 en 4022 zijn toegevoegd.
-
-![foto](ImagesTestplan/HandmatigInstalleren/inbound.PNG)
-![foto](ImagesTestplan/HandmatigInstalleren/outbound.PNG)
-
-Controleer vervolgens of er een installatie is uitgevoerd van MS SQL server 2014 door op de Windows-toets te duwen en SQL 2014 te typen. Open deze niet!
-
-![foto](ImagesTestplan/HandmatigInstalleren/oo09.png)
-
-Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het programma te openen.
-
-Controleer ook onder de C:\-schijf naar alle logs of er geen fouten gegooid zijn.
+1. Open VirtualBox en controleer of er een virtuele machine is bijgekomen.
+2. Start deze vervolgens op.
+3. Nadat deze opgestart is, druk op het Windows-logo en voer in: "Programma's installeren of verwijderen"
+4. Controleer vervolgens in deze lijst of de volgende programma's geïnstalleerd zijn:
+    1. Office (2013 of 2016)
+    2. Adobe Acrobat Reader
+    3. Java (JRE of JDK)
+    4. Adobe Flash
 
 ## Test report
 
-Client Push Policy in-en outbound rules toevoegen.
+*to do
 
 ## Resources
 
