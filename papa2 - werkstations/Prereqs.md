@@ -33,7 +33,10 @@ Rechterklik in dit scherm op Red.local onder Domains en klik daarna op Create a 
 Noem de nieuwe GPO bv.: Client Push Policy Settings (Source Starter GPO mag je op (none) laten staan).
 Rechterklik vervolgens op deze nieuwe policy en klik op Edit. Expand computer configuration, Windows settings, Security settings, Windows Firewall with advanced security. Rechterklik op Inbound rules en klik op New Rule.
 Selecteer onder Predefined op File and Printer Sharing, Next, controleer of alles aangevinkt is en selecteer anders alles en durk op Next, Op het volgende scherm ook alleen maar Next (niets aanpassen), Allow the connection en Finish.
+
 Doe hetzelfde nog eens voor Outbond Rules, maar met hetzelfde proces.
+
+Alsook voor WMI, maar alleen Inbound.
 
 ## Open SQL Ports (AD/DC)
 Ga opnieuw naar Group Policy Management console onder Tools bij Server Manager. 
