@@ -70,7 +70,7 @@ Dus, ga naar Server Manager, Tools, Active Directory Users and Computers. Duid d
 
 ADSI Edit kan helaas niet echt getest worden.
 
-De GPO's kun je wel terug vinden door opnieuw Windows Firewall with advanced security onder Windows Settings, Security. Kijk daar bij de Inboud & Outbound rules.
+De GPO's kun je bekijken door in cmd "rsop.msc" in te voeren. Administrative Templates te klikken, daarna Extra Registry Settings. Hieronder zul je alle aangemaakte GPO's vinden.
 
 ## Web Server (IIS) (SCCM)
 
