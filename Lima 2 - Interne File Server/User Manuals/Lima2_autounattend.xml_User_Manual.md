@@ -2,9 +2,9 @@
 
 ### Benodigdheden
 
-- Windows ADK [https://go.microsoft.com/fwlink/p/?LinkId=393005]
+- [Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=393005)
 - Windows System Image Manager (Bij ADK installatie "Deployment tools" en "Windows PE" selecteren)
-- Programma om ISO files te maken (bv imgburn)[http://www.imgburn.com] 
+- Programma om ISO files te maken bv. [imgburn](http://www.imgburn.com).
 - ISO file van windows server
 
 ### Voorbereidend werk
