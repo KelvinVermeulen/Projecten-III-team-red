@@ -96,9 +96,9 @@ Voeg vervolgens de volgende Roles, Roles Services en Features toe:
     - Windows Authentication
   - Background Intelligent Transfer Service (BITS)
 
-## Windows ADK (SCCM)
+## Windows ADK 8.1 (SCCM)
 
-Installeer ook de Windows 10 ADK.
+Installeer ook de Windows 8.1 ADK.
 Selecteer tijdens de installatie zeker:
   
   - Deployment Tools
@@ -117,10 +117,19 @@ Het pad waar je updates moet opslaan moet je verwijzen naar onze server.
 De databank waarnaar verwezen moet worden zal ook de databank van Papa2 worden.
 Als de installatie bij 'check connection' geen string invult, vul dan zelf localhost of (local) in.
 
-## MS SQL 2014 hotfix
+## MS SQL 2014 hotfix (SCCM)
 
 Download de volgende hotfixes als je wilt werken met MS SQL 2014 als databank voor SCCM en plak deze in de installatiefolder van de image waarin de setup staat van SCCM (\SMSSETUP\BIN\X64\Setup.exe).
 
 [ConfigMgr12R2SP1](http://hotfixv4.microsoft.com/ConfigMgrV5/sp1/CM12_SP1_QFE_KB3020755_X64_ENU_OOB/05.00.7804.1115/free/483084_ENU_x64_zip.exe)
 
 [ConfigMgr12R2](http://hotfixv4.microsoft.com/ConfigMgrV5/nosp/ConfigMgr12_R2_QFE_KB3020755_X64_ENU_OOB/05.00.7958.1113/free/480671_ENU_x64_zip.exe)
+
+## System Center 2012 R2 SP1 (SCCM)
+
+Download de prerequisites van en mount daarna een ISO van *System Center 2012 SP2* en voer de setup.exe uit.
+Zorg dat in het eerste scherm 'upgrade' aangeduid staat en klik daarna op next tot de installatie begint en druk tenslotte op finish.
+
+## Windows ADK 10 (SCCM)
+
+Hierna kun je eventueel nog ADK 10 naast 8.1 installeren of deze compleet vervangen. Maar, normaal moet ADK 8.1 ook instaat zijn om de Client op W10's en 2016's te pushen.
