@@ -2,6 +2,9 @@ Configuratie voor Router0:
 
 ```
 enable
+erase startup-config
+delete vlan.dat
+reboot
 configure terminal
 hostname Router0
 line console 0
@@ -27,8 +30,13 @@ ip route 192.168.1.0 255.255.255.0 192.168.3.1
 ip route 192.168.0.0 255.255.255.0 192.168.3.1
 ip route 192.168.4.0 255.255.255.0 192.168.3.1
 ip route 172.18.0.0 255.255.255.0 192.168.3.1
+ip route 172.
 ip route 0.0.0.0 0.0.0.0 192.168.3.1 
 end
 copy running-config startup-config
 
 ```
+
+enable
+write erase
+reload

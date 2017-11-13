@@ -1,0 +1,5 @@
+dns server toevoegen (ipv4)
+193.190.173.1
+193.190.173.2
+
+ip route 172.22.19.81

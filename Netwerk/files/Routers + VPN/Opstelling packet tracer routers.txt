@@ -11,19 +11,18 @@ Router0 en Router1 voorzien van 1 HWIC-2T ports en 1 HWIC-4ESW ports in physical
 
 Cloud verbinden met Router4 via DTE verbinding -> Se0 (cloud) naar Se0/0/1 (router4)
 
-Router4 verbinden met Router2 en Router3 via DTE verbinding 
-										 -> Se0/0/1 (Router4) naar Se0/1/0 (Router2)
-										 -> Se0/1/1 (Router4) naar Se0/1/1 (Router3)
 
-Router2 vebinden met Router3 en Router0 via DTE verbinding
-										-> Se0/0/1 (Router2) naar Se0/0/1 (Router3)
-										-> Se0/1/1 (Router2) naar Se0/1/1 (Router0)
-										
-Router3 verbinden met Router1 via DTE verbinding
-										-> Se0/1/0 (Router3) naar Se0/1/0 (Router1)
+Router0 
+-> Serial 0/1/0 naar Serial0/2/0 router2
+Router2
+-> Serial 0/1/0 naar Serial 0/1/0 router4
+Router4
+-> Serial 0/1/0 naar Serial 0/1/0 router 2
+-> Serial 0/1/1 naar Serial 0/1/0 router 3
+Router3
+-> Serial 0/1/1 naar Serial 0/1/1 router 2
+-> Serial 0/2/0 naar Serial 0/1/0 router 1
 
-Router0 verbinden met Router1 via Copper Cross-Over cable	(VPN verbinding)
-										-> Fa0/0/0 (Router0) naar Fa0/0/0 (Router1)
 										
 in totaal 6 DTE verbindingen + 1 Cross-over (VPN) verbinding
 
