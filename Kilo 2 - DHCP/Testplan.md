@@ -4,7 +4,7 @@
 - IP-adres: 172.18.0.5
 - Subnetmask: 255.255.255.0
 - Default-Gateway: 172.18.0.1
-- DNS: 172.18.0.2 en 172.18.0.3
+- DNS: 172.18.0.2 en 172.18.0.3<br>
 !!!!
 1. Sluit de DHCP server aan de switch, start het en log in met de volgende wachtwoord: Aa12345. 
 2. Controleer of de ip adres van de server goed geconfigureerd is. Open hiervoor CMD, type ipconfig en druk op enter. Indien de ip-adres als volgt geconfigureerd is, is het goed:
