@@ -1,91 +1,157 @@
+<!--*************************************************
+Windows Server 2012/R2 Answer File Generator
+Created using Windows AFG found at:
+http://windowsafg.no-ip.org
+
+Installation Notes
+Location: Gent,Belgium
+Notes: Enter your comments here...
+**************************************************-->
+
 <?xml version="1.0" encoding="utf-8"?>
-<unattend xmlns="urn:schemas-microsoft-com:unattend">
+  <unattend xmlns="urn:schemas-microsoft-com:unattend">
     <settings pass="windowsPE">
-        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <SetupUILanguage>
-                <UILanguage>en-US</UILanguage>
-            </SetupUILanguage>
-            <InputLocale>nl-be</InputLocale>
-            <UILanguage>en-US</UILanguage>
-            <UserLocale>nl-be</UserLocale>
-            <SystemLocale>en-US</SystemLocale>
-        </component>
-        <component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <DiskConfiguration>
-                <Disk wcm:action="add">
-                    <CreatePartitions>
-                        <CreatePartition wcm:action="add">
-                            <Order>1</Order>
-                            <Size>100</Size>
-                            <Type>Primary</Type>
-                        </CreatePartition>
-                    </CreatePartitions>
-                    <ModifyPartitions>
-                        <ModifyPartition wcm:action="add">
-                            <Active>true</Active>
-                            <Extend>false</Extend>
-                            <Format>NTFS</Format>
-                            <Label>System</Label>
-                            <Letter>C</Letter>
-                            <Order>1</Order>
-                            <PartitionID>1</PartitionID>
-                        </ModifyPartition>
-                    </ModifyPartitions>
-                    <DiskID>1</DiskID>
-                    <WillWipeDisk>true</WillWipeDisk>
-                </Disk>
-            </DiskConfiguration>
-            <ImageInstall>
-                <OSImage>
-                    <InstallFrom>
-                        <Path></Path>
-                        <MetaData wcm:action="add">
-                            <Key>/IMAGE/NAME</Key>
-                            <Value>Windows Server 2012 R2 SERVERSTANDARD</Value>
-                        </MetaData>
-                    </InstallFrom>
-                    <InstallToAvailablePartition>false</InstallToAvailablePartition>
-                    <WillShowUI>Always</WillShowUI>
-                </OSImage>
-            </ImageInstall>
-            <UserData>
-                <ProductKey>
-                    <WillShowUI>Always</WillShowUI>
-                </ProductKey>
-                <AcceptEula>true</AcceptEula>
-                <FullName>Papa2</FullName>
-                <Organization>Team Red</Organization>
-            </UserData>
-        </component>
+      <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <SetupUILanguage>
+          <UILanguage>en-US</UILanguage>
+        </SetupUILanguage>
+        <InputLocale>0813:00000813</InputLocale>
+        <SystemLocale>en-US</SystemLocale>
+        <UILanguage>en-US</UILanguage>
+        <UILanguageFallback>en-US</UILanguageFallback>
+        <UserLocale>en-GB</UserLocale>
+      </component>
+      <component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <DiskConfiguration>
+          <Disk wcm:action="add">
+            <CreatePartitions>
+              <CreatePartition wcm:action="add">
+                <Order>1</Order>
+                <Type>Primary</Type>
+                <Size>100</Size>
+              </CreatePartition>
+              <CreatePartition wcm:action="add">
+                <Extend>true</Extend>
+                <Order>2</Order>
+                <Type>Primary</Type>
+              </CreatePartition>
+            </CreatePartitions>
+            <ModifyPartitions>
+              <ModifyPartition wcm:action="add">
+                <Active>true</Active>
+                <Format>NTFS</Format>
+                <Label>System Reserved</Label>
+                <Order>1</Order>
+                <PartitionID>1</PartitionID>
+                <TypeID>0x27</TypeID>
+              </ModifyPartition>
+              <ModifyPartition wcm:action="add">
+                <Active>true</Active>
+                <Format>NTFS</Format>
+                <Label>OS</Label>
+                <Letter>C</Letter>
+                <Order>2</Order>
+                <PartitionID>2</PartitionID>
+              </ModifyPartition>
+            </ModifyPartitions>
+            <DiskID>0</DiskID>
+            <WillWipeDisk>true</WillWipeDisk>
+          </Disk>
+        </DiskConfiguration>
+        <ImageInstall>
+          <OSImage>
+            <InstallTo>
+              <DiskID>0</DiskID>
+              <PartitionID>2</PartitionID>
+            </InstallTo>
+            <InstallToAvailablePartition>false</InstallToAvailablePartition>
+          </OSImage>
+        </ImageInstall>
+
+        <UserData>
+          <AcceptEula>true</AcceptEula>
+          <FullName>Administrator</FullName>
+          <Organization>Red.local</Organization>
+        </UserData>
+        <EnableFirewall>false</EnableFirewall>
+      </component>
+    </settings>
+    <settings pass="offlineServicing">
+      <component name="Microsoft-Windows-LUA-Settings" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <EnableLUA>false</EnableLUA>
+      </component>
+    </settings>
+    <settings pass="generalize">
+      <component name="Microsoft-Windows-Security-SPP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <SkipRearm>1</SkipRearm>
+      </component>
     </settings>
     <settings pass="specialize">
-        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <ComputerName>Papa2</ComputerName>
-            <TimeZone>Romance Standard Time</TimeZone>
-            <RegisteredOrganization>-</RegisteredOrganization>
-        </component>
+      <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <InputLocale>0813:00000813</InputLocale>
+        <SystemLocale>en-GB</SystemLocale>
+        <UILanguage>en-GB</UILanguage>
+        <UILanguageFallback>en-GB</UILanguageFallback>
+        <UserLocale>en-GB</UserLocale>
+      </component>
+      <component name="Microsoft-Windows-Security-SPP-UX" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <SkipAutoActivation>true</SkipAutoActivation>
+      </component>
+      <component name="Microsoft-Windows-SQMApi" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <CEIPEnabled>0</CEIPEnabled>
+      </component>
+      <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ComputerName>Papa2</ComputerName>
+        <ProductKey>W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9</ProductKey>
+      </component>
     </settings>
     <settings pass="oobeSystem">
-        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <AutoLogon>
-                <Password>
-                    <Value>QQBhADEAMgAzADQANQAhAFAAYQBzAHMAdwBvAHIAZAA=</Value>
-                    <PlainText>false</PlainText>
-                </Password>
-                <Enabled>true</Enabled>
-                <LogonCount>2</LogonCount>
-                <Username>Administrator</Username>
-                <Domain>Red.local</Domain>
-            </AutoLogon>
-            <UserAccounts>
-                <AdministratorPassword>
-                    <Value>QQBhADEAMgAzADQANQAhAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
-                    <PlainText>false</PlainText>
-                </AdministratorPassword>
-            </UserAccounts>
-            <RegisteredOwner>-</RegisteredOwner>
-            <RegisteredOrganization>-</RegisteredOrganization>
-        </component>
+      <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <AutoLogon>
+          <Password>
+            <Value>Aa12345</Value>
+            <PlainText>true</PlainText>
+          </Password>
+          <Enabled>true</Enabled>
+          <Username>Administrator</Username>
+        </AutoLogon>
+        <OOBE>
+          <HideEULAPage>true</HideEULAPage>
+          <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+          <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+          <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+          <NetworkLocation>Work</NetworkLocation>
+          <ProtectYourPC>1</ProtectYourPC>
+          <SkipUserOOBE>true</SkipUserOOBE>
+          <SkipMachineOOBE>true</SkipMachineOOBE>
+        </OOBE>
+        <UserAccounts>
+          <LocalAccounts>
+            <LocalAccount wcm:action="add">
+              <Password>
+                <Value>Aa12345</Value>
+                <PlainText>true</PlainText>
+              </Password>
+              <Description>Administrator</Description>
+              <DisplayName>Administrator</DisplayName>
+              <Group>Administrators</Group>
+              <Name>Administrator</Name>
+            </LocalAccount>
+          </LocalAccounts>
+        </UserAccounts>
+        <RegisteredOrganization>Red.local</RegisteredOrganization>
+        <RegisteredOwner>Administrator</RegisteredOwner>
+        <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
+        <TimeZone>Romance Standard Time</TimeZone>
+        <VisualEffects>
+          <SystemDefaultBackgroundColor>2</SystemDefaultBackgroundColor>
+        </VisualEffects>
+      </component>
+      <component name="Microsoft-Windows-ehome-reg-inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="NonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <RestartEnabled>true</RestartEnabled>
+      </component>
+      <component name="Microsoft-Windows-ehome-reg-inf" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="NonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <RestartEnabled>true</RestartEnabled>
+      </component>
     </settings>
-    <cpi:offlineImage cpi:source="wim://laptopstephan/users/stephan/desktop/install.wim#Windows Server 2012 R2 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
-</unattend>
+  </unattend>
