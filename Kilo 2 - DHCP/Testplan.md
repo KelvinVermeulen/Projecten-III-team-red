@@ -1,35 +1,19 @@
 # Testplan
-## VM (In de VM is er een andere ip adres gerbuikt dan de ip adres dat werd gegeven door de team "netwerken")
-1. Gebruik de computer waarin de VM geïnstalleerd staat en start de DHCP server
-2. Log in met de volgende wachtwoord: Aa12345
-3. Ga naar de instellingen van de dhcp server op virtualbox. Klik op netwerken en controleer of de netwerk instellingen van adapter 1 op "intern netwerk" staat. Indien dat niet het geval is, zet dit op "intern netwerk"
-4. Open CMD, type ipconfig en druk enter. Controleer of de netwerkinstellingen dezelfde zijn als hieronder:
-- IP-adres: 192.168.1.11
-- Subnetmask: 255.255.255.0
-- Default-Gateway: 192.168.1.10
-- DNS: 192.168.1.10
-4. Maak een nieuwe VM aan en installeer Windows 10 daarop. [Klik hier om het stappenplan voor de installatie van een VM te volgen.](https://www.extremetech.com/computing/198427-how-to-install-windows-10-in-a-virtual-machine). Voordat je begint met de installatie van windows 10, verander de netwerk instellingen van de VM (Windows 10) van adapter 1 naar "intern netwerk". In [dit](https://www.youtube.com/watch?v=nsbxw_jx1wQ) video wordt er uitgelegd hoe je dat kan doen.
-5. Nadat de installatie voltooid is, open CMD, type ipconfig in en kijk of er automatisch een IP-adres is toegekend.
-6. Indien er een ip-adres binnen het range 192.168.1.50 - 192.168.1.100, een subnetmask van 255.255.255.0, een default-gateway van 192.168.1.10 en een dns van 192.168.1.10 werd toegekend, is de server goed geconfigureerd.
-
 ## Fysiek
-!!!! Let op, momenteel in de switch nog niet geconfigureerd door de netwerk team. Hierdoor is de ip-adres instellingen verschillend dan de ip-adres hieronder. Indien de ip adres momenteel als volgt geconfigureerd is, klopt stap 3 en kan je verder testen:
-- IP-adres: 172.18.2.2
-- Subnetmask: 255.255.255.224
-- Default-Gateway: 172.18.2.67
-- DNS: 172.18.2.67 en 172.18.2.68
+!!!! Let op, de ip-adres kan elk moment gewijzigd worden. Momenteel is er een willekeurige ip-adres instellingen gekozen.:
+- IP-adres: 172.18.0.5
+- Subnetmask: 255.255.255.0
+- Default-Gateway: 172.18.0.1
+- DNS: 172.18.0.2 en 172.18.0.3<br>
 !!!!
-1. Start de dhcp server dat aangesloten is aan de netwerk dat geconfigureerd is door team "Netwerken" en log in met de volgende wachtwoord: Aa12345. Indien de team "Netwerken" nog geen switch geconfigureerd heeft, neem een switch uit de kast sluit de server daaraan.
-2. Neem een computer uit de kast, sluit de ethernetkabel aan in één van de poorten van de switch en installeer windows 10 daarop. [Klik hier om het stappenplan voor de installatie van Windows 10 via een USB stick op een computer te volgen.](https://www.youtube.com/watch?v=SKbR6XT7fcA)
-3. Controleer of de ip adres van de server goed geconfigureerd is. Open hiervoor CMD, type ipconfig en druk op enter. Indien de ip-adres als volgt geconfigureerd is, is het goed:
-- IP-adres: 172.18.2.2
-- Subnetmask: 255.255.255.224
-- Default-Gateway: 172.18.2.1
-- DNS: 172.18.2.67 en 172.18.2.68
-3. Nadat de installatie voltooid is, open CMD, type ipconfig en kijk of er automatisch een IP-adres toegekend is.
-4. Haal de ethernetkabel uit de switch en sluit het aan op een andere poort.
-5. Type de ipconfig /release in CMD en druk op enter, type daarna ipconfig /renew en druk opnieuw op enter.
-6. Voer stap 3 opnieuw uit.
-5. Herhaal stap 4, 5 en 6 tot je alle poorten hebt doorlopen. Indien er voor elk poort een ip-adres binnen het range 172.18.0.50 - 172.18.0.100, een subnetmask van 255.255.254.0, een default-gateway van 172.18.0.1 en een dns van 172.18.2.67 en 172.18.2.68 werd toegekend, is de server goed geconfigureerd.
+1. Sluit de DHCP server aan de switch, start het en log in met de volgende wachtwoord: Aa12345. 
+2. Controleer of de ip adres van de server goed geconfigureerd is. Open hiervoor CMD, type ipconfig en druk op enter. Indien de ip-adres als volgt geconfigureerd is, is het goed:
+- IP-adres: 172.18.0.5
+- Subnetmask: 255.255.255.0
+- Default-Gateway: 172.18.0.1
+- DNS: 172.18.0.2 en 172.18.0.3
+3. Sluit je eigen computer ook aan de switch.
+4. Open CMD op je eigen computer, type `ipconfig /release` en druk op enter.
+6. Wacht een beetje en type daarna in CMD `ipconfig` en druk op enter.
+5. Indien je een ip-adres binnen het range 172.18.0.50-172.18.0.100 met subnetmask 255.255.255.0 met Default-Gateway: 172.18.0.1 en met DNS 172.18.0.2 en/of 172.18.0.3 hebt gekregen klopt alles en is de DHCP Sevrer goed geconfigureerd.
 
-(Let op indien de switch door de team "netwerken" al geconfigureerd is, zullen enkel de poorten f01 tot f05 werken en moet stap 4 enkel van poort 1 tot 5 uitgevoerd worden!)

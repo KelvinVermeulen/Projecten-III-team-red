@@ -1,0 +1,2 @@
+- Zijn de services geïntegreerd met elkaar?
+- Is alles geautomatiseerd?
