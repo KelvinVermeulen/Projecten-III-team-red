@@ -25,22 +25,22 @@ Ga vervolgens naar Active Directory Users and Computers (onder Server Manager, T
 
 Open hierna Server manager en Tools nog eens om te controleren of de nodige roles, role services en features zijn geïnstalleerd.
 
-![foto](ImagesTestplan/HandmatigInstalleren/web01.png)
-![foto](ImagesTestplan/HandmatigInstalleren/web02.png)
-![foto](ImagesTestplan/HandmatigInstalleren/web03.png)
-![foto](ImagesTestplan/HandmatigInstalleren/wsus01.png)
-![foto](ImagesTestplan/HandmatigInstalleren/wsus02.png)
+![foto](/ImagesTestplan/HandmatigInstalleren/web01.png)
+![foto](/ImagesTestplan/HandmatigInstalleren/web02.png)
+![foto](/ImagesTestplan/HandmatigInstalleren/web03.png)
+![foto](/ImagesTestplan/HandmatigInstalleren/wsus01.png)
+![foto](/ImagesTestplan/HandmatigInstalleren/wsus02.png)
 
 Controleer ook of de Windows ADK geïnstalleerd is door op de Windows-toets te drukken en naar Apps te gaan. Scroll tot het einde en onder Windows Kits.
 
 Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Policy manage console. Controleer of er hier 2 GPO's (Client Push Policy Settings en SQL ports for SCCM) zijn aangemaakt. Rechterklik vervolgens op deze GPO's en kijk vervolgens onder Windows Settings, Security Settings, Windows Firewall with Advanced Settings bij de Inbound Rules en Outbond Rules of de uitzondering voor File and Printer Sharing services en poorten 1433 en 4022 zijn toegevoegd.
 
-![foto](ImagesTestplan/HandmatigInstalleren/inbound.PNG)
-![foto](ImagesTestplan/HandmatigInstalleren/outbound.PNG)
+![foto](/ImagesTestplan/HandmatigInstalleren/inbound.PNG)
+![foto](/ImagesTestplan/HandmatigInstalleren/outbound.PNG)
 
 Controleer vervolgens of er een installatie is uitgevoerd van MS SQL server 2014 door op de Windows-toets te duwen en SQL 2014 te typen. Open deze niet!
 
-![foto](ImagesTestplan/HandmatigInstalleren/oo09.png)
+![foto](/ImagesTestplan/HandmatigInstalleren/oo09.png)
 
 Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het programma te openen.
 
