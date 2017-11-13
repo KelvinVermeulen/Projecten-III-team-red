@@ -18,7 +18,7 @@ ECHO "Done installing NET-Framework-45-Features"
 ECHO "Installing Pre-Requisites"
 Install-WindowsFeature RSAT-ADDS,
 RSAT-Clustering,RSAT-Clustering-CmdInterface,
-RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell,
+RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell
 ECHO "done installing ADLDS"
 
 
