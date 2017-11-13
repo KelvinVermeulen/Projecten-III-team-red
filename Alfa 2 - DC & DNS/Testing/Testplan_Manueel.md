@@ -1,39 +1,50 @@
-# Testplan Alfa 2
-## Windows Server 2016 installatie
-
+# **Testplan Alfa 2**
+## Stap 1: Installatie Windows Server 2016
 ### GUI
-1. Start de server dat genaamd is als Alfa 2
-2. Log in met "Aa12345" als wachtwoord
-3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
-4. Nadat "Server Manger" geopend is, klik op "Local Server" dat je links van de pagina terug kan vinden.
-5. Controller of de "Operating system version" op "Windows Server 2016 Standard staat". Indien dat zo is, is de server installatie succesvol uitgevoerd.
+1. Start de server `Alfa2`
+2. Log in met de gebruiker;
+	- **Account name:** _red/administrator_
+	- **Paswoord:** Aa12345
+3. Open *Server Manager* indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op *Server Manager* te klikken.
+4. Nadat *Server Manager* geopend is, klik op *Local Server* dat je links van de pagina terug kan vinden.
+5. Controlleer of de *Computer Name* op **ns1** en het *Domain* op **red.local** staat.
 
 ### CMD
-1. Start de server dat genaamd is als Alfa 2 
-2. Log in met "Aa12345" als wachtwoord
-3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
-4. Nadat CMD geopend is, type "Winver" en je ziet welke Windows versie er geïnstalleerd is. Indien er Windows Server 2016 staat is de server installatie succesvol uitgevoerd.
+1. Start de server `Alfa2`
+2. Log in met de gebruiker;
+	- **Account name:** _red/administrator_
+	- **Paswoord:** Aa12345
+3. Open *Command Prompt*
+	1. Klik op het vergrootglas in de taakbalk;
+	2. type `cmd` en druk op enter;
+4. Type `HOSTNAME` en je ziet wat de naam van de server is. Indien het **ns2** is, is de naam goed geconfigureerd.
+5. Type `wmic computersystem get domain` om de domain naam te vinden. Indien er **red.local** staat is dat ook goed geconfigureerd.
 
-## Netwerkkaart
-1. Start de server dat genaamd is als Alfa 2 
-2. Log in met "Aa12345" als wachtwoord
-3. Open "Command Prompt" door de startmenu te openen en "CMD" in te typen. (Indien de core versie geïnstalleerd is, wordt de cmd automatisch geopend en is deze stap overbodig)
-4. Type ipconfig en durk op enter.
-5. De ip adres moet als volgt geconfigureerd zijn: 
-- IP Adres: 172.18.2.67
-- Netmask: 255.255.0.0
-- Default Gateway: 172.18.2.65
+## Stap 2: Netwerkinstellingen
+1. Start de server `Alfa2`
+2. Log in met de gebruiker;
+	- **Account name:** _red/administrator_
+	- **Paswoord:** Aa12345
+3. Open *Command Prompt*
+	1. Klik op het vergrootglas in de taakbalk;
+	2. type `cmd` en druk op enter;
+4. Type `ipconfig` en druk op enter.
+5. Het IP-adres moet als volgt geconfigureerd zijn: 
+- IP-address: 172.18.2.67 (OF 172.18.0.2)
+- Netmask: 255.255.0.0 (OF 255.255.255.0)
+- Default Gateway: 172.18.2.65 (OF 172.18.0.1)
 - DNS: 172.18.2.67
-6. Indien de ip adres klopt is de netwerk juist geconfigureerd
 
-## Domeincontroller en DNS
-### DC en DNS geïnstalleerd?
-1. Start de server dat genaamd is als Alfa 2 
-2. Log in met "Aa12345" als wachtwoord
-3. Open "Server Manager" indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op "Server Manager" te klikken.
-4. Indien er aan de linkerkant AD DS en DNS saat, zijn de rollen succesvol geïnstalleerd
-### Controleren of DC en DNS werkt
-1. Verander de ip adres van uw computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
+## Stap 3: Active Directory Domain Cervices
+### Installatie
+1. Start de server Alfa 2 
+2. Log in op Alfa 2 met gebruiker;
+	- **Account name:** _red/administrator_
+	- **Paswoord:** Aa12345
+3. Open *Server Manager* indien dat niet automatisch gebeurt is. Dit doe je door naar de startmenu te gaan en daar op *Server Manager* te klikken.
+4. Indien er aan de linkerkant `AD DS` en `DNS` staat, zijn de rollen succesvol geïnstalleerd.
+### Functionaliteit
+1. Verander het IP-adres van uw computer zodat het in de zelfde netwerk ligt als de server, dit doe je door de inststructies op [dit pagina](https://support.microsoft.com/nl-be/help/15089/windows-change-tcp-ip-settings) te volgen (stap 5 moet je niet uitvoeren aangezien we niet werken met IPv6). Geef de volgende netwerkinformatie in voor het configureren van de netwerk:
 - IP adres: 172.18.2.70
 - Subnetmask: 255.255.0.0
 - Default Gateway: 172.18.2.65
