@@ -27,7 +27,7 @@ Write-Host
 
 #running setupfiles
 start-sleep -m 5
-.\ExchangeFiles\Exchange2016-x64.exe 
+.\ExchangeFiles\Exchange2013-x64-SP1.exe 
 
 #entering DIR & pressing enter
 start-sleep -m 50000
@@ -58,6 +58,6 @@ while($CheckNull -eq $true)
 ####################
 
 #Running setup.exe
-.\ExchangeFiles\setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
+#.\ExchangeFiles\setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
 
 
