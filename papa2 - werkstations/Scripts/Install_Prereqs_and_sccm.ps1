@@ -27,7 +27,7 @@ echo =======================================================================
  Install-WindowsFeature WDS
  dism /online /enable-feature /featurename:NetFX3 /all /Source:c:\sources\sxs /LimitAccess
  #install adk components
- cmd /c C:\Sources\ADK8.1\adksetup.exe /quiet /installpath 'C:\Program Files (x86)\Windows Kits\8.1' /features OptionId.DeploymentTools OptionId.WindowsPreinstallationEnvironment OptionId.UserStateMigrationTool
+ cmd /c C:\Sources\ADK10\adksetup.exe /quiet /installpath 'C:\Program Files (x86)\Windows Kits\10' /features OptionId.DeploymentTools OptionId.WindowsPreinstallationEnvironment OptionId.UserStateMigrationTool
  #install sql db
  #New-ADUser -SamAccountName svcSQL -AccountPassword (ConvertTo-SecureString -AsPlainText "P@ssw0rd" -Force) -name "svcSQL" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
  #Enable-ADAccount svcSQL
