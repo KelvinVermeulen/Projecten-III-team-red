@@ -1,1 +1,1 @@
-new-smbshare -name VerkoopData -Path: D:\shares\VerkoopData -ChangeAccess "Verkoop" -FullAccess "IT Administratie" -EncryptData $True
+new-smbshare -name VerkoopData -Path: D:\ -EncryptData $True -FullAccess "IT Administratie" -ChangeAccess "Verkoop"
