@@ -219,14 +219,14 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 7. **Log in met de volgende gebruikers**. Bij elk gebruiker moeten enkel de volgende shares te zien zijn als je *File Explorer* opent. Voer in elk folder de acties onder *Testing* uit:
 | Gebruikersnaam en wachtwoord| Zichtbare Shares|Permissions|Testing |
 |-----------|---------------------|---------------------|---------------------|
-| Jan.Smet - P@ssword|ITData|Full Control|Voeg een bestand toe.
-| | VerkoopData|Full Control|Voeg een bestand toe.
-| | OntwikkelingData|Full Control|Voeg een bestand toe.
-| | DirData|Full Control|Voeg een bestand toe.
-| | AdminData|Full Control|Voeg een bestand toe.
-| | ShareVerkoop|Full Control|Voeg een bestand toe.
-| | HomeDirs|Full Control|Voeg een bestand toe.
-| | ProfileDirs|Full Control|Voeg een bestand toe.
+| Jan.Smet - P@ssword|ITData|Full Control|Voeg een bestand toe.|
+| | VerkoopData|Full Control|Voeg een bestand toe.|
+| | OntwikkelingData|Full Control|Voeg een bestand toe.|
+| | DirData|Full Control|Voeg een bestand toe.|
+| | AdminData|Full Control|Voeg een bestand toe.|
+| | ShareVerkoop|Full Control|Voeg een bestand toe.|
+| | HomeDirs|Full Control|Voeg een bestand toe.|
+| | ProfileDirs|Full Control|Voeg een bestand toe.|
 | Lies.Smet - P@ssword |AdminData|Read, Write|Voeg een bestand toe & open een bestand.|
 | | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
 | | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
@@ -237,8 +237,8 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 ||ShareVerkoop|Read|Lees een bestand.|
 | | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
 | | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
-| Bert.Smet - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe & lees een bestand.
-| |ShareVerkoop | Read, Write | Voeg een bestand toe & lees een bestand.
+| Bert.Smet - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe & lees een bestand.|
+| |ShareVerkoop | Read, Write | Voeg een bestand toe & lees een bestand.|
 | | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
 | | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
 
