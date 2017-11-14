@@ -218,7 +218,7 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 	7. Indien succevol, zal een pop-up verschijnen die je verwelkomt in het domain red.local. **Herstart het workstation**.
 7. **Log in met de volgende gebruikers**. Bij elk gebruiker moeten enkel de volgende shares te zien zijn als je *File Explorer* opent. Voer in elk folder de acties onder *Testing* uit:
 | Gebruikersnaam en wachtwoord| Zichtbare Shares|Permissions|Testing |
-|-----------|---------------------|---------------------|
+|-----------|---------------------|---------------------|---------------------|
 | Jan.Smet - P@ssword|ITData|Full Control|Voeg een bestand toe.
 | | VerkoopData|Full Control|Voeg een bestand toe.
 | | OntwikkelingData|Full Control|Voeg een bestand toe.
