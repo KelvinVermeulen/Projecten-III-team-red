@@ -24,6 +24,8 @@
 
 [Powershell commando's voor System Center 2016](https://docs.microsoft.com/en-us/system-center/scsm/sm-cmdlets)
 
+[Meer powershells cmdlets](https://technet.microsoft.com/en-us/library/jj821733(v=sc.20).aspx)
+
 ### Research Papa2
 
 [SCCM-pdf](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=26179&tool=Document&browser=Table&tool_action=Viewer&publication=1148505)
