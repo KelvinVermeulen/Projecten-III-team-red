@@ -5,50 +5,31 @@ Opstellen netwerk routers:
 1 Cloud
 5 routers
 
-Router4 , Router2 en Router3 voorzien van 2 HWIC-2T ports in physical tab
-Router0 en Router1 voorzien van 1 HWIC-2T ports en 1 HWIC-4ESW ports in physical tab
-(eerst router uitzetten voor toevoegen van ports daarna weer aanzetten)
+IP routes op pkt naar 172.18.0.0/24 -> gewijzigd naar 172.18.0.0/16
+IP routes op pkt naar 172.16.129.0/24 -> gewijzigd naar 172.16.0.0/16 
 
-Cloud verbinden met Router4 via DTE verbinding -> Se0 (cloud) naar Se0/0/1 (router4)
+-> kan nog altijd pingen tussen 2 pc's door wijzigingen van /24 naar /16
 
-
+Seriele verbindingen fysieke opstelling
 Router0 
 -> Serial 0/1/0 naar Serial0/2/0 router2
+-> Fa0/0 naar Linux netwerk
 Router2
 -> Serial 0/1/0 naar Serial 0/1/0 router4
 Router4
--> Serial 0/1/0 naar Serial 0/1/0 router 2
 -> Serial 0/1/1 naar Serial 0/1/0 router 3
 Router3
 -> Serial 0/1/1 naar Serial 0/1/1 router 2
--> Serial 0/2/0 naar Serial 0/1/0 router 1
+Router1
+-> Serial 0/1/0 naar Serial 0/2/0 router 3		
+-> Fa0/0 naar Windows netwerk		
 
-										
-in totaal 6 DTE verbindingen + 1 Cross-over (VPN) verbinding
+					
 
-Configuratie Routers:
-
-Basisconfiguratie elke router:
-
-# en (enable)
-# conf t (configure terminal)
-# hostname 'naam router' -> vb hostname Router0
-# no ip domain-lookup
-
-(ip adressering nog niet in orde , ip adresverwijzingen nog niet gedaan)
-# interface Se0/0/1
-# ip address ....
-# no shutdown
-
-#end	
-#copy running-config startup-config				
-
-VPN configuratie:
-
-boot system flash flash:c2801--advsecurityk9-mz.124-3g.bin 
 	
 
-last resort instellen routers
+	
+
 
 							
 										

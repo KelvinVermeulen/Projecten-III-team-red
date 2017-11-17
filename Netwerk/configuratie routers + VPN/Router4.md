@@ -15,10 +15,10 @@ line vty 0 15
 login local
 transport input ssh
 ip ssh version 2
-int Se0/1
+int Se0/1/0
 ip add 192.168.1.1 255.255.255.0
 no shut
-int Se0/2
+int Se0/1/1
 ip add 192.168.0.1 255.255.255.0
 no shut
 exit
