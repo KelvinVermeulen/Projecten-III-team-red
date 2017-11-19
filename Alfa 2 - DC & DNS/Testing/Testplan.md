@@ -220,28 +220,28 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 
 | Gebruikersnaam en wachtwoord| Zichtbare Shares|Permissions|Testing |
 |-----------|---------------------|---------------------|---------------------|
-| Jan.Smet - P@ssword|ITData|Full Control|Voeg een bestand toe.|
-| | VerkoopData|Full Control|Voeg een bestand toe.|
-| | OntwikkelingData|Full Control|Voeg een bestand toe.|
-| | DirData|Full Control|Voeg een bestand toe.|
-| | AdminData|Full Control|Voeg een bestand toe.|
-| | ShareVerkoop|Full Control|Voeg een bestand toe.|
-| | HomeDirs|Full Control|Voeg een bestand toe.|
-| | ProfileDirs|Full Control|Voeg een bestand toe.|
-| Lies.Smet - P@ssword |AdminData|Read, Write|Voeg een bestand toe & open een bestand.|
-| | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
-| | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
-|Tim.Smet - P@ssword |DirData |Read, Write|Voeg een bestand toe & open een bestand.|
-| | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
-| | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
-| Sylvie.Smet - P@ssword |OntwikkelingData|Read & Write|Voeg een bestand toe. Lees een bestand.|
-||ShareVerkoop|Read|Lees een bestand.|
-| | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
-| | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
-| Bert.Smet - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe & lees een bestand.|
-| |ShareVerkoop | Read, Write | Voeg een bestand toe & lees een bestand.|
-| | HomeDirs |Read, Write |Voeg een bestand toe & Open een bestand.|
-| | ProfileDirs|Read, Write |Voeg een bestand toe & Open een bestand.|
+| Jan.Smet - P@ssword|ITData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | VerkoopData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | OntwikkelingData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | DirData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | AdminData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | ShareVerkoop|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | HomeDirs|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | ProfileDirs|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Lies.Smet - P@ssword |AdminData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+|Tim.Smet - P@ssword |DirData |Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Sylvie.Smet - P@ssword |OntwikkelingData|Read & Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+||ShareVerkoop|Read|Lees een bestand dat al toegevoegd is in het map.|
+| | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Bert.Smet - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| |ShareVerkoop | Read, Write | Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
+| | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 
 
 
