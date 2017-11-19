@@ -234,8 +234,8 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 |Tim.Smet - P@ssword |DirData |Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
-| Sylvie.Smet - P@ssword |OntwikkelingData|Read & Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
-||ShareVerkoop|Read|Lees een bestand dat al toegevoegd is in het map.|
+| Sylvie.Smet - P@ssword |OntwikkelingData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+||ShareVerkoop|Read|Lees een bestand dat al toegevoegd is in het map. Verwijderen en wijzigen zou niet mogen lukken.|
 | | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | Bert.Smet - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
