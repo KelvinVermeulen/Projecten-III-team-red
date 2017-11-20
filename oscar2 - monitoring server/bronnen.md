@@ -36,9 +36,14 @@ https://technet.microsoft.com/en-us/library/ff700227.aspx
 ### Info over automatisatie EXE met echoargs
 https://stackoverflow.com/questions/1673967/how-to-run-an-exe-file-in-powershell-with-parameters-with-spaces-and-quotes
 
-
-
 * & 'c:\Users\Arto\Downloads\PRTG Network Monitor 17.3.33.2830 Setup (Stable).exe' /silent
+
+### automatisatie vagrant
+https://www.howtogeek.com/112660/how-to-change-your-ip-address-using-powershell/
+
+https://app.vagrantup.com/mwrock/boxes/Windows2012R2
+
+
 
 # PRTG Sensor uitwerking
 
