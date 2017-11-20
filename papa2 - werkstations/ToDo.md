@@ -3,7 +3,6 @@
 ## Documentatie
 
 - [ ] Meer foto's bij prerequisites
-- [ ] Cheatsheet is nog leeg
 - [ ] Meer links bij Links
 - [ ] Tijdsindeling aanpassen
 
@@ -17,11 +16,11 @@
 ## Automatisatie
 
 - [ ] Unattended installation controleren en bijwerken
-- [ ] Web server (IIS) roles, features en role services installeren
-- [ ] ADK installeren
-- [ ] SQL server + hotfix
+- [x] Web server (IIS) roles, features en role services installeren
+- [x] ADK installeren
+- [x] SQL server + hotfix
 - [ ] GPO's aanmaken
-- [ ] SCCM installeren
+- [x] SCCM installeren
 - [ ] Discovery boundaries instellen
 - [ ] Clients pushen
 - [ ] Host installeren
@@ -30,12 +29,12 @@
 
 ## Handmatig
 
-- [ ] Web server (IIS) roles, features en role services installeren
-- [ ] ADK installeren
-- [ ] SQL server + hotfix
+- [x] Web server (IIS) roles, features en role services installeren
+- [x] ADK installeren
+- [x] SQL server + hotfix
 - [ ] GPO's aanmaken
-- [ ] SCCM installeren
-- [ ] Discovery boundaries instellen
+- [x] SCCM installeren
+- [x] Discovery boundaries instellen
 - [ ] Clients pushen
 - [ ] Host installeren
 - [ ] Software installeren
