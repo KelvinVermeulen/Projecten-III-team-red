@@ -1,3 +1,13 @@
+# PRTG
+
+### Router toevoegen
+
+(met SNMP) op router: snmp-server community 'xxx' ro
+
+PRTG: device toevoegen > SNMP Credentials: xxx
+
+Eventuele sensors: ICMP / TCP / POORTEN (FaEth) / UDP / SNMP
+
 # Bronnen
 ### Manual
 https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor
