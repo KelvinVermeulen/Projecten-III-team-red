@@ -2,7 +2,7 @@
 
 ## Documentatie
 
-- [ ] Meer foto's bij prerequisites
+- [+] Meer foto's bij prerequisites
 - [ ] Cheatsheet is nog leeg
 - [ ] Meer links bij Links
 - [ ] Tijdsindeling aanpassen
