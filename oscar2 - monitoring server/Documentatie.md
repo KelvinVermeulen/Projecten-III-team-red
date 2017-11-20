@@ -110,7 +110,7 @@ Default Gateway: **172.18.2.67**
 
 7. Voor de domeincontroller te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: ns1; ip: 172.18.2.67
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -127,7 +127,7 @@ Default Gateway: **172.18.2.67**
         * klik 'add sensor'
         * zoek de sensor met naam 'DNS'
         * klik op 'add this'
-        * vul als domain name 'RED' in en klik 'continue'
+        * vul als domain name 'red.local' in en klik 'continue'
 
     3. Voeg een Folder sensor toe
 
@@ -152,7 +152,7 @@ Default Gateway: **172.18.2.67**
 
 8. Voor de domeincontroller te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: ns2; ip: 172.18.2.68
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -169,7 +169,7 @@ Default Gateway: **172.18.2.67**
         * klik 'add sensor'
         * zoek de sensor met naam 'DNS'
         * klik op 'add this'
-        * vul als domain name 'RED' in en klik 'continue'
+        * vul als domain name 'red.local' in en klik 'continue'
 
     3. Voeg een Folder sensor toe
 
@@ -194,7 +194,7 @@ Default Gateway: **172.18.2.67**
 
 9. Voor de fileServer te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: fileserver; ip: 172.18.2.3
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -229,7 +229,7 @@ Default Gateway: **172.18.2.67**
 
 10. Voor de exchange te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: exchangeServer; ip: 172.18.2.69
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -271,7 +271,7 @@ Default Gateway: **172.18.2.67**
 
 11. Voor de DHCP server te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: exchangeServer; ip: 172.18.2.2
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -304,16 +304,9 @@ Default Gateway: **172.18.2.67**
         * klik op 'add this'
         * laat de default settings staan en klik 'continue'
 
-    5. Voeg een DHCP sensor toe
-
-        * klik 'add sensor'
-        * zoek de sensor met naam 'DHCP'
-        * klik op 'add this'
-        * laat de default settings staan en klik 'continue'
-
 12. Voor de sqlserver te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: SQLServer; ip: 172.18.2.5
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -355,7 +348,7 @@ Default Gateway: **172.18.2.67**
 
 13. Voor de sccm server te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: SCCMServer; ip: 172.18.2.7
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -390,7 +383,7 @@ Default Gateway: **172.18.2.67**
 
 14. Voor de sharepoint te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: sharepoint; ip: 172.18.2.4
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -432,7 +425,7 @@ Default Gateway: **172.18.2.67**
 
 15. Voor de webserver te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
+    * rechtsklik 'servers' -> add device
     * geef naam: webServer; ip: 172.18.2.70
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
@@ -474,8 +467,8 @@ Default Gateway: **172.18.2.67**
 
 16. Voor de hosts te monitoren:
 
-    * rechtsklik 'servers' -> add sensor
-    * geef naam: SCCMServer; ip: 172.18.2.x (x te vinden via ipconfig /all op de host)
+    * rechtsklik 'clients' -> add device
+    * geef gepaste naam van client
     * we kiezen een passend icoon en klikken 'continue'
     * Nu kan je bij de toegevoegde server 'add sensor' klikken voor de volgende sensors... (of rechtklikken op de machine zelf)
 
@@ -504,5 +497,15 @@ Default Gateway: **172.18.2.67**
 
         * klik 'add sensor'
         * zoek de sensor met naam 'wmi CPU'
+        * klik op 'add this'
+        * laat de default settings staan en klik 'continue'
+
+17. Op de Probe Device (voor de DHCP te monitoren)
+
+    1. Voeg een DHCP sensor toe
+
+        * rechtsklik op 'Probe Device'
+        * klik 'add sensor'
+        * zoek de sensor met de naam 'DHCP'
         * klik op 'add this'
         * laat de default settings staan en klik 'continue'

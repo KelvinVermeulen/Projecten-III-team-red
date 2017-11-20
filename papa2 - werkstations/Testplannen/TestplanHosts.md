@@ -11,7 +11,7 @@ Dit testplan dient voor het controlleren of het gelukt is om een client uit te r
 
 |Objectief|Korte beschrijving|Uitgevoerd|
 |---------|------------------|-------|
-|Documentatie|Uitleg die geschrijft hoe je controleert of de host geïnstalleerd is.|X|
+|Documentatie|Uitleg die beschrijft hoe je controleert of de host geïnstalleerd is.|X|
 |Test rapport|Er is een rapport geschreven over het testplan|X|
 |Resources|De nodige ondersteunende filmpjes en uitleg zoeken op YouTube en Google, om toch al eens (half) te zien hoe het moet.|X|
 

@@ -1,27 +1,9 @@
 # Testrapport
 
-* Verantwoordelijke uitvoering: 
-* Verantwoordelijke testen: 
+* Verantwoordelijke uitvoering:Patrick Weyn 
+* Verantwoordelijke testen: Thomas Vervynck
 
 
-## Tussentitel1
+## Aanmelden 
+Aanmelden kon niet met geen enkele gebruiker.
 
-
-
-## Tussentitel2
-
-
-
-## Tussentitel3
-
-
-
-
-## (Tabel indien nodig)
-
-| Kolom1  | Kolom2 | Kolom3 |
-| :---     |    ---: |         ---: |
-| Rij1 |       |        |
-| Rij2 |       |        |
-| Rij3 |       |        |
-| Rij4 |       |        |

@@ -1,6 +1,6 @@
 # Testplan
 
-In deze iteratie gaan we een MSCS lokaal installeren en configureren om in een eerste poging om alles in orde te brengen. Zodanig dat we daarna alles kunnen automatiseren.
+In deze iteratie gaan we een MSCS lokaal installeren en configureren om in een eerste poging alles in orde te brengen. Zodanig dat we daarna alles kunnen automatiseren.
 
 ## Requirements
 
@@ -37,10 +37,11 @@ Klik hierna nog eens op Tools onder Server Manager en open vervolgens Group Poli
 
 ![](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/ImagesTestplan/HandmatigInstalleren/inbound.PNG)
 ![](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/ImagesTestplan/HandmatigInstalleren/outbound.PNG)
+![](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/ImagesTestplan/HandmatigInstalleren/oo09.png)
 
 Controleer vervolgens of er een installatie is uitgevoerd van MS SQL server 2014 door op de Windows-toets te duwen en SQL 2014 te typen. Open deze niet!
 
-![foto](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/ImagesTestplan/HandmatigInstalleren/oo09.png)
+
 
 Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het programma te openen.
 
