@@ -26,3 +26,5 @@
 - [manual execution for 30/10, shadow copy & disk quota](https://msdn.microsoft.com/en-us/library/aa389391(v=vs.85).aspx)
 
 - [File shares powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
+
+- [Partitioning powershell](http://www.itprotoday.com/windows-8/initialize-volume-using-windows-powershell)
