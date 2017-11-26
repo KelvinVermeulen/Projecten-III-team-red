@@ -5,19 +5,17 @@
 
 # Variables
 $SRV1 = "Lima2_WinSer2016"                #WinSer2016 box
-# $VHD2 = 'D:\HyperV\Schijf2.vhdx' tijdelijke comment voor week7 deployment
-$VHD2 = 'D:\HyperV\Schijf2.vhdx'
+$VHD2 = 'D:\HyperV\Schijf2.vhdx'			#location disk 2
 $SRAM = 1GB				                # RAM assigned to Server Operating System
 $WSISO = "D:\school\project\iso's_met_unattend\Server2016-1Schijf.iso"  #WinSer2016 Iso
 $SRV1VHD = 100GB                 #Hard disk 1
 $SRV2VHD = 100GB               #Hard disk 2
-# $VMLOC = "D:\HyperV" tijdelijke comment voor week7 deployment
 $VMLOC = "D:\HyperV"
 $NetworkSwitch5 = "Switch5"	# Name of the Network Switch
 
 # Create VM Folder and Network Switch
 MD $VMLOC -ErrorAction SilentlyContinue
-$TestSwitch = Get-VMSwitch -Name $NetworkSwitch5 -ErrorAction SilentlyContinue; if ($TestSwitch.Count -EQ 0){New-VMSwitch -Name $NetworkSwitch1 -SwitchType Private}
+$TestSwitch = Get-VMSwitch -Name $NetworkSwitch5 -ErrorAction SilentlyContinue; if ($TestSwitch.Count -EQ 0){New-VMSwitch -Name $NetworkSwitch5 -SwitchType Private}
 
 # Create Virtual Machines
 
