@@ -28,5 +28,5 @@
 - [File shares powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
 
 - [Partitioning powershell]
-  -(http://www.itprotoday.com/windows-8/initialize-volume-using-windows-powershell)
+  - (http://www.itprotoday.com/windows-8/initialize-volume-using-windows-powershell)
   - (https://www.thomasmaurer.ch/2012/04/replace-diskpart-with-windows-powershell-basic-storage-cmdlets/)
