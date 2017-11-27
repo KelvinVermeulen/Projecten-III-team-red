@@ -41,3 +41,27 @@
 	- Indien er iets fout loopt bij het testen, hang een extra post-it aan het origineel (liefst een ander formaat dan het origineel) met daarop de desbetreffende fouten;
 		- Dit zorgt ervoor dat het duidelijk zichtbaar is als een groep moeite heeft met bepaalde zaken (papiertje zal volgekrabbeld zijn);
 - Er moet meer getest worden als eenheid;
+
+## Linux
+### Wat ging er goed?
+- De communicatie tussen de teams verliep vlot;
+	- Niet beantwoord: hoe?
+
+### Wat ging er slecht?
+- Analyse:
+	1. Er werden geen prioriteiten opgesteld voor de taken;
+	2. Kanban was digitaal aanwezig, maar het werkte slechts half;
+- Overhead:
+	1. Er was geen planning op voorhand gedaan;
+	2. Het downloaden over het netwerk verliep traag;
+
+### Wat kunnen wij leren van Linux?
+1. Zij hebben Aalst uitgenodigd om een testopstelling te proberen op voorhand. Misschien ook nuttig voor Windows?
+2. De mensen van Linux hebben (per ongeluk) een stand-up uitgevoerd tijdens de testopstelling. Naderhand was het het overleg bij aanvang dat uitgesteld werd door laatkomers.
+	- Het idee om halfweg een stand-up te doen is geen slecht idee.
+
+### Wat volgens de leerkrachten nu belangerijk is:
+1. De communicatie tussen Linux & Windows moet on-point zijn.
+
+### Wat volgens ons belangerijk is:
+Labijn gaat trakteren!

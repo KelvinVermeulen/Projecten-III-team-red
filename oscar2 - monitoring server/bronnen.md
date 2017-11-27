@@ -43,7 +43,8 @@ https://www.howtogeek.com/112660/how-to-change-your-ip-address-using-powershell/
 
 https://app.vagrantup.com/mwrock/boxes/Windows2012R2
 
-
+### Info over automatiseren installatie PRTG
+https://kb.paessler.com/en/topic/2773-what-command-line-codes-and-exit-codes-can-i-use-with-paessler-setups
 
 # PRTG Sensor uitwerking
 

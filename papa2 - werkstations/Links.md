@@ -36,6 +36,7 @@
 
 [SQL server hotfix](https://www.alexandreviot.net/2015/05/06/sccm-2012-installation-with-sql-server-2014/)
 
+[SCCM installatie](https://www.windows-noob.com/forums/topic/15312-how-can-i-install-system-center-configuration-manager-version-1702-current-branch-on-windows-server-2016-with-sql-2016/)
 
 ### Research Werkstations
 
