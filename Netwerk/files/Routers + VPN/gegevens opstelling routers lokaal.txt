@@ -2,6 +2,8 @@ dns server toevoegen (ipv4)
 193.190.173.1
 193.190.173.2
 
+dns server van school gebruiken
+
 ip route 172.22.19.81
 
 reset router met password
@@ -14,4 +16,9 @@ dchp fa0/0 poort
 ip address dhcp 
 no shut
 
+switch altijd default gateway geven
+
+ip default-gateway ""
+
+ip adres toewijzen aan Fa0/0 poort -> check via details ipv4 adres -> int Fa0/0 address
 ...
