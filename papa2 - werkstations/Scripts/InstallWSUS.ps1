@@ -37,7 +37,7 @@ The script is designed to be run in Powershell ISE
 # Location of Windows sxs for .Net Framework 3.5 installation
     $WindowsSXS = "C:\sources\sxs"
 # Do you want to download and install MS Report Viewer 2008 SP1 (required for WSUS Reports)?
-    $RepViewer = $True
+    $RepViewer = $false
 # WSUS Installation Type.  Enter "WID" (for WIndows Internal Database), "SQLExpress" (to download and install a local SQLExpress), or "SQLRemote" (for an existing SQL Instance).
     $WSUSType = "SQLRemote"
 # If using an existing SQL server, provide the Instance name below

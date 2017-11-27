@@ -119,7 +119,7 @@
  - ITClient
  - OClient
  - VClient
-12. Als laatst controleren we of de gerbuikers tot de juiste groep(en) behoren. Dit doen we als volgt:
+12. Als laatst controleren we of de gebruikers tot de juiste groep(en) behoren. Dit doen we als volgt:
  - Bezoek één per één iedere map in **stap 8**; 
  - Right-mouse click op de group die in de map zit. **Klik op eigenschappen**;
  - **Klik** daarna op de tab "Members";
@@ -127,11 +127,11 @@
  
 | Groep            | Gebruiker(s)                 |
 |------------------|------------------------------|
-| Administratie    | Lies LS. Smet en Dirck DS. Smet |
-| Directie         | Tim TS. Smet                 |
-| IT Administratie | Jan JS. Smet                 |
-| Ontwikkeling     | Sylvie SS. Smet              |
-| Verkoop          | Bert BS. Smet                |
+| Administratie    | John Smet 	|
+| Directie         | Lien Smet 	|
+| IT Administratie | Henry Smet	|
+| Ontwikkeling     | Laura Smet |
+| Verkoop          | Dirk Smet	|
 
 
 ### CMD
@@ -180,11 +180,11 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 
 | Groep            | Gebruikersnaam en wachtwoord                |Beperking                 |
 |------------------|------------------------------|------------------------------|
-| Administratie    | Lies.Smet - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu, eigenschappenvan de netwerkadapters kan niet geopend worden |
-| Directie         | Tim.Smet - P@ssword                |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu                |
-| IT Administratie | Jan.Smet - P@ssword                 |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu                 |
-| Ontwikkeling     | Sylvie.Smet - P@ssword              |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu             |
-| Verkoop          | Bert.Smet - P@ssword                |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu, eigenschappenvan de netwerkadapters kan niet geopend worden                |
+| Administratie    | John.Smet@red.local - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu, eigenschappenvan de netwerkadapters kan niet geopend worden |
+| Directie         | Lien.Smet@red.local - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu                |
+| IT Administratie | Henry.Smet@red.local - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu                 |
+| Ontwikkeling     | Laura.Smet@red.local - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu             |
+| Verkoop          | Dirk.Smet@red.local - P@ssword |Configuratie scherm kan niet geopend worden, Game link is niet terug te vinden in startmenu, eigenschappenvan de netwerkadapters kan niet geopend worden                |
 
 
 
@@ -220,7 +220,7 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 
 | Gebruikersnaam en wachtwoord| Zichtbare Shares|Permissions|Testing |
 |-----------|---------------------|---------------------|---------------------|
-| Jan.Smet - P@ssword|ITData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| John.Smet@red.local - P@ssword|ITData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | VerkoopData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | OntwikkelingData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | DirData|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
@@ -228,17 +228,17 @@ Tijdens het uitwerken van de policies test je ook of de gebruikers zijn aangemaa
 | | ShareVerkoop|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | HomeDirs|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Full Control|Voeg een bestand toe, wijzig en sla op, en verwijder|
-| Lies.Smet - P@ssword |AdminData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Lien.Smet@red.local - P@ssword |AdminData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
-|Tim.Smet - P@ssword |DirData |Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Henry.Smet@red.local - P@ssword |DirData |Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
-| Sylvie.Smet - P@ssword |OntwikkelingData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Laura.Smet@red.local - P@ssword |OntwikkelingData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
 ||ShareVerkoop|Read|Lees een bestand dat al toegevoegd is in het map. Verwijderen en wijzigen zou niet mogen lukken.|
 | | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
-| Bert.Smet - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
+| Dirk.Smet@red.local - P@ssword|VerkoopData|Read, Write|Voeg een bestand toe, wijzig en sla op, en verwijder|
 | |ShareVerkoop | Read, Write | Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | HomeDirs |Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
 | | ProfileDirs|Read, Write |Voeg een bestand toe, wijzig en sla op, en verwijder|
