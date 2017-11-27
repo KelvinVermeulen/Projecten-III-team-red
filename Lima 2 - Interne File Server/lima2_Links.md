@@ -20,6 +20,7 @@
 - [Unattend.xml]
   - [automatisation unattend.xml](https://social.technet.microsoft.com/wiki/contents/articles/36609.windows-server-2016-unattended-installation.aspx)
   - [windows server unattended](https://medium.com/tech-jobs-academy/creating-a-windows-server-2012-r2-core-unattended-installation-iso-ab8071c03279)
+  - [Run script with or after unattend.xml installation](https://serverfault.com/questions/813992/run-powershell-script-from-server-in-unattend-xml)
 
 - [Partitioning powershell]
   - [Initialize a Volume Using Windows PowerShell](http://www.itprotoday.com/windows-8/initialize-volume-using-windows-powershell)
