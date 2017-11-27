@@ -31,6 +31,6 @@ echo =======================================================================
  #install sql db
  #New-ADUser -SamAccountName svcSQL -AccountPassword (ConvertTo-SecureString -AsPlainText "P@ssw0rd" -Force) -name "svcSQL" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
  #Enable-ADAccount svcSQL
- C:\Sources\SQL2012SP1\Setup.exe /qs /ACTION=Install /FEATURES=SQL,RS,Tools /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="red.local\Administrator" /SQLSVCPASSWORD="P@ssw0rd" /SQLSYSADMINACCOUNTS="red.local\Domain Admins" /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /IACCEPTSQLSERVERLICENSETERMS /SQLCOLLATION=SQL_Latin1_General_CP1_CI_AS
+ C:\Sources\SQL2012SP1\Setup.exe /qs /ACTION=Install /FEATURES=SQL,RS,Tools /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="red.local\Administrator" /SQLSVCPASSWORD="Aa12345" /SQLSYSADMINACCOUNTS="red.local\Domain Admins" /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /IACCEPTSQLSERVERLICENSETERMS /SQLCOLLATION=SQL_Latin1_General_CP1_CI_AS
  #install configMgr
  C:\Sources\SCCM2012R2\SMSSETUP\BIN\X64\setup.exe /script C:\Sources\Site-setup.ini /nouserinput
