@@ -70,6 +70,7 @@
 - PS C:\> Set-FsrmQuota -Path "d:\www\example.com" -Size 4.5GB
 - D:\www> Get-FsrmQuota
 - als er een error is met de "trust relation between workstation & domain" -> uit domein gaan, restart, terug in domein redlocal, restart
+- DFS gebruiken voor share, (powershell line for installation), nog uitzoeken hoe dfs te automatiseren
 
 #### netwerkinformatie
 - ip: 172.18.2.3
