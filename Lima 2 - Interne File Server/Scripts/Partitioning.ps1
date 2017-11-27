@@ -1,13 +1,21 @@
 #Script to automate the partitioning 
 
-#Disk 0
-Initialize-Disk 0
+#Change driveLetter from  DVD-drive
+$drv = Get-WmiObject win32_volume -filter 'DriveLetter = "D:"'
+$drv.DriveLetter = "I:"
+$drv.Put() | out-null
 
-New-Partition -DiskNumber 0 -Size 20GB -DriveLetter D 
+#Disk 0
+
+#Resize System partition
+Resize-Partition -DiskNumber 0 -PartitionNumber 2 -Size 33GB
+
+#The new partitions
+New-Partition -DiskNumber 0 -Size 33GB -DriveLetter D 
 Format-Volume -DriveLetter D -FileSystem NTFS
 Set-Volume -DriveLetter D -NewFileSystemLabel "VerkoopData"
 
-New-Partition -DiskNumber 0 -Size 20GB -DriveLetter E
+New-Partition -DiskNumber 0 -UseMaximumSize -DriveLetter E
 Format-Volume -DriveLetter E -FileSystem NTFS
 Set-Volume -DriveLetter E -NewFileSystemLabel "OntwikkelingData"
 
@@ -30,7 +38,7 @@ New-Partition -DiskNumber 1 -Size 20GB -DriveLetter Y
 Format-Volume -DriveLetter Y -FileSystem NTFS
 Set-Volume -DriveLetter Y -NewFileSystemLabel "HomeDirs"
 
-New-Partition -DiskNumber 1 -Size 20GB -DriveLetter Z
+New-Partition -DiskNumber 1  -UseMaximumSize -DriveLetter Z
 Format-Volume -DriveLetter Z -FileSystem NTFS
 Set-Volume -DriveLetter Z -NewFileSystemLabel "ProfileDirs"
 

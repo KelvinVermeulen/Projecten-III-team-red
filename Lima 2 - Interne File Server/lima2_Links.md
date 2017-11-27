@@ -26,8 +26,10 @@
   - [Basic storage cmdlets](https://www.thomasmaurer.ch/2012/04/replace-diskpart-with-windows-powershell-basic-storage-cmdlets/)
   - [Disk Management](https://protechgurus.com/disk-management-simple-volume-using-powershell/)
   - [Hard Disk](https://www.technig.com/manage-hard-disk-with-powershell/)
-  
-- [Shares]
+  - [Resize Partition](https://docs.microsoft.com/en-us/powershell/module/storage/resize-partition?view=win10-ps)
+  - [Change driveletter DVD drive]https://social.technet.microsoft.com/Forums/scriptcenter/en-US/cf6a1d3e-ff11-47dc-9cef-53072484e3f2/script-to-change-drive-letter-of-dvd-drive?forum=ITCG
+
+  - [Shares]
   - [creating shares automatically](http://www.tomsitpro.com/articles/create-file-share-windows-server-2016,1-3364.html)
   - [shared folder quotas installen](https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/) 
   - [File shares powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
