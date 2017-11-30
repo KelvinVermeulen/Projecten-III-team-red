@@ -10,7 +10,8 @@
     1. Rechterklik op Hyper-V Manager en klik op `Connect to Server...`, kies voor Local computer en druk op OK. 
     2. Nu gaan we een Virtuele Switch creëren, eerst klik op "Virtual Switch Manager", dan doe je volgende stappen 
     ![Virtual_Switch1](https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Testing/images/virtualswitch1.PNG)    
-      Dit geeft het volgende scherm, in dit scherm kunnen we naam van de switch aanpassen, het connectie type en het vlan id. We passen     enkel de naam aan en zetten het connectie type op external en adapter op wireless                                       !           [Virtual_Switch2](https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Testing/images/virtualswitch2.PNG)
+      Dit geeft het volgende scherm, in dit scherm kunnen we naam van de switch aanpassen, het connectie type en het vlan id. We passen     enkel de naam aan en zetten het connectie type op external en adapter op wireless                                       
+    ![Virtual_Switch2](https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Testing/images/virtualswitch2.PNG)
     3. Als laatste krijg je als pop-up nog een error en hier klikken we gewoon op ja.
 3. Nadat Hyper-V Manager goed is geconfigureerd gaan we terug naar het Git Bash scherm en typen het commando `vagrant up`. Deze zal de volledige installatie van de Webserver uitvoeren.
 4. Wanneer de installatie afgelopen is kunnen we de Webserver openen in Hyper-V Manager en controleren we of alles correct is ingesteld en geïnstalleerd.
