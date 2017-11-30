@@ -1,17 +1,17 @@
 $DBServer = 'November2'
-$ConfigDB = 'spFarmConfiguration'
+$ConfigDB = 'Sharepoint_Config'
 $CentralAdminContentDB = 'spCentralAdministration'
-$CentralAdminPort = '2016'
-$PassPhrase = 'YOURPASS1'
+$CentralAdminPort = '30281'
+$PassPhrase = 'Aa123456'
 $SecPassPhrase = ConvertTo-SecureString $PassPhrase -AsPlaintext -Force
 
-$FarmAcc = 'red\spFarmAcc'
-$FarmPassword = 'YOURPASS1'
+$FarmAcc = 'red\Administrator'
+$FarmPassword = 'Aa123456'
 $FarmAccPWD = ConvertTo-SecureString $FarmPassword  -AsPlaintext -Force
 $cred_FarmAcc = New-Object System.Management.Automation.PsCredential $FarmAcc,$FarmAccPWD
 
 --WebFrontEnd, Application, DistributedCache, Search, Custom, SingleServerFarm
-$ServerRole = "Custom"
+$ServerRole = "SingleServerFarm"
 
 
 
