@@ -12,9 +12,9 @@
     ![Virtual_Switch1](https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Testing/images/virtualswitch1.PNG)
       
       Dit geeft het volgende scherm, in dit scherm kunnen we naam van de switch aanpassen, het connectie type en het vlan id. We passen enkel de naam aan en zetten het connectie type op external en adapter op wireless ![Virtual_Switch2](https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Testing/images/virtualswitch2.PNG)
-    3. 
-2. Gebruik het commando `vagrant up` en laat de installatie volledig verlopen.
-3. Via Hyper-V kan je een GUI openen en volgende instellingen zouden moet overeenkomen met de instellingen op de VM.
+    3. Als laatste krijg je als pop-up nog een error en hier klikken we gewoon op ja.
+3. Nadat Hyper-V Manager goed is geconfigureerd gaan we terug naar het Git Bash scherm en typen het commando `vagrant up`. Deze zal de volledige installatie van de Webserver uitvoeren.
+4. Wanneer de installatie afgelopen is kunnen we de Webserver openen in Hyper-V Manager en controleren we of alles correct is ingesteld en geïnstalleerd.
 
 - De tijd staat juist en de tijdzone is "Central Europe Standard Time"
 - Volgende features zijn geïnstalleerd (bij "Web Server(IIS)" features) :  
