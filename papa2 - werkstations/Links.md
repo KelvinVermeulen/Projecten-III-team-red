@@ -30,6 +30,8 @@
 
 [SCCM-pdf](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=26179&tool=Document&browser=Table&tool_action=Viewer&publication=1148505)
 
+[Build numbers](https://buildnumbers.wordpress.com/sccm/)
+
 ### Automatisatie Papa2
 
 [SCCM automatisch installeren](https://douwevanderuit.wordpress.com/2014/02/10/howto-install-a-primary-site-server-and-all-prereqs-with-powershell/)
