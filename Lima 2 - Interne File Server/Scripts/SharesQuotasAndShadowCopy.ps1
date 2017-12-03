@@ -31,3 +31,6 @@ New-FsrmQuota -Path "F:\" -Description "ITData Quota" -Size 200MB -Threshhold $T
 
 # perhaps this works?? check later:
 # http://juventusitprofessional.blogspot.be/2013/11/windows-powershell-shadow-copy.html
+vssadmin add shadowstorage /for=H: /on=C: /MaxSize=500MB
+
+# this seems to work, but how do i schedule it for automatic daily copies?
