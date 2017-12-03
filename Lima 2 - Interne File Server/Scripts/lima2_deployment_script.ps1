@@ -1,7 +1,5 @@
-# This script configures the Hyper-V machines used for the 50331 Course.
-# PowerShell 3.0 and Windows Server 2012 or Windows 8 Pro are required to perform this setup.
-# The C:\ Drive should have at least 200GB of free space available.
-# All the files on the 50331 Student CD should be copied to C:\Labfiles before performing this setup.
+#Script om de LIMA2 server automatisch te installeren in hyper-v omgeving
+#script voor roles and features voor de file server zitten in 
 
 # Variables
 $SRV1 = "Lima2_WinSer2016"                #WinSer2016 box
