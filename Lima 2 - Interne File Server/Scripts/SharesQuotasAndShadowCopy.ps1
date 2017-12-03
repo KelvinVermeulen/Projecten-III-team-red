@@ -11,12 +11,26 @@ new-smbshare -name ProfileDirs -Path: Z:\ -EncryptData $False -FullAccess "IT Ad
 new-smbshare -name ShareVerkoop -Path: D:\ -EncryptData $False -FullAccess "IT Administratie" -ReadAccess "Ontwikkeling" -ChangeAccess "Verkoop"
  
 # quotas
+# http://techgenix.com/powershell-file-management-part3/
 
-Set-FsrmQuota -Path "D:\" -Size 100MB
-Set-FsrmQuota -Path "G:\" -Size 100MB
-Set-FsrmQuota -Path "H:\" -Size 100MB   
+$Action = New-FsrmAction -Type Command -Command "c:\windows\system32\cmd.exe" -CommandParameters "echo  >> c:\log.txt" -ShouldLogError
+$Threshold = New-FsrmQuotaThreshold -Percentage 90 -Action $action
+# example thingy : New-FsrmQuota -Path "C:\Shares" -Size 128MB -Threshold $Threshold -Softlimit (softlimit does not enforce the threshold, but just logs it)
 
-Set-FsrmQuota -Path "E:\" -Size 200MB
-Set-FsrmQuota -Path "F:\" -Size 200MB
+New-FsrmQuota -Path "D:\" -Description "VerkoopData Quota" -Size 100MB -Threshhold $Threshold
+New-FsrmQuota -Path "G:\" -Description "DirData Quota" -Size 100MB -Threshhold $Threshold
+New-FsrmQuota -Path "H:\" -Description "AdminData Quota" -Size 100MB -Threshhold $Threshold
+
+New-FsrmQuota -Path "E:\" -Description "OntwikkelingData Quota" -Size 200MB -Threshhold $Threshold
+New-FsrmQuota -Path "F:\" -Description "ITData Quota" -Size 200MB -Threshhold $Threshold
 
 # shadowcopy
+
+# is enabling shadowcopies even possible with powershell? 
+# activation of vss seems gui-only? https://mcpmag.com/articles/2015/12/07/creating-volume-shadow-copies.aspx
+
+# perhaps this works?? check later:
+# http://juventusitprofessional.blogspot.be/2013/11/windows-powershell-shadow-copy.html
+vssadmin add shadowstorage /for=H: /on=C: /MaxSize=500MB
+
+# this seems to work, but how do i schedule it for automatic daily copies?

@@ -35,7 +35,9 @@
   - [shared folder quotas installen](https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/) 
   - [File shares powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
   
-  - [DFS]
+- [DFS]
+  - [Powershell script](https://www.petri.com/create-a-distributed-file-system-namespace-in-windows-server-2012-r2)
   - [Powershell DFS](https://www.technig.com/install-configure-distributed-file-system/)
   - [Powershell DFS microsoft](https://technet.microsoft.com/en-us/library/dn296591(v=wps.630).aspx)
   - [Cmdlets](https://blogs.technet.microsoft.com/filecab/2012/10/19/introducing-dfs-namespaces-windows-powershell-cmdlets/)
+
