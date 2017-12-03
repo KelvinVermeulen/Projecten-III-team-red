@@ -35,4 +35,4 @@
   - [shared folder quotas installen](https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/) 
   - [File shares powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
   - [Powershell DFS](https://www.technig.com/install-configure-distributed-file-system/)
-  - [Powershell DFS microsoft] (https://technet.microsoft.com/en-us/library/dn296591(v=wps.630).aspx)
+  - [Powershell DFS microsoft](https://technet.microsoft.com/en-us/library/dn296591(v=wps.630).aspx)
