@@ -28,3 +28,6 @@ New-FsrmQuota -Path "F:\" -Description "ITData Quota" -Size 200MB -Threshhold $T
 
 # is enabling shadowcopies even possible with powershell? 
 # activation of vss seems gui-only? https://mcpmag.com/articles/2015/12/07/creating-volume-shadow-copies.aspx
+
+# perhaps this works?? check later:
+# http://juventusitprofessional.blogspot.be/2013/11/windows-powershell-shadow-copy.html
