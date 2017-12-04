@@ -14,15 +14,19 @@ Seriele verbindingen fysieke opstelling
 Router0 
 -> Serial 0/1/0 naar Serial0/2/0 router2
 -> Fa0/0 naar Linux netwerk
-Router2
--> Serial 0/1/0 naar Serial 0/1/0 router4
-Router4
--> Serial 0/1/1 naar Serial 0/1/0 router 3
-Router3
--> Serial 0/1/1 naar Serial 0/1/1 router 2
+
 Router1
 -> Serial 0/1/0 naar Serial 0/2/0 router 3		
--> Fa0/0 naar Windows netwerk		
+-> Fa0/0 naar Windows netwerk
+
+Router2
+-> Serial 0/1/0 naar Serial 0/1/0 router4
+
+Router4
+-> Serial 0/1/1 naar Serial 0/1/0 router 3
+
+Router3
+-> Serial 0/1/1 naar Serial 0/1/1 router 2	
 
 					
 
