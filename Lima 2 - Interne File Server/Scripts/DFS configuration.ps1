@@ -11,6 +11,6 @@ New-DfsnRoot -Path \\red.local\ShareVerkoop -TargetPath \\lima2\ShareVerkoop -Ty
 
 #Add folder target to namespace
 $folders | Where-Object {$_ -like "*ShareVerkoop*"} | ForEach-Object {$name = (Get-Item $_).name; 
-$DfsPath = (‘\\red.local\ShareVerkoop\’ + $name); 
+$DfsPath = (‘\\red.local\files\’ + $name); 
 $targetPath = (‘\\lima2\’ + $name);
 New-DfsnFolderTarget -Path $dfsPath -TargetPath $targetPath}
