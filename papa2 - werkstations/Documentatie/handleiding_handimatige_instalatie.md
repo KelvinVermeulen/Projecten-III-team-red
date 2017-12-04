@@ -395,6 +395,187 @@ it for evaluate for every 2 days. Click **OK**.
 
  
 
-### Configuration Manager 2012 R2 Client Installation
+## Configuration Manager 2012 R2 Client Installation
+
+### Client Push Installation
+
+From the Configuration Manager Console Click **Administration**, Under **Site Configuration**, Click **Sites**, at the top ribbon under Client
+Installation Settings, click **Client Push
+Installation. **In the **General** tab
+check the box for **Enable Automatic site
+wide client push installati**on. Under System types select **Servers and Workstations**. If you want
+to install the client agent on domain controllers choose the option “**Always Install configuration Manager Client
+on Domain Controllers**“, with this the client agents will be installed on
+all the newly discovered Domain controllers. If you want to have an option of
+pushing the client agent to domain controllers during client installation
+wizard then choose the option “**Never Install
+Configuration Manager Client on Domain Controller unless specified in Client
+Push Installation Wizard**”. Click on **Apply**.
+Select the **Accounts** tab, the account
+that you will add here must have local administrator rights on every computer
+on which you want to install the client. Once you have added the account, Click
+**Apply** and **OK** to close the properties page.
 
  
+
+## Boot Images and Distribution Point Configuration For OSD In SCCM 2012 R2
+
+### PXE
+
+PXE initiated deployments: PXE-initiated deployments let
+client computers request a deployment over the network. The operating system
+image and a Windows PE boot image are sent to a distribution point that is
+configured to accept PXE boot requests. We will first enable the PXE support
+for the clients. Launch the Configuration Manager 2012 R2 console, click on
+Administration, Servers and Site system roles, right click Distribution point
+and click properties. Click on PXE tab, check the box “Enable PXE support for
+clients“. There is warning box that appears, click on Yes. This will enable the
+PXE support for clients. When you enable the PXE support for clients the
+Windows Deployment Services will be installed in the background. You will see
+the WDS service running when you open services.msc. Enable the option Allow
+this DP to respond to incoming PXE requests, this will allow DP to respond to
+the incoming PXE requests. Enable the option Enable unknown computer support,
+an unknown computer may be a computer where the Configuration Manager client is
+not installed or it can be a computer that is not imported into Configuration
+Manager or that has not been discovered by Configuration Manager. To deploy
+operating systems to any of the computers you must enable this option. Enable
+the option Require a password when computers use PXE, it is recommended to
+provide a strong password for any computers that use PXE. This is more of an
+additional security for your PXE deployments. User Device Affinity – This is to
+specify how you want the distribution point to associate users with the
+destination computer for PXE deployments. You have 3 options for user device
+affinity, a) Do not use user device affinity – Select this if you do not want
+to associate users with the destination computer. b) Allow user device affinity
+with manual approval – Select this option to wait for approval from an
+administrative user before users are associated with the destination computer.
+c) Allow user device affinity with automatic approval – Select this option to
+automatically associate users with the destination computer without waiting for
+approval. For the option Network Interfaces, select Respond to PXE requests on
+all network interfaces. Here you basically specify whether the distribution
+point responds to PXE requests from all network interfaces or from specific
+network interfaces. If you want a specific network interface to respond to PXE
+request select Respond to PXE requests on specific network interfaces. PXE
+server response delay – This option is to specify delay (in seconds) for the
+distribution point before it responds to computer requests when multiple
+PXE-enabled distribution points are used. By default, the Configuration Manager
+PXE service point responds first to network PXE requests. Once you have
+configured these options click on Apply and click on OK. 
+
+ 
+
+### Boot images
+
+Before you proceed for OSD, you need to make few changes to
+the Boot Images too. When you install SCCM 2012 R2, you will find that there
+are 2 images that are installed by SCCM. Boot Image (x64) – used when you
+deploy 64 bit OS, Boot Image (x86) – used when you deploy 32 bit OS. The first
+step is to enable the command support on both the boot images. Enabling this
+option helps in troubleshooting OS deployment issues. To enable the command
+support, in the CM console, click Software Library, expand Operating system,
+Click Boot Images. Right click Boot Image (X64) and click on Properties. Click
+on Customization tab and check the box Enable Command Support (testing only).
+Click on Apply
+
+After you enable the command support, on the same window
+click on Data Source tab and make sure the option Deploy this boot image from
+the PXE-enabled DP. This is option is enabled by default, if its not enabled
+please enable it. Click on Apply and click OK.
+
+The changes that you made to Boot Image (x64), repeat the
+same for Boot Image (x86). 
+
+After you make the changes to the Boot Images you must
+distribute the content to DP. If you had distributed the boot images to DP
+previously and in case if you make changes to it post that then you can Update
+Distribution Points. To distribute the boot images to DP, right click on the
+boot image and click Distribute Content. Distribute content of both the boot
+images.
+
+Network Access Account
+
+To configure the Network Access Account, open the CM2012 R2
+console, click on Administration, expand Overview, expand Site Configuration,
+click Sites, on the top ribbon click Configure Site Components, click Software
+Distribution. Click on the tab Network Access Account, choose Specify the
+account that accesses network locations (by default the option is set to Use
+the computer account of Configuration Manager client). Click on the orange icon
+and add the user account that has enough permissions to access the content
+which is required while deploying Operating System. Click on Apply and click on
+OK.
+
+ 
+
+### Capturing Boot Image
+
+We will first create a task sequence media and create a
+capture media which is in saved .iso format. This .iso file contains the
+necessary files and instructions to capture a reference operating system. The
+same .iso file captures the operating system and stores the captured OS in .wim
+format. Once we get the .wim file we will import the file to SCCM 2012 R2 and
+we can use this .wim to deploy this OS to another computer either by using SCCM
+or WDS.
+
+ The first step
+involves creating a capture media which is in .iso file. Launch the ConfigMgr
+console, click on Software Library, expand Overview, expand Operating Systems,
+right click Task Sequences and click on Create Task Sequence Media.
+
+Type of Media – Select the type of media as Capture Media.
+Click Next.
+
+Media Type – You can select either USB flash drive or
+CD/DVD. I have tried using USB flash drive and even that works. In this example
+we will choose CD/DVD, and we will store the media file in one of the shared
+location on SCCM server. You can choose to store the capture media on any
+shared location, it may not be necessarily SCCM server. One important thing
+here you must save the capture media with .iso extension. Click on Next.
+
+Selecting Boot Image – This is very important step. Select
+the Boot Image by clicking on Browse. Select Boot Image (x64) and for DP click
+on Browse and select the desired DP. Click Next.
+
+The capture media has been created by the wizard. Click on
+Close.
+
+After creating the capture media we will now mount the
+capture media (.iso file) on the windows machine and run the image capture
+wizard. 
+
+Image Destination – Provide a folder path where the captured
+image should be stored. The name of the captured image should have .wim as
+extension. Also provide a user account that has enough permissions to store the
+captured file to the shared folder. Click Next.
+
+Image Information – Provide the image information such as
+Created by, Version and Description. Click on Next.
+
+Click on Finish to complete the Image Capture Wizard. Note
+that we have just run the image capture wizard, in the next step sysprep
+captures the OS.
+
+The computer restarts and we see that the wizard now starts
+capturing volume and the OS.
+
+Once we have got the .wim file, we can import the .wim as
+operating system image in SCCM 2012 R2. To import the operating system image,
+right click Operating System Images, click on Add Operating System Image. Enter
+the path where the captured .wim file is present. Click on Next.
+
+The name and version is picked up automatically, click on
+Next.
+
+The operating system image has been imported successfully.
+Click on Close
+
+After importing the image the next step is to distribute the
+image to the DP. Right click on the windows image and click on Distribute
+Content.
+
+Add the DP and click Next.
+
+The image file has been distributed to the DP. Click on
+Close. Wait for sometime while the DP updates the content, check the content
+status and you must see a green circle which means that content is now
+available with DP.       
+
+## Deploying Windows 7 Using SCCM 2012 R2

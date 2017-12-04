@@ -34,7 +34,7 @@
   - [creating shares automatically](http://www.tomsitpro.com/articles/create-file-share-windows-server-2016,1-3364.html)
   - [shared folder quotas installen](https://www.saotn.org/powershell-get-fsrmquota-and-set-fsrmquota/) 
   - [File shares powershell](http://windowsitpro.com/powershell/managing-file-shares-windows-powershell)
-  
+  - [Quota with powershell](http://techgenix.com/powershell-file-management-part3/)
 - [DFS]
   - [Powershell script](https://www.petri.com/create-a-distributed-file-system-namespace-in-windows-server-2012-r2)
   - [Powershell DFS](https://www.technig.com/install-configure-distributed-file-system/)

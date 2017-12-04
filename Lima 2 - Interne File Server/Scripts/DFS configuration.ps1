@@ -3,14 +3,17 @@
 #STILL IN PROGRESS!#
 
 #Make folder
-$folders = (‘C:\dfsroots\files’,’D:\ShareVerkoop’)  mkdir -path $folders
+$folders = 'C:\dfsroots\files','D:\testShare' 
+mkdir -path $folders
 #Make share
-$folders | ForEach-Object {$sharename = (Get-Item $_).name; New-SMBShare -Name $shareName -Path $_ -ReadAcces "Ontwikkeling" -ChangeAcces "Verkoop" -FullAcces "IT Administratie"}
+New-SMBShare -Name testShare -Path "D:\testShare" -ReadAccess "Ontwikkeling" -ChangeAccess "Verkoop" -FullAccess "IT Administratie"}
 #DFNSroot
-New-DfsnRoot -Path \\red.local\ShareVerkoop -TargetPath \\lima2\ShareVerkoop -Type DomainV2
+New-DfsnRoot -Path \\red.local\testShare -TargetPath \\lima2\testShare -Type DomainV2
 
 #Add folder target to namespace
-$folders | Where-Object {$_ -like "*ShareVerkoop*"} | ForEach-Object {$name = (Get-Item $_).name; 
-$DfsPath = (‘\\red.local\files\’ + $name); 
-$targetPath = (‘\\lima2\’ + $name);
-New-DfsnFolderTarget -Path $dfsPath -TargetPath $targetPath}
+$DfsPath = \\red.local\files\testShare 
+$targetPath = \\lima2\testShare
+New-DfsnFolderTarget -Path $DfsPath -TargetPath $targetPath
+
+
+
