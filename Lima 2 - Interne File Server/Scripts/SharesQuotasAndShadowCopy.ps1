@@ -34,6 +34,11 @@ New-FsrmQuota -Path "F:\" -Description "ITData Quota" -Size 200MB -Threshold $Th
 # http://juventusitprofessional.blogspot.be/2013/11/windows-powershell-shadow-copy.html
 vssadmin add shadowstorage /for=H: /on=C: /MaxSize=500MB
 
+#Set Shadow Copy Scheduled Task for H: PM
+$Action=new-scheduledtaskaction -execute "c:\windows\system32\vssadmin.exe" -Argument "create shadow /for=H:"
+$Trigger=new-scheduledtasktrigger -daily -at 06:00PM
+Register-ScheduledTask -TaskName ShadowCopyH_PM -Trigger $Trigger -Action $Action -Description "ShadowCopyH_PM"
+
 # this seems to work, but how do i schedule it for automatic daily copies?
 
 #check this out aswell https://social.technet.microsoft.com/Forums/ie/en-US/fb69840d-5f52-4711-8168-2faa23088233/shadow-copy-schedule-per-script?forum=winserverfiles
