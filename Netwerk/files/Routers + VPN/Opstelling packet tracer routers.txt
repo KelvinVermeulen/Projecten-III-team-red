@@ -22,17 +22,11 @@ Router1
 Router2
 -> Serial 0/1/0 naar Serial 0/1/0 router4
 
+Router3
+-> Serial 0/1/1 naar Serial 0/1/1 router 2
+
 Router4
 -> Serial 0/1/1 naar Serial 0/1/0 router 3
-
-Router3
--> Serial 0/1/1 naar Serial 0/1/1 router 2	
-
-					
-
-	
-
-	
 
 
 							
