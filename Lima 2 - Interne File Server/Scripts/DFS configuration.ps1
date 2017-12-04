@@ -15,3 +15,5 @@ $folders | Where-Object {$_ -like "*ShareVerkoop*"} | ForEach-Object {$name = (G
 $DfsPath = (‘\\red.local\files\’ + $name); 
 $targetPath = (‘\\lima2\’ + $name);
 New-DfsnFolderTarget -Path $dfsPath -TargetPath $targetPath}
+
+##confilct removal comment
