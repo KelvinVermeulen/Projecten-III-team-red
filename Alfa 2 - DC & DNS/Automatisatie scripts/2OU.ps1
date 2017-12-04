@@ -1,4 +1,7 @@
-﻿#Sub OU aanmaken
+New-ADOrganizationalUnit -Name "RED" ;
+
+
+#Sub OU aanmaken
 New-ADOrganizationalUnit -Name "Administratie" -Path "OU=RED,DC=red,DC=local";
 New-ADOrganizationalUnit -Name "Directie" -Path "OU=RED,DC=red,DC=local";
 New-ADOrganizationalUnit -Name "IT Administratie" -Path "OU=RED,DC=red,DC=local";
