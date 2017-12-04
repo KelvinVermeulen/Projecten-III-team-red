@@ -2,13 +2,19 @@
 
 ## Automatische installaties
 
-1. 'vagrant up' op de locatie van vagrantfile
+1. In hyper-v check de instellingen voor de virtuele switch adapter.
+Extern netwerk staat op wireless en de vlan-id staat op 200.
 
-2. Check of google chrome wordt geïnstalleerd
+![vlan](https://github.com/HoGentTIN/p3ops-red/tree/master/oscar2%20-%20monitoring%20server/img/switch.JPG)
 
-3. Check of PRTG is geïnstalleerd
+2. 'vagrant up' op de locatie van vagrantfile
 
-4. Check of de ip addressering is veranderd naar juiste
+3. In Hyper-V manager bij instellingen van de VM moet het vlan nog meegegevn worden.
+
+4. Script runnen voor de installatie PRTG & IP instellingen
+
+5. Check of google chrome werd geïnstalleerd
+
 
 ## Configuratie PRTG
 
