@@ -5,7 +5,7 @@
 #Make folder
 $folders = (‘C:\dfsroots\files’,’D:\ShareVerkoop’)  mkdir -path $folders
 #Make share
-$folders | ForEach-Object {$sharename = (Get-Item $_).name; New-SMBShare -Name $shareName -Path $_ -FullAccess Everyone}
+$folders | ForEach-Object {$sharename = (Get-Item $_).name; New-SMBShare -Name $shareName -Path $_ -ReadAcces "Ontwikkeling" -ChangeAcces "Verkoop" -FullAcces "IT Administratie"}
 #DFNSroot
 New-DfsnRoot -Path \\red.local\ShareVerkoop -TargetPath \\lima2\ShareVerkoop -Type DomainV2
 
