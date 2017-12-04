@@ -3,17 +3,16 @@
 #STILL IN PROGRESS!#
 
 #Make folder
-$folders = (‘C:\dfsroots\files’,’D:\ShareVerkoop’)  mkdir -path $folders
+$folders = (‘C:\dfsroots\files’,’D:\testShare);  
+mkdir -path $folders
 #Make share
+$sharename = testShare; 
 $folders | ForEach-Object {$sharename = (Get-Item $_).name; 
-New-SMBShare -Name $shareName -Path $_ -ReadAcces "Ontwikkeling" -ChangeAcces "Verkoop" -FullAcces "IT Administratie"}
+New-SMBShare -Name $shareName -Path "D:\testShare" -ReadAcces "Ontwikkeling" -ChangeAcces "Verkoop" -FullAcces "IT Administratie"}
 #DFNSroot
-New-DfsnRoot -Path \\red.local\ShareVerkoop -TargetPath \\lima2\ShareVerkoop -Type DomainV2
+New-DfsnRoot -Path \\red.local\testShare -TargetPath \\lima2\testShare -Type DomainV2
 
 #Add folder target to namespace
-$folders | Where-Object {$_ -like "*ShareVerkoop*"} | ForEach-Object {$name = (Get-Item $_).name; 
-$DfsPath = (‘\\red.local\files\’ + $name); 
-$targetPath = (‘\\lima2\’ + $name);
+$DfsPath = (‘\\red.local\files\testShare’); 
+$targetPath = (‘\\lima2\testShare’);
 New-DfsnFolderTarget -Path $dfsPath -TargetPath $targetPath}
-
-##confilct removal comment
