@@ -201,6 +201,23 @@ We voegen enkele poorten toe:
 
 ![Rules firewall](img/newPorts.PNG)
 
+
+## Routes
+
+*Om enkel te controleren of de routes in orde zijn, kunnen we tijdelijk het filteren van de packets uitschakelen.*
+
+We voegen routes toe naar VLAN 200, 300, 500 en 999 (native). Er staan ook routes naar netwerk `0.0.0.0/1` en `128.0.0.0/1` in, dit om een default static route te simuleren (`0.0.0.0/0` is niet mogelijk in pfSense). Hiernaast is er ook een route naar `172.18.0.0/16` om alles te routeren binnen `red.local`. Deze 3 routes zijn uitgeschakeld en worden dus niet toegepast op de firewall.
+
+![Routes](img/routes.jpg)
+
+## Gateways
+
+We hebben ook 3 gateways gedefinieerd; 2 WAN en 1 LAN gateway.
+
+`GW_ROUTERIN` dient als gateway voor het intern verkeer (naar `red.local`), `WAN_DHCP6` dient voor IPv6 en is uitgeschakeld. `WANGW` is de default gateway en al het verkeer dat niet bestemd is voor `red.local` zal via deze DG naar buiten gaan.
+
+![Gateways](img/GW.jpg)
+
 ## Backup/restore configuratie
 
 `Diagnostics` -> `Backup & Restore`
