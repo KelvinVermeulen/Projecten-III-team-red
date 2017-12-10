@@ -8,11 +8,6 @@ line console 0
 password cisco
 login
 exit
-vlan 80
-name Linux
-vlan 800
-name Windows
-exit
 int Fa0/1
 ip add 192.168.0.2 255.255.255.0
 no shut
