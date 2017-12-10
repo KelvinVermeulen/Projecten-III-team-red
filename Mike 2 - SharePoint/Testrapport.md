@@ -85,7 +85,7 @@
 	- **Account name:** _RED/Administrator_
 	- **Paswoord:** Aa12345
 3. Open een internetbrowser;
-4. Surf naar 'http://mike2:30281/';
+4. Surf naar ´http://mike2:30281/´;
 5. Als je hier de SharePoint GUI krijgt, wilt het zeggen dat alles succesvol geïnstalleerd is;
 
 
