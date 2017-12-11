@@ -8,16 +8,20 @@ $drv.Put() | out-null
 #Disk 0
 
 #Resize System partition
-Resize-Partition -DiskNumber 0 -PartitionNumber 2 -Size 33GB
+Resize-Partition -DiskNumber 0 -PartitionNumber 2 -Size 25GB
 
 #The new partitions
-New-Partition -DiskNumber 0 -Size 33GB -DriveLetter D 
+New-Partition -DiskNumber 0 -Size 25GB -DriveLetter D 
 Format-Volume -DriveLetter D -FileSystem NTFS
 Set-Volume -DriveLetter D -NewFileSystemLabel "VerkoopData"
 
-New-Partition -DiskNumber 0 -UseMaximumSize -DriveLetter E
+New-Partition -DiskNumber 0 -Size 25GB -DriveLetter E
 Format-Volume -DriveLetter E -FileSystem NTFS
 Set-Volume -DriveLetter E -NewFileSystemLabel "OntwikkelingData"
+
+New-Partition -DiskNumber 0 -UseMaximumSize -DriveLetter J 
+Format-Volume -DriveLetter J -FileSystem NTFS
+Set-Volume -DriveLetter J -NewFileSystemLabel "ShareVerkoop"
 
 #Disk 1
 Initialize-Disk 1
