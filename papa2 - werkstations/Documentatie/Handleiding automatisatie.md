@@ -22,4 +22,4 @@ Wanneer je het script `InstalWSUS.ps1` uitvoert, zal de installatie van WSUS sta
 
 ## Configuratie SCCM
 
-De configuratie van SCCM gebeurt op dezelfde wijze als bij de handmatige installatie. De uitgebreide stappen hoe je dit aanpakt vind je [hier] (https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/Documentatie/handleiding_handimatige_instalatie.md###Configuring Discovery and Boundaries) 
+De configuratie van SCCM gebeurt op dezelfde wijze als bij de handmatige installatie. De uitgebreide stappen hoe je dit aanpakt vind je [https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/Documentatie/handleiding_handimatige_instalatie.md](###configuring-discovery-and-boundaries) 
