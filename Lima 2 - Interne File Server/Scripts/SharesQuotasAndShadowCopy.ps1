@@ -8,7 +8,7 @@ new-smbshare -name DirData -Path: G:\ -EncryptData $False -FullAccess "IT Admini
 new-smbshare -name AdminData -Path: H:\ -EncryptData $False -FullAccess "IT Administratie" -ChangeAccess "Administratie"
 new-smbshare -name HomeDirs -Path: Y:\ -EncryptData $False -FullAccess "IT Administratie" -ChangeAccess "everyone"
 new-smbshare -name ProfileDirs -Path: Z:\ -EncryptData $False -FullAccess "IT Administratie" -ChangeAccess "everyone"
-#new-smbshare -name ShareVerkoop -Path: D:\ -EncryptData $False -FullAccess "IT Administratie" -ReadAccess "Ontwikkeling" -ChangeAccess "Verkoop"
+new-smbshare -name ShareVerkoop -Path: J:\ -EncryptData $False -FullAccess "IT Administratie" -ReadAccess "Ontwikkeling" -ChangeAccess "Verkoop"
  
 # quotas
 
