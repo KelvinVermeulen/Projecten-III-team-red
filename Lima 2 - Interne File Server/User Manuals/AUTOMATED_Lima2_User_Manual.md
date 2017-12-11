@@ -17,6 +17,7 @@
 - Run lima2_deployment_script.ps1
 - Run Partitioning.ps1
 - Run DomainJoin.ps1
+ - If there's an error about trust issues, leave and rejoin the domain!
 - Run Roles_and_features.ps1
 - Run SharesQuotasAndShadowCopy.ps1
 - Run DFS_configuration.ps1
