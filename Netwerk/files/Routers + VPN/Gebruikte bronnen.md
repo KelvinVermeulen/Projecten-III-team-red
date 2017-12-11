@@ -1,5 +1,4 @@
-# Gebruikte bronnen
-# Routers lokaal
+# Gebruikte bronnen - routers lokaal
 
 ## Cursussen & forums
 - https://static-course-assets.s3.amazonaws.com/ConnectNet6/en/index.html#3.3.2.1
