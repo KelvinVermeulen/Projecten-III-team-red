@@ -1,6 +1,6 @@
 
-#Checking pre-requisites
-ECHO "Checking pre-requisites"
+#Installing pre-requisites
+ECHO "Installing pre-requisites"
 ECHO "Installing OS roles and features"
 Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience,
  RPC-over-HTTP-proxy, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth,
@@ -49,7 +49,7 @@ Write-Host "Press any key to continue"
 $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 Write-Host
 
-.\ucma\UcmaRuntimeSetup.exe
+.\ucma\UcmaRuntimeSetup.exe -q
 ###################UCMA-END##################################
 
 #Restarting PC !NEED TO BE AT END!
