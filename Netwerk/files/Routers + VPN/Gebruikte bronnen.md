@@ -1,7 +1,7 @@
-#Gebruikte bronnen
-#Routers lokaal
+# Gebruikte bronnen
+# Routers lokaal
 
-##Cursussen & forums
+## Cursussen & forums
 - https://static-course-assets.s3.amazonaws.com/ConnectNet6/en/index.html#3.3.2.1
 - http://resources.intenseschool.com/ccna-lab-practice-with-cisco-packet-tracer-basic-router-configuration-2/
 - https://courses.cs.ut.ee/MTAT.08.033/2015_fall/uploads/Main/6_1.pdf
@@ -12,7 +12,7 @@
 - https://supportforums.cisco.com/t5/firewalling/asdm-packet-trace-vpn-connections/td-p/2419878
 - https://www.cisco.com/c/en/us/td/docs/security/vpn_modules/6342/vpn_cg/6342site3.html
 
-##YouTube tutorials
+## YouTube tutorials
 - https://www.youtube.com/watch?v=QF8pqGNWVqI
 - https://www.youtube.com/watch?v=N0-OMbng_8Q
 - https://www.youtube.com/watch?v=E71mpDrGPXg
