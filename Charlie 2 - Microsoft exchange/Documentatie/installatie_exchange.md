@@ -11,14 +11,15 @@
 
 - Meld je aan in het domein: System -> Change setting -> Change -> Domain: red.local
 - **Restart PC**
-- Installatiescript_Deel2_JDM.ps1 **Need Exchange2013.EXE**
+- Run installatiescript_Deel2_JDM.ps1 **Need Exchange2013.EXE**
 
-- Installatiescript_Deel3_JDM.ps1
+- Run installatiescript_Deel3_JDM.ps1
 
 - Deactiveer firewall via Powershell met volgende commando :
 
 		Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
+- Run exchange2013_config.ps1
 
 ### Opmerkingen
 
