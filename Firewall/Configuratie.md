@@ -200,7 +200,7 @@ We voegen enkele poorten toe:
 - Destination Port: (zie afbeelding hieronder)
 
 
-[PDF alle geconfigureerde rules LAN](files/Firewall rules-LAN.pdf)
+[PDF alle geconfigureerde rules LAN](files/Firewall_rules-LAN.pdf)
 
 <!-- Verouderd
 ![Rules firewall](img/newPorts.PNG)
