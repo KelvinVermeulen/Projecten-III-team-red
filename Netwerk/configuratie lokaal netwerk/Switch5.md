@@ -110,6 +110,10 @@ interface g0/1
 ip address 172.18.2.34 255.255.255.224
 no shutdown
 exit
+access-list 1 permit 172.18.0.0 0.0.255.255
+interface g0/0.300
+ip access-group 1 out
+exit
 ip route 0.0.0.0 0.0.0.0 172.18.2.33
 ip route 172.18.2.130 255.255.255.255 172.18.2.33
 ip route 172.18.2.133 255.255.255.255 172.18.2.33
