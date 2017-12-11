@@ -22,7 +22,7 @@
 - Open a powershell
 - Run Partitioning.ps1
 - Configure the IP-settings
- - ip: 172.18.0.7
+  - ip: 172.18.0.7
  - sm: 255.255.255.0
  - dns: 172.18.0.2
 - Run DomainJoin.ps1
