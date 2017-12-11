@@ -14,11 +14,11 @@
 
 ### Run Scripts
 
-####On Host system
+#### On Host system
 - Make sure HyperV is enabled on your host-machine by running the HyperV_enable.ps1
 - Run lima2_deployment_script.ps1
 
-####On Lima2
+#### On Lima2
 - Open a powershell
 - Run Partitioning.ps1
 - Configure the IP-settings
