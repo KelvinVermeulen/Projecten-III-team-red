@@ -10,7 +10,7 @@
 		DNS-Server: 172.18.0.2
 
 - Meld je aan in het domein: System -> Change setting -> Change -> Domain: red.local
-- **Restart PC**
+- Restart PC and log in as domain admin
 - Run installatiescript_Deel2_JDM.ps1 **Need Exchange2013.EXE**
 
 - Run installatiescript_Deel3_JDM.ps1
