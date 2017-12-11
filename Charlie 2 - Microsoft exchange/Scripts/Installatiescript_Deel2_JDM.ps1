@@ -1,4 +1,4 @@
-#Check if exchangefiles already exist
+#Check if exchangefiles folder already exist
 if(Test-Path ExchangeFiles)
 {
 $directoryInfo = Get-ChildItem ExchangeFiles | Measure-Object
@@ -8,9 +8,7 @@ if($directoryInfo.count -eq 0)
 }
 }
 
-
 #making exchangefiles folder
-
 ECHO "Making folder for setupfiles"
 if(!(Test-Path ExchangeFiles))
 {
@@ -55,9 +53,7 @@ ECHO "Still extracting"
 }
 while($CheckNull -eq $true)
 #>
-####################
 
-#Running setup.exe
-#.\ExchangeFiles\setup /PrepareAD /OrganizationName:"Red" /IAcceptExchangeServerLicenseTerms
+
 
 

@@ -11,16 +11,46 @@ Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience,
  Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation
 ECHO "Done installing roles en features"
 
+#NET-Framework
 ECHO "Installing NET-Framework-45-Features"
 Install-WindowsFeature NET-Framework-45-Features
 ECHO "Done installing NET-Framework-45-Features"
 
+#RSAT-ADDS
 ECHO "Installing Pre-Requisites"
 Install-WindowsFeature RSAT-ADDS,
 RSAT-Clustering,RSAT-Clustering-CmdInterface,
 RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell
 ECHO "done installing ADLDS"
 
+###################UCMA-START##################################
+#Check if ucma-folder already exist
+if(Test-Path ucma)
+{
+$directoryInfo = Get-ChildItem ucma | Measure-Object
+if($directoryInfo.count -eq 0)
+{
+	Remove-Item ucma 
+}
+}
+
+#making ucma folder
+ECHO "Making folder for setupfiles"
+if(!(Test-Path ucma))
+{
+new-item ucma -itemtype directory 
+}else
+{
+ECHO "Already created"
+}
+ECHO "Place Setupfiles in C:\Users\Administrator\Documents\ucma "
+
+Write-Host "Press any key to continue"
+$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+Write-Host
+
+.\ucma\UcmaRuntimeSetup.exe
+###################UCMA-END##################################
 
 #Restarting PC !NEED TO BE AT END!
 Write-Host "Press any key to restart"
