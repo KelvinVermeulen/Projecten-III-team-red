@@ -199,12 +199,16 @@ We voegen enkele poorten toe:
 - Source: `LAN net`
 - Destination Port: (zie afbeelding hieronder)
 
-![Rules firewall](img/newPorts.PNG)
 
+[PDF alle geconfigureerde rules LAN](files/Firewall rules-LAN.pdf)
+
+<!-- Verouderd
+![Rules firewall](img/newPorts.PNG)
+-->
 
 ## Routes
 
-*Om enkel te controleren of de routes in orde zijn, kunnen we tijdelijk het filteren van de packets uitschakelen.*
+*Om enkel te controleren of de routes in orde zijn, kunnen we tijdelijk het filteren van de packets uitschakelen.* Advanced -> Firewall & NAT.
 
 We voegen routes toe naar VLAN 200, 300, 500 en 999 (native). Er staan ook routes naar netwerk `0.0.0.0/1` en `128.0.0.0/1` in, dit om een default static route te simuleren (`0.0.0.0/0` is niet mogelijk in pfSense). Hiernaast is er ook een route naar `172.18.0.0/16` om alles te routeren binnen `red.local`. Deze 3 routes zijn uitgeschakeld en worden dus niet toegepast op de firewall.
 
@@ -214,7 +218,7 @@ We voegen routes toe naar VLAN 200, 300, 500 en 999 (native). Er staan ook route
 
 We hebben ook 3 gateways gedefinieerd; 2 WAN en 1 LAN gateway.
 
-`GW_ROUTERIN` dient als gateway voor het intern verkeer (naar `red.local`), `WAN_DHCP6` dient voor IPv6 en is uitgeschakeld. `WANGW` is de default gateway en al het verkeer dat niet bestemd is voor `red.local` zal via deze DG naar buiten gaan.
+`GW_ROUTERIN` 172.18.2.97 dient als gateway voor het intern verkeer (naar `red.local`), `WAN_DHCP6` dient voor IPv6 en is uitgeschakeld. `WANGW` is de default gateway en al het verkeer dat niet bestemd is voor `red.local` zal via deze DG naar buiten gaan.
 
 ![Gateways](img/GW.jpg)
 
@@ -225,3 +229,6 @@ We hebben ook 3 gateways gedefinieerd; 2 WAN en 1 LAN gateway.
 Download configuration as XML.
 
 
+**Opmerking:** Het is mogelijk dat na het restoren van de backup dat de firewall packages wilt installeren van het internet, dit is niet noodzakelijk. Cancel deze installatie/updates dus. Dit moet je zeker doen als er nog geen internetverbinding is (want dit zou toch niet lukken).
+
+Kies hierbij voor "Clear package lock".
