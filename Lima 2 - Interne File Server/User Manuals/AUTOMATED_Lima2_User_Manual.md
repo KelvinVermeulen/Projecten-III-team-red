@@ -10,7 +10,7 @@
 ### Getting Ready
 
 - Copy the scripts from your usb-stick to the virtual machine
- - After the installation completed and you're logged in, restart the server. (Else you won't be able to copy scripts within the VM)
+  - After the installation completed and you're logged in, restart the server. (Else you won't be able to copy scripts within the VM)
 
 ### Run Scripts
 
@@ -23,12 +23,12 @@
 - Run Partitioning.ps1
 - Configure the IP-settings
   - ip: 172.18.0.7
- - sm: 255.255.255.0
- - dns: 172.18.0.2
+  - sm: 255.255.255.0
+  - dns: 172.18.0.2
 - Run DomainJoin.ps1
- - If there's an error about trust issues, leave and rejoin the domain!
+  - If there's an error about trust issues, leave and rejoin the domain!
 - Log-in with administrator@red.local
- - The scripts won't be saved on the domain account, so you need yo copy them again.
+  - The scripts won't be saved on the domain account, so you need yo copy them again.
 - Run Roles_and_features.ps1
 - Run SharesQuotasAndShadowCopy.ps1
 - Run DFS_configuration.ps1
