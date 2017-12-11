@@ -9,7 +9,7 @@
 
 ### Getting Ready
 
-- 
+- Copy the scripts from your usb-stick to the virtual machine
 
 ### Run Scripts
 
