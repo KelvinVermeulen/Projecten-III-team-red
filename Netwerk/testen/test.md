@@ -56,7 +56,7 @@ Pingtesten naar elke router:
 
 Pingtest tussen linux en windows:
 
-![alt text](images%20testrapport/pinglinuxwindowws.png)
+![alt text](images%20testrapport/pinglinuxwindowws.PNG)
 
 # Internet test
 
