@@ -9,7 +9,7 @@ password cisco
 login
 exit
 int Fa0/1
-ip add 172.16.129.13 255.255.0.0
+ip add 172.16.129.13 255.255.255.252
 no shut
 int Fa0/0
 ip add 192.168.1.1 255.255.255.0
