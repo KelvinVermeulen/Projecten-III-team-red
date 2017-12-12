@@ -12,9 +12,9 @@ Opstelling pkt:
 
 Fysieke opstelling:
 
-![alt text](images%20testrapport/opstelling1.PNG)
+![alt text](images%20testrapport/opstelling1.jpg)
 
-![alt text](images%20testrapport/opstelling2.PNG)
+![alt text](images%20testrapport/opstelling2.jpg)
 
 Deze komen overeen , we zien op de foto's ook dat alle poorten open staan en werken.
 
@@ -22,23 +22,23 @@ Deze komen overeen , we zien op de foto's ook dat alle poorten open staan en wer
 
 Router 1:
 
-![alt text](images%20testrapport/router1config.PNG)
+![alt text](images%20testrapport/router1config.png)
 
 Router 2:
 
-![alt text](images%20testrapport/router2config.PNG)
+![alt text](images%20testrapport/router2config.png)
 
 Router 3:
 
-![alt text](images%20testrapport/router3config.PNG)
+![alt text](images%20testrapport/router3config.png)
 
 Router 4:
 
-![alt text](images%20testrapport/router4config.PNG)
+![alt text](images%20testrapport/router4config.png)
 
 Switch:
-![alt text
-](images%20testrapport/switch1config.PNG)
+
+![alt text](images%20testrapport/switch1config.png)
 
 # Pingtesten tussen alle routers en tussen het windows en linux gedeelte
 
@@ -56,7 +56,7 @@ Pingtesten naar elke router:
 
 Pingtest tussen linux en windows:
 
-![alt text](images%20testrapport/pinglinuxwindows.PNG)
+![alt text](images%20testrapport/pinglinuxwindows.png)
 
 # Internet test
 
