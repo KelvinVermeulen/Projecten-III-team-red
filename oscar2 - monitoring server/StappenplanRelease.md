@@ -1,5 +1,22 @@
 # Stappenplan Release
 
+- Box installeren
+
+- Bestanden overzetten
+
+- Chrome installeren
+
+  * dependency: internet nodig, niet in domein, geen ip ingesteld
+
+- PRTG installeren
+
+  * dependency: internet nodig, niet in domein, geen ip ingesteld
+
+- PRTG opstarten
+  * dependency: PRTG geinstalleerd, internet nodig
+
+
+
 ## Automatische installaties
 
 1. In hyper-v, check de instellingen voor de virtuele switch adapter.
