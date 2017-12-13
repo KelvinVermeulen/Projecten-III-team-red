@@ -59,7 +59,7 @@
   - Default Gateway: 172.18.2.1
   - DNS: 172.18.2.67 OF 172.18.2.68
   
- ## Server naam en domein naam
+ ## Stap 3: Server naam en domein naam
  
  ### GUI
  1. Start de server `Mike2`;
@@ -83,7 +83,7 @@
  6. Type `wmic computersystem get domain` en druk op *enter*;
  7. Indien er **red.local** verschijnt, is dat ook goed geconfigureerd;
  
- ## Scripts
+ ## Stap 4: Scripts
  ### Roleconfig
  1. Start de server `Mike2`;
  2. Log in met de gebruiker;
@@ -109,7 +109,7 @@
  4. Bij alle prerequisits moet er `Already Installed` staan;
  5. Hieraan kan je zien dat alle prerequisits correct geïnstalleerd zijn;
  
- ## Sharepoint
+ ## Stap 5: Sharepoint
  ### Setup
  1. Start de server `Mike2`;
  2. Log in met de gebruiker;
