@@ -33,6 +33,7 @@
     - Stel ook de DG in de switch juist: deze moet verwijzen naar `172.18.2.97`
 2. Aan de WAN-interface dien je een andere router te verbinden.
     - IP: `172.18.2.113/28`
+3. Voeg op iedere router ook telkens een statische route naar het ander netwerk (omdat de SN anders zijn).
 
 ## Wat bevat het testrapport?
 
