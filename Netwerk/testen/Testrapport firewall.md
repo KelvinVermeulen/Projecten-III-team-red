@@ -17,9 +17,9 @@ We stellen ook alles in zoals aangegeven in [het testplan](https://github.com/Ho
 
 We stellen vast dat we vanaf de router (in het intern netwerk) en een client (hier een server met een statisch IP-adres) alle apparaten kunnen bereiken (dus ook over/door de firewall heen).
 
-![connectiviteit](img/connectiviteit.png)
-![firewall](img/firewall.jpg)
-![ping](img/ping.jpg)
-![opstelling1](img/opstelling1.jpg)
-![opstelling2](img/opstelling2.jpg)
-![testrouter](img/testrouter.jpg)
+![connectiviteit](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/firewall%20afbeeldingen/connectiviteit.png)
+![firewall](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/firewall%20afbeeldingen/connectiviteit.png/firewall.jpg)
+![ping](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/firewall%20afbeeldingen/ping.jpg)
+![opstelling1](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/firewall%20afbeeldingen/opstelling1.jpg)
+![opstelling2](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/firewall%20afbeeldingen/opstelling2.jpg)
+![testrouter](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/firewall%20afbeeldingen/testrouter.jpg)
