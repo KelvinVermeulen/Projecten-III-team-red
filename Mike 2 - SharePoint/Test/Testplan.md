@@ -17,8 +17,8 @@
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
  3. Open *Command Prompt*
- 	1. Klik op de windowstoets;
- 	2. type `cmd` en druk op *enter*;
+ 	- Klik op de windowstoets;
+ 	- type `cmd` en druk op *enter*;
  4. Type `winver` en druk op *enter*;
  5. Controleer of het *Operating system version* op `Windows Server 2016 Standard` staat.
  
@@ -35,10 +35,10 @@
   7. Rechtsklik op de Ethernet adapter en kies eigenschappen;
   8. Klik op de optie 'Internet Protocol versie 4 (TCP/IPv4) en kies eigenschappen;
   9. Het IP-adres moet als volgt geconfigureerd zijn: 
- -- IP-address: 172.18.2.4
- -- Netmask: 255.255.0.0
- - IP-address: 172.18.0.12
- - Netmask: 255.255.255.0
+  - IP-address: 172.18.2.4
+  - Netmask: 255.255.0.0
+  - IP-address: 172.18.0.12
+  - Netmask: 255.255.255.0
   - Default Gateway: 172.18.2.1
   - DNS: 172.18.2.67 OF 172.18.2.68
   
@@ -48,14 +48,14 @@
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
  3. Open *Command Prompt*
- 	1. Klik op de windowstoets;
-  	2. type `cmd` en druk op enter;
-  4. Type `ipconfig` en druk op enter;
-  5. Het IP-adres moet als volgt geconfigureerd zijn: 
- -- IP-address: 172.18.2.4
- -- Netmask: 255.255.0.0
- +- IP-address: 172.18.0.12
- +- Netmask: 255.255.255.0
+ 	 - Klik op de windowstoets;
+  	- type `cmd` en druk op enter;
+ 4. Type `ipconfig` en druk op enter;
+ 5. Het IP-adres moet als volgt geconfigureerd zijn: 
+  - IP-address: 172.18.2.4
+  - Netmask: 255.255.0.0
+  - IP-address: 172.18.0.12
+  - Netmask: 255.255.255.0
   - Default Gateway: 172.18.2.1
   - DNS: 172.18.2.67 OF 172.18.2.68
   
@@ -76,12 +76,12 @@
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
  3. Open *Command Prompt*
- 	1. Klik op het vergrootglas in de taakbalk;
- 	2. type `cmd` en druk op *enter*;
+ 	- Klik op het vergrootglas in de taakbalk;
+ 	- type `cmd` en druk op *enter*;
  4. Type `HOSTNAME` en druk op *enter*;
  5. Indien er **Mike2** verschijnt, is de naam goed geconfigureerd;
- 5. Type `wmic computersystem get domain` en druk op *enter*;
- 6. Indien er **red.local** verschijnt, is dat ook goed geconfigureerd;
+ 6. Type `wmic computersystem get domain` en druk op *enter*;
+ 7. Indien er **red.local** verschijnt, is dat ook goed geconfigureerd;
  
  ## Scripts
  ### Roleconfig
@@ -90,7 +90,7 @@
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
  3. Voer het script `1_roleconfig.ps1` uit;
- 4. Als er overal _NoChangeNeeded_ staat zijn alle roles correct geïnstalleerd;
+ 4. Als er overal _NoChangeNeeded_ staat zijn alle roles correct geÃ¯nstalleerd;
  
  ### Mounting ISO's
  1. Start de server `Mike2`;
@@ -107,7 +107,7 @@
  	- **Paswoord:** Aa12345
  3. Voer de Prerequisitinstaller op `WindowsSharePointServer2016EN.iso` uit;
  4. Bij alle prerequisits moet er `Already Installed` staan;
- 5. Hieraan kan je zien dat alle prerequisits correct geïnstalleerd zijn;
+ 5. Hieraan kan je zien dat alle prerequisits correct geÃ¯nstalleerd zijn;
  
  ## Sharepoint
  ### Setup
@@ -116,7 +116,7 @@
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
  3. Voer de Setup.exe op `WindowsSharePointServer2016EN.iso` uit;
- 4. Wanneer je enkel de opties _Repair_ en _Remove_ krijgt, wilt het zeggen dat SharePoint volledig en correct geïnstalleerd is.
+ 4. Wanneer je enkel de opties _Repair_ en _Remove_ krijgt, wilt het zeggen dat SharePoint volledig en correct geÃ¯nstalleerd is.
  
  ### Server
  1. Start de server `Mike2`;
@@ -125,4 +125,4 @@
  	- **Paswoord:** Aa12345
  3. Open een internetbrowser;
  4. Surf naar `http://mike2:30281/`;
- 5. Als je hier de SharePoint GUI krijgt, wilt het zeggen dat de server succesvol geïnstalleerd en geconfigureerd is;
+ 5. Als je hier de SharePoint GUI krijgt, wilt het zeggen dat de server succesvol geÃ¯nstalleerd en geconfigureerd is;
