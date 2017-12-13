@@ -104,7 +104,7 @@
  2. Log in met de gebruiker;
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
- 3. Voer de Prerequisitinstaller op `WindowsSharePointServer2016EN.iso` uit;
+ 3. Voer de Prerequisitinstaller.exe op `WindowsSharePointServer2016EN.iso` uit;
  4. Bij alle prerequisits moet er `Already Installed` staan;
  5. Hieraan kan je zien dat alle prerequisits correct geïnstalleerd zijn;
  
