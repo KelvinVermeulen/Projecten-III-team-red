@@ -28,13 +28,12 @@
  2. Log in met de gebruiker;
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
- 3. Klik op de windowstoets;
- 4. Type 'instellingen';
- 5. Klik op 'Netwerk en Internet';
- 6. Klik op 'Adapteropties wijzigen';
-  7. Rechtsklik op de Ethernet adapter en kies eigenschappen;
-  8. Klik op de optie 'Internet Protocol versie 4 (TCP/IPv4) en kies eigenschappen;
-  9. Het IP-adres moet als volgt geconfigureerd zijn: 
+ 3. Open *Server Manager*;
+ 4. Klik op *Local Server* dat je linksbovenaan op de pagina terug kan vinden;
+ 5. Klik op de link naast Ethernet;
+ 6. Rechtsklik op de Ethernet adapter en kies eigenschappen;
+ 7. Klik op de optie 'Internet Protocol versie 4 (TCP/IPv4) en kies eigenschappen;
+ 8. Het IP-adres moet als volgt geconfigureerd zijn: 
   - IP-address: 172.18.2.4
   - Netmask: 255.255.0.0
   - IP-address: 172.18.0.12
