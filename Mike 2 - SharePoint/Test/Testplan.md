@@ -35,9 +35,7 @@
  7. Klik op de optie 'Internet Protocol versie 4 (TCP/IPv4) en kies eigenschappen;
  8. Het IP-adres moet als volgt geconfigureerd zijn: 
   - IP-address: 172.18.2.4
-  - Netmask: 255.255.0.0
-  - IP-address: 172.18.0.12
-  - Netmask: 255.255.255.0
+  - Netmask: 255.255.255.224
   - Default Gateway: 172.18.2.1
   - DNS: 172.18.2.67 OF 172.18.2.68
   
@@ -52,9 +50,7 @@
  4. Type `ipconfig` en druk op enter;
  5. Het IP-adres moet als volgt geconfigureerd zijn: 
   - IP-address: 172.18.2.4
-  - Netmask: 255.255.0.0
-  - IP-address: 172.18.0.12
-  - Netmask: 255.255.255.0
+  - Netmask: 255.255.255.224
   - Default Gateway: 172.18.2.1
   - DNS: 172.18.2.67 OF 172.18.2.68
   
@@ -123,5 +119,5 @@
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
  3. Open een internetbrowser;
- 4. Surf naar `http://mike2:30281/`;
+ 4. Surf naar `http://mike2:2017/`;
  5. Als je hier de SharePoint GUI krijgt, wilt het zeggen dat de server succesvol geïnstalleerd en geconfigureerd is;
