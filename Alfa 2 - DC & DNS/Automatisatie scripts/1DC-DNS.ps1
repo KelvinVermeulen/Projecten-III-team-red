@@ -6,6 +6,10 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.2.67" -PrefixLeng
 #DNS Server wijzigen
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses "193.190.173.1","193.190.173.2"
 
+#DNS forwarder instellen
+Add-DnsServerForwarder -IPAddress 193.190.173.1 -PassThru
+Add-DnsServerForwarder -IPAddress 193.190.173.2 -PassThru
+
 #Firewall uitschakelen
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
