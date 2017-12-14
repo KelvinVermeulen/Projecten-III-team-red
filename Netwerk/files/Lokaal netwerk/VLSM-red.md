@@ -88,4 +88,8 @@ RouterSwitch5: G0/0.200: `172.18.0.1`
 
 ## Opstelling zonder interfaces
 
+![Opstelling](../../img/opstelling1.png)
+
 ## Opstelling met interfaces
+
+![Opstelling](../../img/opstelling2.png)
