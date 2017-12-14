@@ -23,18 +23,18 @@ Na het runnen van het eerste script, en een ipconfig/all in cmd, kloppen alle ip
 De computernaam is November2 en zit in het domein red.local.
 
 
-###Aanmaken Directories
+### Aanmaken Directories
 
 Na het runnen van het tweede script, ga ik naar C:\Program Files, daar staat de map Microsoft SQL Server, deze stap is ook geslaagd.
 
 
 ### Java en .Net Installatie 
 
-####Java
+#### Java
 
 Na het runnen van het derde script, ga ik naar control panel --> Programma's, hier staat er Java 8, Java is correct geïnstalleerd.
 
-####.Net
+#### .Net
 
 Na uitvoeren van het commando _Get-WindowsFeature Net-Framework-Core_ in Powershell, staat er dat .NET geïnstalleerd is, deze stap is geslaagd.
 
