@@ -3,6 +3,10 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.2.68" -PrefixLeng
 #DNS Server wijzigen
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses "193.190.173.1","193.190.173.2"
 
+#DNS forwarder instellen
+Add-DnsServerForwarder -IPAddress 193.190.173.1 -PassThru
+Add-DnsServerForwarder -IPAddress 193.190.173.2 -PassThru
+
 #Computer naam wijzigen --> Niet nodig waneer je de Windows Server automatisch laat installeren met autoUnattend.xml
 #Rename-computer -newname ns2
 
