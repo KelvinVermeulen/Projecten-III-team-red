@@ -1,4 +1,4 @@
-﻿Set-TimeZone -Name "Central Europe Standard Time"
+﻿#Set-TimeZone -Name "Central Europe Standard Time"
 Write-Host 'Directories aanmaken'
 #Directories
 MD 'C:\Program Files\Microsoft SQL Server'
