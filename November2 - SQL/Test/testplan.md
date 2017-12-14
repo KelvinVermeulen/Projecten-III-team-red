@@ -74,7 +74,7 @@
 
 ### Aanmaken Directories
 
-1. Restart alleer eerst de computer en meld aan op het domein
+1. Restart aller eerst de computer en meld aan op het domein
 
 2. Run het 2de script
 
