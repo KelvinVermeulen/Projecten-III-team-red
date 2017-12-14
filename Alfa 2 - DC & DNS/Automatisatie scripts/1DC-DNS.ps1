@@ -4,7 +4,7 @@
 #IP-adres en default gateway wijzigen
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.2.67" -PrefixLength 27 -DefaultGateway "172.18.2.65"
 #DNS Server wijzigen
-Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 193.190.173.1
+Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses "193.190.173.1","193.190.173.2"
 
 #Firewall uitschakelen
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
