@@ -1,7 +1,7 @@
 #IP-adres en default gateway wijzigen
-New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.0.3" -PrefixLength 24 -DefaultGateway "172.18.0.1"
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.2.68" -PrefixLength 27 -DefaultGateway "172.18.2.65"
 #DNS Server wijzigen
-Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 172.18.0.2
+Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses "193.190.173.1","193.190.173.2"
 
 #Computer naam wijzigen --> Niet nodig waneer je de Windows Server automatisch laat installeren met autoUnattend.xml
 #Rename-computer -newname ns2
