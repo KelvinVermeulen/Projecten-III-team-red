@@ -2,9 +2,9 @@
 #Rename-computer -newname ns1
 
 #IP-adres en default gateway wijzigen
-New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.0.2" -PrefixLength 24 -DefaultGateway "172.18.0.1"
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.18.2.67" -PrefixLength 27 -DefaultGateway "172.18.2.65"
 #DNS Server wijzigen
-#Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 192.168.1.1
+Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 193.190.173.1
 
 #Firewall uitschakelen
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
