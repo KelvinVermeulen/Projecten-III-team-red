@@ -4,7 +4,7 @@
 
 * Verantwoordelijke uitvoering: Maarten De Smedt
 
-* Verantwoordelijke testen: 
+* Verantwoordelijke testen: Robin D'Hondt
 
 
 
