@@ -42,8 +42,13 @@
   - De server moet tot het domein "red.local" behoren.
   
   - Controleer of de naam van de server "Delta2" is.
+  
+5. Herstart de server en log in met als domeinadmin.
+  - Run het script 'InstallSqlManagementStudio.ps1'
+  - Eens SSMS geinstalleerd is open je Management Studio.
+  - Connecteer met de Server 'NOVEMBER2'.
      
-#Configuratie IIS
+# Configuratie IIS
 - Voer het bestand 'DotNetCore.2.0.3-WindowsHosting.exe' uit.
 - Maak een nieuwe databank aan ( Je moet eerst connectie hebben met de Server NOVEMBER2). De naam van deze databank is '08exSportsStore'
 - Open IIS ( Server Manager > tools > Internet Information Services Manager )
