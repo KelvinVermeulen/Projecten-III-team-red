@@ -43,6 +43,23 @@
   
   - Controleer of de naam van de server "Delta2" is.
      
+#Configuratie IIS
+- Voer het bestand 'DotNetCore.2.0.3-WindowsHosting.exe' uit.
+- Maak een nieuwe databank aan ( Je moet eerst connectie hebben met de Server NOVEMBER2). De naam van deze databank is '08exSportsStore'
+- Open IIS ( Server Manager > tools > Internet Information Services Manager )
+    + Vouw Delta2 open.
+    + Open Sites > open Default Web Site
+    + Rechtermuisklik op Default website > Add application ( dan opent er een pop up scherm)
+        + Geef de naam in van de applicatie 
+        + Duid het fysieke pad aan ( de folder waar je published applicatie staat)
+        + Connecteer als admin ( met Domain credentials )
+        + Klik op test settings ( beide tests moeten slagen )
+        + Druk op ok
+    + Rechtermuisknop op de applicatie die je net toegvoegd hebt
+    + Klik op edit permissions , ga vervolgens naar security , voeg IIS_IUSRS toe en geef de volledige controle.
+    + Ga terug naar IIS en ga naar Features View > klik hier op Directory browsing
+        + Zorg ervoor dat directory browsing Enabled is.
+    + Rechtermuisknop op je applicatie > Manage applications > browse . Nu zou je je applicatie moeten zien.
 
 
 
