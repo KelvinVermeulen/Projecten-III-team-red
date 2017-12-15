@@ -17,3 +17,6 @@ Install-ADDSDomainController -CreateDNSDelegation:$false -DatabasePath 'C:\Windo
 #DNS forwarder instellen
 Add-DnsServerForwarder -IPAddress 193.190.173.1 -PassThru
 Add-DnsServerForwarder -IPAddress 193.190.173.2 -PassThru
+
+#Server opnieuw opstarten
+Restart-computer
