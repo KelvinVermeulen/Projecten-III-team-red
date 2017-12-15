@@ -1,10 +1,45 @@
-## Testplan Delta 2
-# Fysiek
+# Testplan Delta 2
+## Fysiek
 1. Start een computer waar Windows Server 2016 op geïnstalleerd staat.
 2. Voer volgend [script]( https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Scripts/Delta2.ps1) uit in Powershell.
 3. Gebruik volgend commando `Get-WindowsFeature | where-object {$_.Installed -eq $True} | format-list DisplayName` om na te gaan welke features installed zijn.
-4. Overige instellingen kunnen worden gecontroleerd via de GUI.
-# Virtueel
+4. Nu kunnen we controleren of alle instellingen correct geconfigureerd zijn en het script goed verlopen is. We kijken de volgende instellingen na.
+    - De tijd staat juist en de tijdzone is "Central Europe Standard Time"
+    - Volgende features zijn geïnstalleerd (bij "Web Server(IIS)" features) :  
+    + Default Document  
+    + Directory Browsing  
+    + HTTP Errors  
+    + Static Content  
+    + HTTP Logging  
+    + Request Monitor  
+    + Tracing  
+    + Static Content Compression  
+    + Request Filtering  
+    + .NET Extensibility4.6  
+    + ASP.NET 4.6  
+    + ISAP Extensions  
+    + ISAPI Filters  
+    + IIS Management Console  
+    
+    - Met volgende netwerkinstellingen :
+    + IP adres : 172.18.2.70
+    + Netmask : 255.255.255.224
+    + Default Gateway : 172.18.2.65
+    + DNS : 172.18.2.68
+    
+    - De server moet tot het domein "red.local" behoren.
+  
+    - Controleer of de naam van de server "Delta2" is.
+    
+5. Herstart de server en log in met volgende gegevens:
+    - **Account name:** _RED/Administrator_
+ 	- **Paswoord:** Aa12345
+  - Run het script 'InstallSqlManagementStudio.ps1'
+  - Eens SSMS geinstalleerd is open je Management Studio.
+  - Connecteer met de Server 'NOVEMBER2'.
+
+
+## Virtueel
 1. Open Git Bash als Administrator en ga naar de juiste map met de scripts.
 2. Open nu het programma "Hyper-V Manager" hierin gaan we volgende stappen nemen:
     1. Rechterklik op Hyper-V Manager en klik op `Connect to Server...`, kies voor Local computer en druk op OK. 
@@ -43,15 +78,18 @@
   
   - Controleer of de naam van de server "Delta2" is.
   
-5. Herstart de server en log in met als domeinadmin.
+5. Herstart de server en log in met volgende gegevens:
+    - **Account name:** _RED/Administrator_
+ 	- **Paswoord:** Aa12345
   - Run het script 'InstallSqlManagementStudio.ps1'
   - Eens SSMS geinstalleerd is open je Management Studio.
   - Connecteer met de Server 'NOVEMBER2'.
      
-# Configuratie IIS
-- Voer het bestand 'DotNetCore.2.0.3-WindowsHosting.exe' uit.
-- Maak een nieuwe databank aan ( Je moet eerst connectie hebben met de Server NOVEMBER2). De naam van deze databank is '08exSportsStore'
-- Open IIS ( Server Manager > tools > Internet Information Services Manager )
+## Configuratie IIS
+
+6. Voer het bestand 'DotNetCore.2.0.3-WindowsHosting.exe' uit.
+7. Maak een nieuwe databank aan ( Je moet eerst connectie hebben met de Server NOVEMBER2). De naam van deze databank is '08exSportsStore'
+8. Open IIS ( Server Manager > tools > Internet Information Services Manager )
     + Vouw Delta2 open.
     + Open Sites > open Default Web Site
     + Rechtermuisklik op Default website > Add application ( dan opent er een pop up scherm)
