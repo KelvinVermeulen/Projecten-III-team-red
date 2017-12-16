@@ -5,7 +5,7 @@
 
 ## Wat moet getest worden
 
-- Toegelaten protocollen (21, 25, 53, 80, 110, 143, 161, 443) van binnen het LAN
+- Toegelaten protocollen (21, 25, 53, 80, 110, 143, 161, 443, etc.) van binnen het LAN
 - IP-adressen LAN- en WAN-interface
 - DNS-servers, domeinnaam, upstream IPv4 van WAN (gateway)
 - Timezone en hostnaam
@@ -14,6 +14,7 @@
 
 ## Testwijze
 
+## Instellingen
 1. Open de WebGUI vanop een machine met IP-adres `172.18.2.99` en surf naar het IP-adres `172.18.2.98` via een webbrowser.
     - Username: `admin`
     - Password: `pfsense`
@@ -25,7 +26,15 @@
 5. Controleer of DNS-resolver en DNS-forwarder beide uitgeschakeld zijn, dit kan je nagaan bij `Services -> DNS Resolver en Services -> DNS Forwarder`.
 6. Controleer of de hostnaam (`pfSense`), domeinnaam (`red`) en DNS-servers (`172.18.2.67` en `172.18.2.68`) correct ingesteld staan, dit kan je nagaan bij `System -> General Setup`. Hier kan je ook de Timezone nagaan, dit dient op `Europe/Brussels` te staan.
 
+## Connectiviteit (vereenvoudigd netwerk)
+**Gebruik de opstelling in de PT!**
+1. Gebruik een laptop met een IP-adres: `172.18.2.100/28`, DG: `172.18.2.97`. Zorg er voor dat de laptop verbonden is met een switch en de switch met een router. Hierna dien je de router te verbinden met de LAN-interface van de firewall.
+    - IP router: `172.18.2.97/28`
+    - Stel ook de DG in de switch juist: deze moet verwijzen naar `172.18.2.97`
+2. Aan de WAN-interface dien je een andere router te verbinden.
+    - IP: `172.18.2.113/28`
+3. Voeg op iedere router ook telkens een statische route naar het ander netwerk (omdat de SN anders zijn).
 
 ## Wat bevat het testrapport?
 
-- Een overzicht (adhv afbeeldingen) van alle *belangrijke* firewall configuratie.
+- Een overzicht (adhv afbeeldingen) van de testen (connectiviteit) + de opstelling hiervan.
