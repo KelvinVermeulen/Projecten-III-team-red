@@ -32,25 +32,24 @@ Copy the path and execute in CMD.
 After creating a system manager container, assigning
 permissions and extending the AD scheme you can start adding Windows Roles and
 Features to the server. As this is a simple process I won’t go in the details.
-
-·        
+       
 Server Roles
 
-o  
+  
 Web Server (IIS)
 
-·        
+       
 Features
 
-o  
-.Net Framework 3.5 Features [Install all sub
+ 
+- Net Framework 3.5 Features [Install all sub
 features]
 
-o  
-.Net Framework 4.5 Features [Install all sub
+ 
+- .Net Framework 4.5 Features [Install all sub
 features]
 
-o  
+ 
 BITS
 
 o  
