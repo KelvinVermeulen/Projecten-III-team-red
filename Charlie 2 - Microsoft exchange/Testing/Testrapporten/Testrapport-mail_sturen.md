@@ -1,4 +1,4 @@
-# Testplan
+# Testplan Mail versturen
 
 1. Inloggen via de link https://mail.red.local/owa met de gegevens gebruikersnaam en wachtwoord is gelukt 
 2. Testmail versturen is gekukt
