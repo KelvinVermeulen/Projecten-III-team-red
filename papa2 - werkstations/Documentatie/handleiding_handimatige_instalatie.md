@@ -50,59 +50,59 @@ features]
 features]
 
  
--BITS
+- BITS
 
   
--Remote Differential Compression
+- Remote Differential Compression
 
       
 Roles Services
 
 
--Common HTTP Features
+- Common HTTP Features
 
  
--Default Document
+- Default Document
 
  
--Static Content
+- Static Content
 
  
--Application Development
+- Application Development
 
 
--ASP.NET 3.5
-
- 
--.NET Extensibility 3.5
-
-
--ASP.NET 4.5
+- ASP.NET 3.5
 
  
--.NET Extensibility 4.5
+- .NET Extensibility 3.5
+
+
+- ASP.NET 4.5
 
  
--ISAPI extensions
+- .NET Extensibility 4.5
+
+ 
+- ISAPI extensions
 
   
--Security
+- Security
 
  
--Windows Authentication
+- Windows Authentication
 
   
--IIS 6 Management Compatibility
+- IIS 6 Management Compatibility
 
 
--IIS Management Console
+- IIS Management Console
 
 
--IIS 6 Metabase Compatibility
+- IIS 6 Metabase Compatibility
  
--IIS 6 WMI Compatibility
+- IIS 6 WMI Compatibility
  
--IIS Management Scripts and Tools
+- IIS Management Scripts and Tools
 
 **ATTENTION: **Before
 you start the installation, you need to specify an alternate source path to
