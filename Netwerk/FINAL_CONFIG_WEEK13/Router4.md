@@ -14,7 +14,6 @@ no shut
 exit
 int fa0/1
 ip add 192.168.0.1 255.255.255.0
-ip nat inside
 no shut
 exit
 ip route 192.168.2.0 255.255.255.0 192.168.0.2
@@ -24,7 +23,9 @@ ip route 172.18.0.0 255.255.0.0 192.168.0.2
 ip route 0.0.0.0 0.0.0.0 Fa0/0
 ip nat inside source list 1 interface Fa0/0 overload
 access-list 1 permit any
-int Fa0/0
+int fa0/1
+ip nat inside
+int fa0/0
 ip nat outside
 end
 copy running-config startup-config
