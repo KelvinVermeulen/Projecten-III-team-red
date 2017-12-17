@@ -578,4 +578,4 @@ Close. Wait for sometime while the DP updates the content, check the content
 status and you must see a green circle which means that content is now
 available with DP.       
 
-## Deploying Windows 7 Using SCCM 2012 R2
+
