@@ -1,6 +1,6 @@
 # Testplan
 
-##Dependencies
+## Dependencies
 - Exchange Server 2013 SP1 is geïnstalleerd en geconfigureerd
 
 1. log in via https://mail.red.local/owa met volgenden gegevens:
