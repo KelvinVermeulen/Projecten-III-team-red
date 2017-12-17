@@ -9,8 +9,7 @@
 
 | Aanmaken voor | Action | Location | Use | Hide/Show this drive | Targeting |
 | --- | --- | --- | --- | --- | --- |
-| Shareverkoop | Create | [\\lima2\ShareVerkoop](smb://lima2/ShareVerkoop) | S | Show this drive | IT Administratie
-OR VerkoopOR Ontwikkeling |
+| Shareverkoop | Create | [\\lima2\ShareVerkoop](smb://lima2/ShareVerkoop) | S | Show this drive | IT AdministratieOR VerkoopOR Ontwikkeling |
 | profiledirs | Create | [\\lima2\ProfileDirs](smb://lima2/ProfileDirs) | T | Show this drive | VerkoopOR OntwikkelingOR IT AdministratieOR DirectieOR Administratie |
 | HOMEdirs | Create | [\\lima2\HomeDirs](smb://lima2/HomeDirs) | U | Show this drive | VerkoopOR OntwikkelingOR IT AdministratieOR DirectieOR Administratie |
 | Admindata | Create | [\\lima2\AdminData](smb://lima2/AdminData) | V | Show this drive | AdministratieOR IT Administratie |
