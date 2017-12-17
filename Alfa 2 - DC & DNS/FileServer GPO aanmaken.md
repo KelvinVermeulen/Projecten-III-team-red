@@ -1,11 +1,11 @@
 # FileServer configuration GPO
 
-1. 1Group Policy Management Forest: red.local Domains red.local
-2. 2Rechtermuisklik op red.local Create GPO in this domain, and Link it here…
-3. 3Naam: FileServer
-4. 4Rechtermuisklik op FileServer Edit…
-5. 5User configuration Preferences Windows Settings Dirve Maps
-6. 6Aanmaken drives:
+1. Group Policy Management Forest: red.local Domains red.local
+2. Rechtermuisklik op red.local Create GPO in this domain, and Link it here…
+3. Naam: FileServer
+4. Rechtermuisklik op FileServer Edit…
+5. User configuration Preferences Windows Settings Dirve Maps
+6. Aanmaken drives:
 
 | Aanmaken voor | Action | Location | Use | Hide/Show this drive | Targeting |
 | --- | --- | --- | --- | --- | --- |
