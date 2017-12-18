@@ -25,6 +25,8 @@ Databank werd aangemaakt in SQL Server
 Eerst naar de tool Internet Information Services Manager gegaan. Vervolgens Default Web Site geopend.
 - Applicatie toegevoegd met de domainuser. Tests zijn geslaagd
 - Na de permissions en Directory Browsing aan te passen kan ik de applicatie zien online. 
+### Stap 9
+IIS is correct gereset en er kan geschreven worden naar de databank.
 Alles is dus correct geïnstalleerd en verlopen. 
 ## Virtueel
 
@@ -53,7 +55,7 @@ Databank werd aangemaakt in SQL Server
 Eerst naar de tool Internet Information Services Manager gegaan. Vervolgens Default Web Site geopend.
 - Applicatie toegevoegd met de domainuser. Tests zijn geslaagd
 - Na de permissions en Directory Browsing aan te passen kan ik de applicatie zien online. 
-Alles is dus correct geïnstalleerd en verlopen. 
 ### Stap 9
+IIS is correct gereset en er kan geschreven worden naar de databank.
 
-
+Alles is dus correct geïnstalleerd en verlopen. 
