@@ -41,7 +41,7 @@ The script is designed to be run in Powershell ISE
 # WSUS Installation Type.  Enter "WID" (for WIndows Internal Database), "SQLExpress" (to download and install a local SQLExpress), or "SQLRemote" (for an existing SQL Instance).
     $WSUSType = "SQLRemote"
 # If using an existing SQL server, provide the Instance name below
-    $SQLInstance = "papa2"
+    $SQLInstance = "MSSQLSERVER"
 # Location to store WSUS Updates (will be created if doesn't exist)
     $WSUSDir = "C:\WSUS_Updates"
 # Temporary location for installation files (will be created if doesn't exist)
@@ -52,7 +52,7 @@ The script is designed to be run in Powershell ISE
 
 # Do you want to configure WSUS (equivalent of WSUS Configuration Wizard, plus some additional options)?  If $false, no further variables apply.
 # You can customise the configurations, such as Products and Classifications etc, in the "Begin Initial Configuration of WSUS" section of the script.
-    $ConfigureWSUS = $True
+    $ConfigureWSUS = $false
 # Do you want to decline some unwanted updates?
     $DeclineUpdates = $True
 # Do you want to configure and enable the Default Approval Rule?

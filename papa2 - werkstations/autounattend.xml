@@ -1,10 +1,10 @@
 <!--*************************************************
-Windows Server 2012/R2 Answer File Generator
+Windows Server 2016 Answer File Generator
 Created using Windows AFG found at:
 http://windowsafg.no-ip.org
 
 Installation Notes
-Location: Gent,Belgium
+Location:
 Notes: Enter your comments here...
 **************************************************-->
 
@@ -15,20 +15,38 @@ Notes: Enter your comments here...
         <SetupUILanguage>
           <UILanguage>en-US</UILanguage>
         </SetupUILanguage>
-        <InputLocale>0813:00000813</InputLocale>
+        <InputLocale>0c09:00000409</InputLocale>
         <SystemLocale>en-US</SystemLocale>
         <UILanguage>en-US</UILanguage>
         <UILanguageFallback>en-US</UILanguageFallback>
-        <UserLocale>en-GB</UserLocale>
+        <UserLocale>en-US</UserLocale>
       </component>
       <component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ImageInstall>
+          <OSImage>
+            <InstallTo>
+              <DiskID>0</DiskID>
+              <PartitionID>2</PartitionID>
+            </InstallTo>
+          </OSImage>
+        </ImageInstall>
+
+        <UserData>
+          <AcceptEula>true</AcceptEula>
+          <FullName>Administrator</FullName>
+          <Organization>red.local</Organization>
+          <ProductKey>
+            <Key>PBHNX-227B2-3G7HX-3BMYB-39KCB</Key>
+          </ProductKey>
+        </UserData>
+        <EnableFirewall>true</EnableFirewall>
         <DiskConfiguration>
           <Disk wcm:action="add">
             <CreatePartitions>
               <CreatePartition wcm:action="add">
                 <Order>1</Order>
+                <Size>350</Size>
                 <Type>Primary</Type>
-                <Size>100</Size>
               </CreatePartition>
               <CreatePartition wcm:action="add">
                 <Extend>true</Extend>
@@ -38,42 +56,24 @@ Notes: Enter your comments here...
             </CreatePartitions>
             <ModifyPartitions>
               <ModifyPartition wcm:action="add">
-                <Active>true</Active>
                 <Format>NTFS</Format>
-                <Label>System Reserved</Label>
+                <Label>System</Label>
                 <Order>1</Order>
                 <PartitionID>1</PartitionID>
                 <TypeID>0x27</TypeID>
               </ModifyPartition>
               <ModifyPartition wcm:action="add">
-                <Active>true</Active>
-                <Format>NTFS</Format>
-                <Label>OS</Label>
-                <Letter>C</Letter>
                 <Order>2</Order>
                 <PartitionID>2</PartitionID>
+                <Letter>C</Letter>
+                <Label>OS</Label>
+                <Format>NTFS</Format>
               </ModifyPartition>
             </ModifyPartitions>
             <DiskID>0</DiskID>
             <WillWipeDisk>true</WillWipeDisk>
           </Disk>
         </DiskConfiguration>
-        <ImageInstall>
-          <OSImage>
-            <InstallTo>
-              <DiskID>0</DiskID>
-              <PartitionID>2</PartitionID>
-            </InstallTo>
-            <InstallToAvailablePartition>false</InstallToAvailablePartition>
-          </OSImage>
-        </ImageInstall>
-
-        <UserData>
-          <AcceptEula>true</AcceptEula>
-          <FullName>Administrator</FullName>
-          <Organization>Red.local</Organization>
-        </UserData>
-        <EnableFirewall>false</EnableFirewall>
       </component>
     </settings>
     <settings pass="offlineServicing">
@@ -89,10 +89,10 @@ Notes: Enter your comments here...
     <settings pass="specialize">
       <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <InputLocale>0813:00000813</InputLocale>
-        <SystemLocale>en-GB</SystemLocale>
-        <UILanguage>en-GB</UILanguage>
-        <UILanguageFallback>en-GB</UILanguageFallback>
-        <UserLocale>en-GB</UserLocale>
+        <SystemLocale>nl-BE</SystemLocale>
+        <UILanguage>nl-BE</UILanguage>
+        <UILanguageFallback>nl-BE</UILanguageFallback>
+        <UserLocale>nl-BE</UserLocale>
       </component>
       <component name="Microsoft-Windows-Security-SPP-UX" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <SkipAutoActivation>true</SkipAutoActivation>
@@ -102,14 +102,13 @@ Notes: Enter your comments here...
       </component>
       <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ComputerName>Papa2</ComputerName>
-        <ProductKey>W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9</ProductKey>
       </component>
     </settings>
     <settings pass="oobeSystem">
       <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <AutoLogon>
           <Password>
-            <Value>Aa12345</Value>
+            <Value>Test12345</Value>
             <PlainText>true</PlainText>
           </Password>
           <Enabled>true</Enabled>
@@ -117,21 +116,22 @@ Notes: Enter your comments here...
         </AutoLogon>
         <OOBE>
           <HideEULAPage>true</HideEULAPage>
+          <HideLocalAccountScreen>true</HideLocalAccountScreen>
           <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
           <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
           <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
           <NetworkLocation>Work</NetworkLocation>
           <ProtectYourPC>1</ProtectYourPC>
-          <SkipUserOOBE>true</SkipUserOOBE>
           <SkipMachineOOBE>true</SkipMachineOOBE>
+          <SkipUserOOBE>true</SkipUserOOBE>
         </OOBE>
         <UserAccounts>
+          <AdministratorPassword>
+            <Value>Test12345</Value>
+            <PlainText>true</PlainText>
+          </AdministratorPassword>
           <LocalAccounts>
             <LocalAccount wcm:action="add">
-              <Password>
-                <Value>Aa12345</Value>
-                <PlainText>true</PlainText>
-              </Password>
               <Description>Administrator</Description>
               <DisplayName>Administrator</DisplayName>
               <Group>Administrators</Group>
@@ -139,19 +139,10 @@ Notes: Enter your comments here...
             </LocalAccount>
           </LocalAccounts>
         </UserAccounts>
-        <RegisteredOrganization>Red.local</RegisteredOrganization>
+        <RegisteredOrganization>red.local</RegisteredOrganization>
         <RegisteredOwner>Administrator</RegisteredOwner>
         <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
         <TimeZone>Romance Standard Time</TimeZone>
-        <VisualEffects>
-          <SystemDefaultBackgroundColor>2</SystemDefaultBackgroundColor>
-        </VisualEffects>
-      </component>
-      <component name="Microsoft-Windows-ehome-reg-inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="NonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <RestartEnabled>true</RestartEnabled>
-      </component>
-      <component name="Microsoft-Windows-ehome-reg-inf" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="NonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <RestartEnabled>true</RestartEnabled>
       </component>
     </settings>
   </unattend>

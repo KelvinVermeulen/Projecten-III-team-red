@@ -9,8 +9,6 @@ echo =======================================================================
  echo files for ConfigMgr to C:\Sources\SCCM2012R2\Downloads. Tested on Hyper-V.
  echo No reboots required. Hit enter, get some coffee, sit back and enjoy the ride.
  pause
- #schema extension
- #C:\Sources\SCCM2012R2\SMSSETUP\BIN\X64\extadsch.exe
  #server prereqs
  Get-Module servermanager
  Install-WindowsFeature Web-Windows-Auth
