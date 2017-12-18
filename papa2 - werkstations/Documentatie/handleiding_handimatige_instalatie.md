@@ -32,80 +32,77 @@ Copy the path and execute in CMD.
 After creating a system manager container, assigning
 permissions and extending the AD scheme you can start adding Windows Roles and
 Features to the server. As this is a simple process I won’t go in the details.
-
-·        
+       
 Server Roles
 
-o  
+  
 Web Server (IIS)
 
-·        
+       
 Features
 
-o  
-.Net Framework 3.5 Features [Install all sub
+ 
+- Net Framework 3.5 Features [Install all sub
 features]
 
-o  
-.Net Framework 4.5 Features [Install all sub
+ 
+- .Net Framework 4.5 Features [Install all sub
 features]
 
-o  
-BITS
+ 
+- BITS
 
-o  
-Remote Differential Compression
+  
+- Remote Differential Compression
 
-·        
+      
 Roles Services
 
-o  
-Common HTTP Features
 
-§ 
-Default Document
+- Common HTTP Features
 
-§ 
-Static Content
+ 
+- Default Document
 
-o  
-Application Development
+ 
+- Static Content
 
-§ 
-ASP.NET 3.5
+ 
+- Application Development
 
-§ 
-.NET Extensibility 3.5
 
-§ 
-ASP.NET 4.5
+- ASP.NET 3.5
 
-§ 
-.NET Extensibility 4.5
+ 
+- .NET Extensibility 3.5
 
-§ 
-ISAPI extensions
 
-o  
-Security
+- ASP.NET 4.5
 
-§ 
-Windows Authentication
+ 
+- .NET Extensibility 4.5
 
-o  
-IIS 6 Management Compatibility
+ 
+- ISAPI extensions
 
-§ 
-IIS Management Console
+  
+- Security
 
-§ 
-IIS 6 Metabase Compatibility
+ 
+- Windows Authentication
 
-§ 
-IIS 6 WMI Compatibility
+  
+- IIS 6 Management Compatibility
 
-§ 
-IIS Management Scripts and Tools
+
+- IIS Management Console
+
+
+- IIS 6 Metabase Compatibility
+ 
+- IIS 6 WMI Compatibility
+ 
+- IIS Management Scripts and Tools
 
 **ATTENTION: **Before
 you start the installation, you need to specify an alternate source path to
@@ -578,4 +575,4 @@ Close. Wait for sometime while the DP updates the content, check the content
 status and you must see a green circle which means that content is now
 available with DP.       
 
-## Deploying Windows 7 Using SCCM 2012 R2
+

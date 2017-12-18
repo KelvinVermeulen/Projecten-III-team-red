@@ -12,7 +12,7 @@ function main(){
     
     setDomain
 
-    renameServer
+    #renameServer (rename zit in autounattend )
 
 }
 
@@ -161,8 +161,8 @@ $wmi.EnableStatic("172.18.2.70", "255.255.255.224")
 $wmi.SetGateways("172.18.2.65", 1)
 $wmi.SetDNSServerSearchOrder("0.0.0.0")
 #>
-New-NetIPAddress -InterfaceAlias Ethernet -IPAddress "172.18.0.5" -PrefixLength 24 -DefaultGateway "172.18.0.1"
-Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses "172.18.0.1"
+New-NetIPAddress -InterfaceAlias Ethernet -IPAddress "172.18.2.70" -PrefixLength 27 -DefaultGateway "172.18.2.65"
+Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses "172.18.2.67"
 
 #Write-Host "New Ip address and DNS are set. And ready to go ;) " -ForegroundColor Green
 
