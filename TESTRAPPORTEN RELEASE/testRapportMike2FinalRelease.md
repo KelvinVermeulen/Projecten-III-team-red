@@ -15,6 +15,7 @@
 ## Stap 3: Server naam en domein naam
   1. De server naam is Mike2 (correct)
   2. Server behoort tot het domein red.local (correct)
+  
   ![Naam_Domein](https://github.com/HoGentTIN/p3ops-red/blob/master/Mike%202%20-%20SharePoint/Test/Images/Naam_Domein.png)
   
 ## Stap 4: Scripts
@@ -22,6 +23,7 @@
   geeft. Dit wil zeggen dat alle nodige rollen geïnstalleerd zijn.
   2. Het mounten van de iso's in goed verlopen. Als je naar 'this PC' gaat zien de verschillende iso's staan.
   3. Voer prerequisitinstaller.exe uit. Elke feature geeft weer dat er geen actie ondernomen is, dus elke feature is correct geïnstalleerd.
+  
   ![Prerequisites](https://github.com/HoGentTIN/p3ops-red/blob/master/Mike%202%20-%20SharePoint/Test/Images/Prerequisites.png)
 ## Stap 5: Sharepoint
   1. We voeren setup.exe uit van de WindowsSharePointServer2016EN.iso uit. We krijgen enkel de optie Repair en Remove te zien.
