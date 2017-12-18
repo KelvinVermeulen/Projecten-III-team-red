@@ -18,5 +18,10 @@ Het bestand DotNetCore.2.0.3-windowsHosting.exe is goed uitgevoerd.
 ### Stap 7
  Server is geconnecteerd met Databank en heeft een databank gecreëerd.
 ### Stap 8
+Eerst naar de tool Internet Information Services Manager gegaan. Vervolgens Default Web Site geopend.
+
+Applicatie toegevoegd met de domainuser. Tests zijn geslaagd
+Na de permissions en Directory Browsing aan te passen kan ik de applicatie zien online. Alles is dus correct geïnstalleerd en verlopen.
 
 ### Stap 9
+IIS is correct gereset en er kan geschreven worden naar de databank.
