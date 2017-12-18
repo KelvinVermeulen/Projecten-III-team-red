@@ -275,8 +275,8 @@ IIS is correct gereset en er kan geschreven worden naar de databank.
 
 ![ServerManager](https://github.com/HoGentTIN/p3ops-red/blob/master/Delta%202%20-%20Webserver/Testing/images/screenshots/databankdelta2.PNG)
 ---
-### Netwerk
-# Testrapport netwerk red
+# Netwerk
+### Testrapport netwerk red
 
 * Verantwoordelijke uitvoering: Robin Bauwens en Laurens Bracke
 
