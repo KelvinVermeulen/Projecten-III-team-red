@@ -1,12 +1,11 @@
 # Verzameling van alle Testrapporten
 
-### Alfa2
+# Alfa2
 
-### Bravo2
+# Bravo2
 
-### Charlie2
+# Charlie2
 
-# Testplan Charlie2
 ## Testrapport_Prerequ
 **Alles werkt, behalve de eerste, want die is blijkbaar niet meer nodig.**
 ![Prerequ](Afbeeldingen_Testrapport/Prerequ_1.PNG)
@@ -26,9 +25,7 @@
 **We kunnen inloggen met administrator op ECP.**
 ![Admin](Afbeeldingen_Testrapport/ECP.PNG)
 
-### Kilo2
-
-# Final Testrapport Kilo2
+# Kilo2
 
 ## IP-configuratie
 	
@@ -60,9 +57,8 @@
 
 - SUCCESVOL
 
-### Lima2
+# Lima2
 
-# Testrapport Final Week Lima2
 1. Stappenplan voor het installatie van FileServer is goed geschreven. Zonder enige kennis kon ik het uitvoeren.
 
 2. Er is ingelogd met alle users binnen het domein. Na het inloggen was de shares zichtbaar zoals het moest.
@@ -74,8 +70,8 @@
 ![](https://github.com/HoGentTIN/p3ops-red/blob/master/Lima%202%20-%20Interne%20File%20Server/ShadowCopy.png)
 
 
-### Oscar2
-# Testrapport
+
+# Oscar2
 
 ### Dependencies:
 
@@ -91,9 +87,9 @@
 
 ![Oscar_Screenshot](https://github.com/HoGentTIN/p3ops-red/blob/master/oscar2%20-%20monitoring%20server/img/Oscar_Screenshot.jpg)
 
-### Papa2
+# Papa2
 
-# Testrapport
+### Testrapport
 
 * Verantwoordelijke uitvoering: team Papa2
 * Verantwoordelijke testen: Arto Collumbien en Sandrien Amourette
@@ -149,9 +145,9 @@ Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het
 
 Optie 66 en 67 ingesteld. Bij het proberen booten via PXe krijgen we een TFTP acces violation error. 
 
-### Mike2
+# Mike2
 
-# Testrapport Final Release Mike2
+### Testrapport Final Release Mike2
 ## Stap 1: Installatie Windows Server 2016
   1. Server is correct ingesteld. Server zit in het domein red.local.
   2. We kunnen inloggen met domeinaccount RED\Administrator.
@@ -187,9 +183,9 @@ Optie 66 en 67 ingesteld. Bij het proberen booten via PXe krijgen we een TFTP ac
 ![Sharepoint](https://github.com/HoGentTIN/p3ops-red/blob/master/Mike%202%20-%20SharePoint/Test/Images/Sharepoint.png)
 ![Site](https://github.com/HoGentTIN/p3ops-red/blob/master/Mike%202%20-%20SharePoint/Test/Images/Site.png)
 
-### November2
+# November2
 
-# Testplan November2 final release
+### Testplan November2 final release
 
 * Verantwoordelijke uitvoering: Maarten De Smedt
 
@@ -242,9 +238,9 @@ Server werkt zonder problemen.
 
 De server is volledig en correct geïnstalleerd.
 
-### Delta2
----
-# Testrapport Delta2 Final Release 
+# Delta2
+
+### Testrapport Delta2 Final Release 
 
 ### Stap 1
 Windows is normaal opgestart
