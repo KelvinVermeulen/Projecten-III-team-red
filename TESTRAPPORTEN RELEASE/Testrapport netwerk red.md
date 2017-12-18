@@ -1,4 +1,4 @@
-# Testrapport netwerk routers
+# Testrapport netwerk red
 
 * Verantwoordelijke uitvoering: Robin Bauwens en Laurens Bracke
 
