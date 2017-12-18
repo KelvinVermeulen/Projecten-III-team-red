@@ -102,7 +102,8 @@
     + Klik op edit permissions , ga vervolgens naar security , voeg IIS_IUSRS toe en geef de volledige controle.
     + Ga terug naar IIS en ga naar Features View > klik hier op Directory browsing
         + Zorg ervoor dat directory browsing Enabled is.
-    + Rechtermuisknop op je applicatie > Manage applications > browse . Nu zou je je applicatie moeten zien.
+    + Rechtermuisknop op je applicatie > Manage applications > browse. 
+ 9. Open Command Prompt openen en schrijf 'IISReset'. Nu zou je je applicatie moeten zien.
 
 
 
