@@ -2,7 +2,7 @@
 
 * Verantwoordelijke uitvoering: Robin Bauwens en Laurens Bracke
 
-# Testen
+## Testen
 
 # Fysieke opstelling komt overeen met die van de packet tracer
 
@@ -18,7 +18,7 @@ Deze komen overeen, we zien op de foto ook dat alle poorten open staan en werken
 
 # Configuratie is correct en komt overeen
 
-We kijken naar de config van de routers/switch in de config files map nieuwe config en kijken of deze overeenkomen.
+We kijken naar de config van de routers/switch in de config files (map nieuwe config) en kijken of deze overeenkomen.
 
 Router 1:
 
@@ -77,6 +77,19 @@ Ping van windows naar linux:
 ![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/pingwindowslinux.PNG)
 
 Men verkrijgt internet en alle pings lukken. De opstelling is dus correct.
+
+# Test webserver
+
+Webserver linux (green-local):
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/linuxweb.PNG)
+
+Webserver windows (red-local):
+
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/windowsweb.PNG)
+
+We verkrijgen beide webservers (delta en echo) dus alles klopt.
+
 
 
 
