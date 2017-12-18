@@ -92,7 +92,7 @@
  2. Log in met de gebruiker;
  	- **Account name:** _RED/Administrator_
  	- **Paswoord:** Aa12345
- 3. Voer het script `Add DvdDrives.ps1` uit;
+ 3. Lijn 4-6 in elk script zorgt voor het mounten van de ISO's: `3_Roleconfig.ps1` & `5_prerequisites.ps1` & `7_SharePointSetup.ps1`;
  4. Open Windows Verkenner en alle drives moeten gemount zijn;
  
  ### Prerequisitinstaller
@@ -102,7 +102,7 @@
  	- **Paswoord:** Aa12345
  3. Voer de Prerequisitinstaller.exe op `WindowsSharePointServer2016EN.iso` uit;
  4. Bij alle prerequisits moet er `Already Installed` staan;
- 5. Hieraan kan je zien dat alle prerequisits correct geïnstalleerd zijn;
+ 5. Hieraan kan je zien dat alle prerequisites correct geïnstalleerd zijn;
  
  ## Stap 5: Sharepoint
  ### Setup
