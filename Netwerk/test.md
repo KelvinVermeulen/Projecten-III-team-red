@@ -12,7 +12,7 @@ Opstelling Packet Tracer:
 
 Fysieke opstelling week 13 (final release):
 
-![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/pingdefault.PNG)
+![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/opstellingweek13.JPG)
 
 Deze komen overeen, we zien op de foto ook dat alle poorten open staan en werken.
 
