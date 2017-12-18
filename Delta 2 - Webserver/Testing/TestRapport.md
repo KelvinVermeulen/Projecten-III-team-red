@@ -54,4 +54,6 @@ Eerst naar de tool Internet Information Services Manager gegaan. Vervolgens Defa
 - Applicatie toegevoegd met de domainuser. Tests zijn geslaagd
 - Na de permissions en Directory Browsing aan te passen kan ik de applicatie zien online. 
 Alles is dus correct geïnstalleerd en verlopen. 
+### Stap 9
+
 
