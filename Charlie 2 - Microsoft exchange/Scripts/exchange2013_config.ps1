@@ -27,7 +27,7 @@ Set-ActiveSyncVirtualDirectory -Identity "Microsoft-Server-ActiveSync (Default W
 Set-oabvirtualdirectory –Identity "OAB (Default Web Site)" –ExternalUrl https://mail.red.local/oab
 
 ## Set Outlook Anywhere
-Set-OutlookAnywhere -Identity "mail\rpc (Default Web Site)" -InternalHostname mail.red.local -ExternalHostname mail.red.local -ExternalClientsRequireSsl $true
+Set-OutlookAnywhere -Identity "mail\rpc (Default Web Site)" -InternalHostname mail.red.local -ExternalHostname mail.red.local -ExternalClientsRequireSsl $true -DefaultAuthenticationMethod negotiate -InternalClientsRequireSsl $true
 
 ## Auto discover
 Set-ClientAccessServer -Identity mail -AutoDiscoverServiceInternalUri https://autodiscover.red.local/Autodiscover/Autodiscover.xml
@@ -38,8 +38,15 @@ New-ManagementRoleAssignment -Role "Reset Password" -SecurityGroup "Organization
 ## Public Folder Maibox
 ## Moet nog aangepast worden
 New-Mailbox -PublicFolder -Name PublicRED1
-New-PublicFolder -Name Departments
-New-PublicFolder -Name Management -Path \Departments
+New-PublicFolder -Name Administratie
+New-PublicFolder -Name Directie
+New-PublicFolder -Name ITAdministratie
+New-PublicFolder -Name Ontwikkeling
+New-PublicFolder -Name Verkoop
 
 ## Public Folder permissions
-Add-PublicFolderClientPermission -Identity "\Departments" -User Administrator -AccessRights owner
+Add-PublicFolderClientPermission -Identity "\Administratie" -User "John Smet" -AccessRights owner
+Add-PublicFolderClientPermission -Identity "\Directie" -User "Lien Smet" -AccessRights owner
+Add-PublicFolderClientPermission -Identity "\Ontwikkeling" -User "Laura Smet" -AccessRights owner
+Add-PublicFolderClientPermission -Identity "\ITAdministratie" -User "Henry Smet" -AccessRights owner
+Add-PublicFolderClientPermission -Identity "\Verkoop" -User "Dirk Smet" -AccessRights owner
