@@ -30,5 +30,6 @@
   Dus de installatie is goed verlopen.
   2. Om de server te controleren surfen we naar http://mike2:2017/. Dit lukt op de eigen server en op andere servers.
   De server is succesvol geïnstalleerd en geconfigureerd
+  
 ![Sharepoint](https://github.com/HoGentTIN/p3ops-red/blob/master/Mike%202%20-%20SharePoint/Test/Images/Sharepoint.png)
 ![Site](https://github.com/HoGentTIN/p3ops-red/blob/master/Mike%202%20-%20SharePoint/Test/Images/Site.png)
