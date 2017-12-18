@@ -19,7 +19,7 @@ We stellen ook alles in zoals aangegeven in [het testplan](https://github.com/Ho
 - [Rules LAN](w13/RULES_LAN.pdf)
 - [Rules WAN](w13/RULES_WAN.pdf)
 - [routes](w13/routes.pdf)
-- [routes](w13/routes2.pdf)
+- [gateways](w13/routes2.pdf)
 - [We hebben ook "reserved networks" aangepast](w13/3.PNG)
 - [Packet filtering staat dus effectief aan](w13/2.PNG)
 
