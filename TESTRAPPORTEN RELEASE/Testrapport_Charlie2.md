@@ -1,4 +1,8 @@
 # Testplan Charlie2
+* Verantwoordelijke uitvoering: team Alfa2 & Bravo 2
+* Verantwoordelijke testen: Patrick Weyn
+
+**Testen van het tesplan die hier niet worden getest, waren optioneel in de uitvoering**
 ## Testrapport_Prerequ
 **Alles werkt, behalve de eerste, want die is blijkbaar niet meer nodig.**
 ![Prerequ](Afbeeldingen_Testrapport/Prerequ_1.PNG)
