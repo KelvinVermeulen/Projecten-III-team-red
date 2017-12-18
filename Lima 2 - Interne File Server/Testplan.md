@@ -24,6 +24,6 @@ Auteur(s) testplan: Cedric Van Dorpe
   - Resultaat: De Test (Slaagt | Faalt)
   
 * Ga na of de shadowcopy correct ingesteld is zoals beschreven in de user manual:
-  - Ga op lima2 naar de eigenschappen van schijf H, en ga naar de schaduwkopieën tab. Kijk daar bij de planning of er 3 maal per dag een schaduwkopie gemaakt wordt van schijf H, op schijf C.
+  - Kijk of er een shadowcopy is aangemaakt
 
   - Resultaat: De Test (Slaagt | Faalt)
