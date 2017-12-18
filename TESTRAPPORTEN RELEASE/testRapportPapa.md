@@ -3,6 +3,8 @@
 * Verantwoordelijke uitvoering: team Papa2
 * Verantwoordelijke testen: Arto Collumbien en Sandrien Amourette
 
+**Testen van het tesplan die hier niet worden getest, waren optioneel in de uitvoering**
+
 ## Services, roles, en features
 
 Open de Server manager en Tools nog eens om te controleren of de nodige roles, role services en features zijn geïnstalleerd.
