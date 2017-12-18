@@ -48,3 +48,8 @@ Controlleer tenslotte of System Center 2012 R2 correct is geinstalleerd door het
 ![](https://github.com/HoGentTIN/p3ops-red/blob/master/papa2%20-%20werkstations/ImagesTestrapport/14.jpg)
 
 **Gecheckt en in orde**
+
+
+### Troubleshooting
+
+Optie 66 en 67 ingesteld. Bij het proberen booten via PXe krijgen we een TFTP acces violation error. 
