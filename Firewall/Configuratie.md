@@ -194,17 +194,22 @@ Teveel ports... rond 5-6 ports nodig
 
 `Firewall` -> `Rules`
 
+### LAN
 We voegen enkele poorten toe:
 
-- Source: `LAN net`
-- Destination Port: (zie afbeelding hieronder)
+[PDF alle geconfigureerde rules LAN](files/RULES_LAN.pdf)
 
+Wijziging: in plaats van alle poorten (die voor het LAN gebruik worden) allemaal mee te geven, geven we mee dat alles (`*`) toegelaten wordt.
 
-[PDF alle geconfigureerde rules LAN](files/Firewall_rules-LAN.pdf)
+<!-- Van binnen naar buiten -->
 
-<!-- Verouderd
-![Rules firewall](img/newPorts.PNG)
--->
+### WAN
+
+[PDF alle geconfigureerde rules LAN](files/RULES_WAN.pdf)
+
+Enkele protocollen (zoals HTTP, SMTP, etc.) mag wel toegelaten wordt als inkomend verkeer, deze zullen behandeld worden door onze eigen servers. De rest wordt dan geblokkeerd.
+
+<!-- Van buiten naar binnen -->
 
 ## Routes
 
