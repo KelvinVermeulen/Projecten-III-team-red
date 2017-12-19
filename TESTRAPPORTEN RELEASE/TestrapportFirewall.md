@@ -25,4 +25,4 @@ We stellen ook alles in zoals aangegeven in [het testplan](https://github.com/Ho
 
 Alle configuratie komt dus overeen en we kunnen de webserver buiten ons domein (via/over de firewall) bereiken, pings mislukken aangezien we dit niet hebben toegelaten (ICMP).
 
-![De mails die verstuurd werden door de Linux-mailserver (en de mails die wij versturen naar de Linux-mailserver) komen ook aan op onze mailserver.](https://github.com/HoGentTIN/p3ops-red/blob/master/TESTRAPPORTEN%20RELEASE/Testrapport_Charlie2.md)
+De mails die verstuurd werden door de Linux-mailserver (en de mails die wij versturen naar de Linux-mailserver) komen ook aan op onze mailserver. [Zie testrapport Charlie2](https://github.com/HoGentTIN/p3ops-red/blob/master/TESTRAPPORTEN%20RELEASE/Testrapport_Charlie2.md)
