@@ -133,22 +133,28 @@ We overlopen de `Setup Wizard` in `System`.
 ![Verloop](img/extra/2.PNG)
 ![Verloop](img/extra/2.2.PNG)
 -->
+Het belangrijkste hier is dat we een hostnaam instellen en SSH activeren.
+
 **Alternate hostname: zonder spaties!**
 ![Verloop](img/extra/2.1.PNG)
 
 ## System / General Setup
 
+Hierbij kunnen we enkele instellingen controleren die we ingegeven hebben in de `Setup Wizard`.
+
+Zorg er ook voor dat de `DNS Forwarder/DNS Resolver`-functie van pfSense **niet** gebruikt wordt!
+
 ![Verloop](img/extra/3.PNG)
 ![Verloop](img/extra/3.1.PNG)
 ![Verloop](img/extra/3.2.PNG)
 
-**Do not use the DNS Forwarder/DNS Resolver!**
+
 
 ![Verloop](img/extra/3.3.PNG)
 
 ## System / Routing / Gateways
 
-We passen hier de `Description`aan, dit is optioneel.
+We passen hier de `Description` aan, dit is optioneel.
 
 ![Verloop](img/extra/4.PNG)
 
@@ -160,7 +166,7 @@ Disable de DNS resolver.
 ![Verloop](img/extra/6.1.PNG)
 
 
-**Schakel DNS Forwarder bij "Services" ook uit (indien dit vooraf nog niet gebeurde)!**
+**Schakel DNS Forwarder bij "Services" ook zeker uit (indien dit vooraf nog niet gebeurde)!**
 
 <!--
 ## Wizard
@@ -171,6 +177,8 @@ Disable de DNS resolver.
 -->
 
 ## Aliassen
+
+Dit deel is optioneel maar kan handig zijn voor latere configuratie.
 
 `Firewall` -> `Aliases` -> `IP`
 
@@ -192,10 +200,17 @@ Teveel ports... rond 5-6 ports nodig
 
 ## Rules
 
+In deze sectie gaan we kiezen welke protocollen er toegelaten worden om het netwerk te verlaten of binnen te komen.
+
 `Firewall` -> `Rules`
 
 ### LAN
+
+We laten toe dat al het LAN-verkeer naar buiten mag, hier gaan we dus een `permit any` gebruiken.
+
+<!--
 We voegen enkele poorten toe:
+-->
 
 [PDF alle geconfigureerde rules LAN](files/RULES_LAN.pdf)
 
@@ -205,15 +220,19 @@ Wijziging: in plaats van alle poorten (die voor het LAN gebruik worden) allemaal
 
 ### WAN
 
+We filteren al het verkeer dat van buitenaf komt, niet alles mag de firewall passeren (naar binnen).
+
 [PDF alle geconfigureerde rules LAN](files/RULES_WAN.pdf)
 
-Enkele protocollen (zoals HTTP, SMTP, etc.) mag wel toegelaten wordt als inkomend verkeer, deze zullen behandeld worden door onze eigen servers. De rest wordt dan geblokkeerd.
+Enkele protocollen (zoals HTTP, SMTP, IMAP, POP3, etc.) mag wel toegelaten wordt als inkomend verkeer, deze zullen behandeld worden door onze eigen servers. De rest wordt dan geblokkeerd en zal dus het LAN van `red.local` niet bereiken.
+
+**Opgelet:** ICMP wordt niet toegelaten en dus zullen pings ook de firewall **niet** passeren. Dit betekent niet dat de server onbereikbaar is voor anderen.
 
 <!-- Van buiten naar binnen -->
 
 ## Routes
 
-*Om enkel te controleren of de routes in orde zijn, kunnen we tijdelijk het filteren van de packets uitschakelen.* Advanced -> Firewall & NAT.
+*Om enkel te controleren of de routes in orde zijn, kunnen we tijdelijk het filteren van de packets uitschakelen.* Advanced -> Firewall & NAT. Dit zetten we natuurlijk uit om de het filteren van het verkeer te testen/gebruiken.
 
 We voegen routes toe naar VLAN 200, 300, 500 en 999 (native). Er staan ook routes naar netwerk `0.0.0.0/1` en `128.0.0.0/1` in, dit om een default static route te simuleren (`0.0.0.0/0` is niet mogelijk in pfSense). Hiernaast is er ook een route naar `172.18.0.0/16` om alles te routeren binnen `red.local`. Deze 3 routes zijn uitgeschakeld en worden dus niet toegepast op de firewall.
 
