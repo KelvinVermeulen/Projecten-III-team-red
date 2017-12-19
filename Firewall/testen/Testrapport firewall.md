@@ -6,7 +6,7 @@ Verantwoordelijke testen: Pieter en Ebu
 
 ### Configuratie
 
-We kunnen de informatie over configuratie van de firewall uit de XML of PDF halen. Hierin zien we dat de protocollen van buitenaf toegelaten worden, DNS-resolving uit staat, hostname en timezone geconfigureerd zjin, DNS-servers met domeinnaam en upstream WAN ook in orde is, en dat de interfaces ook correct zijn.
+We kunnen de informatie over configuratie van de firewall uit de XML of PDF halen. Hierin zien we dat de protocollen toegelaten worden, routes in orde zijn, DNS-resolving uit staat, hostname en timezone geconfigureerd zijn, DNS-servers met domeinnaam en upstream WAN ook in orde is, en dat de interfaces ook correct zijn.
 
 
 ### Opstelling (connectiviteit) testen
