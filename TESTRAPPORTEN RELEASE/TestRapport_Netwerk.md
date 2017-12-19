@@ -84,6 +84,8 @@ Webserver linux (green-local):
 
 ![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/linuxweb.PNG)
 
+Hierbij controleren we dus de connectiviteit met de Linux-kant, hierbij wordt er ook impliciet getest of het (gefilterd) verkeer door de firewall passeert.
+
 Webserver windows (red-local):
 
 ![alt text](https://github.com/HoGentTIN/p3ops-red/blob/master/Netwerk/testen/images%20testrapport/windowsweb.PNG)

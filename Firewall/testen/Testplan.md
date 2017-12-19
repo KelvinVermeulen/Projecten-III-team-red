@@ -5,7 +5,7 @@
 
 ## Wat moet getest worden
 
-- Toegelaten protocollen (21, 25, 53, 80, 110, 143, 161, 443, etc.) van binnen het LAN
+- Toegelaten protocollen (21, 25, 53, 80, 110, 143, 161, 443, etc.) van buitenaf (WAN)
 - IP-adressen LAN- en WAN-interface
 - DNS-servers, domeinnaam, upstream IPv4 van WAN (gateway)
 - Timezone en hostnaam
