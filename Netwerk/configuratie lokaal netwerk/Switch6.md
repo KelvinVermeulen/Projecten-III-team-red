@@ -106,7 +106,7 @@ no shutdown
 exit
 ip route 172.18.0.0 255.255.254.0 172.18.2.34
 ip route 172.18.2.0 255.255.255.224 172.18.2.34
-ip route 0.0.0.0 0.0.0.0 g0/0.600
+ip route 0.0.0.0 0.0.0.0 172.18.2.98
 ip route 172.18.2.129 255.255.255.255 172.18.2.34
 ip route 172.18.2.132 255.255.255.255 172.18.2.34
 ip route 172.18.2.131 255.255.255.255 172.18.2.34
@@ -118,3 +118,5 @@ copy running-config startup-config
 
 
 ```
+
+Ook een Default Static Route naar de LAN-interface van de firewall (en die zal ook verder routeren naar buiten) + **gebruik next-hop ipv uitgaande interface**!

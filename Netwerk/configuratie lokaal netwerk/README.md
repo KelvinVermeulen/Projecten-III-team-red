@@ -78,3 +78,6 @@ op MLS -> gebruik commando `no switchport` om interface te gebruiken met ip-adre
 - van Switch6 een NTP-server maken?
 - STP niet nodig (geen redundante paden)
 - Mogelijks EtherChannel toepassen (poorten moeten allemaal dezelfde snelheid, duplex en VLAN hebben).
+
+
+**Opgelet:** Het kan zijn dat de routers/switchen `crypto key` niet ondersteunen (IOS-versie) + controleer of de poorten in gebruik effectief overeenkomen met die van de configuratie (bvb Fa0/1 ipv G0/1).

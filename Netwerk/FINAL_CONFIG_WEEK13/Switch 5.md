@@ -1,9 +1,9 @@
-Configuratie voor Switch 6:
+Configuratie voor Switch 5:
 
 ```
 enable
 configure terminal
-hostname Switch6
+hostname Switch5
 banner motd %Unauthorized access prohibited%
 enable secret DirkThijs
 ip domain-name red.local
@@ -22,20 +22,18 @@ ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
 vlan 999
-vlan 500
+vlan 200
 exit
 interface vlan 999
-ip address 172.18.2.133 255.255.255.240
+ip address 172.18.2.132 255.255.255.240
 no shutdown
 exit
-ip default-gateway 172.18.2.130
-
-interface fa0/1
+ip default-gateway 172.18.2.129
+interface range f0/4-9
 switchport mode access
-switchport access vlan 600
+switchport access vlan 300
 no shutdown
 exit
-
 interface range f0/20-21
 channel-group 1 mode desirable
 no shutdown
@@ -46,12 +44,15 @@ switchport trunk native vlan 999
 no shutdown
 exit
 
+
 interface g0/1
 switchport mode trunk
 switchport trunk native vlan 999
 no shutdown
 
-interface range f0/2-19
+interface range f0/1-3
+shutdown
+interface range f0/10-19
 shutdown
 interface range f0/22-24
 shutdown
@@ -61,14 +62,16 @@ shutdown
 end
 copy running-config startup-config
 
+
 ```
 
-Configuratie voor Router op Switch 6:
+
+Configuratie voor Router op Switch 5:
 
 ```
 enable
 configure terminal
-hostname RouterSwitch6
+hostname RouterSwitch5
 banner motd %Unauthorized access prohibited%
 enable secret DirkThijs
 ip domain-name red.local
@@ -86,37 +89,41 @@ exit
 ip ssh version 2
 ip ssh authentication-retries 2
 ip ssh time-out 60
-interface f0/0.500
-encapsulation dot1q 500
-ip address 172.18.2.65 255.255.255.224
+
+
+interface g0/0.200
+encapsulation dot1q 200
+ip address 172.18.0.1 255.255.254.0
+ip helper-address 172.18.2.2
 no shutdown
-interface f0/0.600
-encapsulation dot1q 600
-ip address 172.18.2.97 255.255.255.240
+interface g0/0.300
+encapsulation dot1q 300
+ip address 172.18.2.1 255.255.255.224
 no shutdown
-interface f0/0.999
+interface g0/0.999
 encapsulation dot1q 999 native
-ip address 172.18.2.130 255.255.255.224
+ip address 172.18.2.129 255.255.255.224
 no shutdown
-interface f0/0
+interface g0/0
 no shutdown
-interface f0/1
-ip address 172.18.2.33 255.255.255.224
+interface g0/1
+ip address 172.18.2.34 255.255.255.224
 no shutdown
 exit
-ip route 172.18.0.0 255.255.254.0 172.18.2.34
-ip route 172.18.2.0 255.255.255.224 172.18.2.34
-ip route 0.0.0.0 0.0.0.0 172.18.2.98
-ip route 172.18.2.129 255.255.255.255 172.18.2.34
-ip route 172.18.2.132 255.255.255.255 172.18.2.34
-ip route 172.18.2.131 255.255.255.255 172.18.2.34
+access-list 1 permit any
+access-list 1 deny 172.16.0.0 0.0.255.255
+interface g0/0.300
+ip access-group 1 out
+exit
+ip route 0.0.0.0 0.0.0.0 172.18.2.33
+ip route 172.18.2.130 255.255.255.255 172.18.2.33
+ip route 172.18.2.133 255.255.255.255 172.18.2.33
+ip route 172.18.2.134 255.255.255.255 172.18.2.33
+
 end
 copy running-config startup-config
-
-                                interface g0/0
-                                ip helper-address 172.18.2.2
 
 
 ```
 
-Ook een Default Static Route naar de LAN-interface van de firewall (en die zal ook verder routeren naar buiten) + **gebruik next-hop ipv uitgaande interface**!
+Let ook hier op of de poorten in gebruik wel effectief overeenkomen met de poorten in de configuratie!
