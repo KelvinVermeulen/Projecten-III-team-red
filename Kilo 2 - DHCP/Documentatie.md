@@ -24,4 +24,9 @@ Domein wachtwoord: Aa12345<br>
 ## Informatie voer DHCP 
 Scope naam: VLAN200 <br>
 IP-range: 178.18.0.50 - 172.18.0.100<br>
+Subnetmask: 255.255.254.0<br>
+Default router: 172.18.0.1 <br>
+DNS Server: 172.18.2.67<br>
+DnsDomain: red.local<br>
+Uitgezonderde IP-range: 172.18.0.0 - 172.18.0.49
 
