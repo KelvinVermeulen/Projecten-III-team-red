@@ -232,7 +232,7 @@
 
 ## Stap 1: Start de server op in Hyper-V
 * Ik ben als Administrator succesvol ingelogd.
-* Het controlpaneel van PRTG werd automatisch opgestart.
+* Google chrome en PRTG werden automatisch geinstalleerd.
 
 ## Stap 2: Controle
 
