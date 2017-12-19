@@ -11,6 +11,7 @@
 - Timezone en hostnaam
 - DNS-resolving uitgeschakeld (de firewall mag enkel filteren!)
 - *Optioneel: Aliassen voor IP en poorten*
+- Routes om netwerken te bereiken (niet **volledig** nodig voor testen basisfunctie firewall)
 
 ## Testwijze
 
@@ -18,7 +19,7 @@
 1. Open de WebGUI vanop een machine met IP-adres `172.18.2.99` en surf naar het IP-adres `172.18.2.98` via een webbrowser.
     - Username: `admin`
     - Password: `pfsense`
-2. Ga naar `Firewall -> Rules -> LAN` en controleer of alle protocollen (21, 25, 53, 80, 110, 143, 161, 443) toegelaten worden vanaf het LAN.
+2. Ga naar `Firewall -> Rules -> LAN` en `WAN` en controleer of alle protocollen (25, 53, 80, 110, 143, 389, 443) toegelaten worden van buiten het LAN + of al het verkeer van het LAN wordt toegelaten wordt naar buiten.
 3. Controleer in het dashboard of de hostnaam `pfSense.red` is, en of beide netwerkinterfaces (LAN & WAN) aanwezig zijn (en correct ingesteld zijn qua IP-adressen. 
     - LAN: `172.18.2.98/28`
     - WAN: `172.18.2.114/28`
