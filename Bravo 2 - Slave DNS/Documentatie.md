@@ -37,6 +37,8 @@ Domein wachtwoord: Aa12345<br>
 | ControlPanelGameLink    | Toegang tot contol panel en game link blokkeren | Iedereen|
 | Netwerkadapter         | Toegang tot netwerkadapter instellingen blokkeren               | Verkoop en administratie|
 | FileServer | Automatisch aanmaken van schijfen per user                 | Iedereen|
+| SQLpoortenVoorSCCM2012R2 | Poorten activeren voor SQL                 | Iedereen|
+| ActiveScripting | Actief scripting activeren op IE                 | Iedereen|
 
 
 
