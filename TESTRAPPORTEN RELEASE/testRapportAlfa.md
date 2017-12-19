@@ -145,3 +145,5 @@
 | | ProfileDirs|Full Control|Heeft een folder met jouw naam|
 
 ![Screenshot1](https://github.com/HoGentTIN/p3ops-red/blob/master/TESTRAPPORTEN%20RELEASE/Afbeeldingen_Testrapport/alf%20(6).jpg)
+
+**Permissies van alle gebruikers zijn op de release getest, maar er zijn geen afbeeldingen van genomen.**
